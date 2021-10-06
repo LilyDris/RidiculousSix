@@ -2,8 +2,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-import jdk.javadoc.internal.doclets.formats.html.resources.standard;
-
 public class LibraryMain {
 
     final static String menu = "1. Search\n2. Add new records\n3. Order items\n4. Edit records\n5. Useful reports\n 6. Quit";
