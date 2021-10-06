@@ -2,17 +2,16 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-import jdk.javadoc.internal.doclets.formats.html.resources.standard;
-
 public class LibraryMain {
 
-    final static String menu = "1. Search\n2. Add new records\n3. Order items\n4. Edit records\n5. Useful reports\n 6. Quit";
+    final static String menu = "1. Search\n2. Add new records\n3. Order items\n4. Edit records\n5. Useful reports\n6. Quit";
+    public static Scanner keyboard = new Scanner(System.in);
+    public static int choice;
+    public static List<ArtistOjects> artistInventory = new ArrayList<>();
+    public static List<MovieObjects> movieInventory = new ArrayList<>();
 
     public static void main(String[] args) {
-        int choice = 0;
-        List<ArtistOjects> artistInventory = new ArrayList<>();
-        List<MovieObjects> movieInventory = new ArrayList<>();
-        Scanner keyboard = new Scanner(System.in);
+
         while (choice != 6) {
             System.out.println(menu);
             System.out.println("Enter number option would you like?");
@@ -48,6 +47,8 @@ public class LibraryMain {
                 + "2. Number of albums checked out by a single patron\n" + "3. Most popular actor in the database\n"
                 + "4. Most listened to artist in the database\n" + "5. Patron who has checked out the most videos";
         System.out.println(reportMenu);
+        System.out.println("Enter number option would you like?");
+        choice = keyboard.nextInt();
     }
 
     // User selects an artist (provide the name), edit any field of the artist and
@@ -55,6 +56,8 @@ public class LibraryMain {
     private static void editRecords() {
         final String editMenu = "1. Edit an Artist";
         System.out.println(editMenu);
+        System.out.println("Enter number option would you like?");
+        choice = keyboard.nextInt();
     }
 
     // The user enter the information to order a new movie, with number of copies
@@ -62,6 +65,8 @@ public class LibraryMain {
     private static void orderItems() {
         final String orderMenu = "1. Order a Movie\n2. Activate item recieved";
         System.out.println(orderMenu);
+        System.out.println("Enter number option would you like?");
+        choice = keyboard.nextInt();
     }
 
     // The user provides all the info needed to enter a new artist or a new Song
@@ -69,6 +74,8 @@ public class LibraryMain {
     private static void addNewRecords() {
         final String recordsMenu = "1. Add an artist\n2. Add a Track";
         System.out.println(recordsMenu);
+        System.out.println("Enter number option would you like?");
+        choice = keyboard.nextInt();
     }
     // 1a. The user provides an artist, the program retrieves the information
     // available
@@ -77,6 +84,44 @@ public class LibraryMain {
     private static void searchRecords() {
         final String searchMenu = "1. Artist\n2. Track";
         System.out.println(searchMenu);
+        System.out.println("Enter number option would you like?");
+        choice = keyboard.nextInt();
+        boolean found = false;
+        switch (choice) {
+
+            case 1:
+                System.out.println("Enter name of Artist:");
+                String artist = keyboard.nextLine();
+
+                for (int i = 0; i < artistInventory.size(); i++) {
+                    if (1 == artist.compareToIgnoreCase(artistInventory.get(i).name)) {
+                        artistInventory.get(i).printArtistInfo();
+                        found = true;
+                    }
+                }
+                if (!found) {
+                    System.out.println("No Artist found with that name");
+                }
+                break;
+            case 2:
+                System.out.println("Enter name of Artist:");
+                String track = keyboard.nextLine();
+
+                for (int i = 0; i < artistInventory.size(); i++) {
+                    for(int j=0;j<artistInventory.get(i).getTracks().size();j++){
+                    if (1 == track.compareToIgnoreCase(artistInventory.get(i).getTracks().get(j).trackName)) {
+                        artistInventory.get(i).getTracks().get(j).printTrackInfo();
+                        found = true;
+                    }
+                }
+                }
+                if (!found) {
+                    System.out.println("No Track found with that name");
+                }
+                break;
+            default:
+                System.out.println("Invalid Option");
+        }
     }
 
 }
