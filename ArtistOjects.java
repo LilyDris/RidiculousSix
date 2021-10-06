@@ -11,14 +11,16 @@ public class ArtistOjects {
     //constructor with name   
     public ArtistOjects(String name){
         this.name=name;
-        genres= new ArrayList<>();
+        this.genres= new ArrayList<>();
+        this.tracks=new ArrayList<>();
     }
 
     //constructor with name and age
     public ArtistOjects(String name, int age){
         this.name=name;
         this.age=age;
-        genres=new ArrayList<>();
+        this.genres= new ArrayList<>();
+        this.tracks=new ArrayList<>();
     }
 
     //constructor with name, age, and genres
@@ -26,6 +28,15 @@ public class ArtistOjects {
         this.name=name;
         this.age=age;
         this.genres=genres;
+        this.tracks=new ArrayList<>();
+    }
+
+    //constructor with name, age, genres, and tracks
+    public ArtistOjects(String name, int age, List<String> genres, List<TrackObject> tracks){
+        this.name=name;
+        this.age=age;
+        this.genres=genres;
+        this.tracks=tracks;
     }
 
     //getters
