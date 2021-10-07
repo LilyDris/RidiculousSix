@@ -1,10 +1,12 @@
 import java.util.List;
+import java.util.Scanner;
 
 public class ArtistObjects {
     String name;
     int age;
     List<String> genres;
     List<TrackObject> tracks;
+    Scanner keyboard= new Scanner(System.in);
 
     // constructor with name, age, and genres
     public ArtistObjects(String setName, int setAge, List<String> setGenres, List<TrackObject> setTracks) {
@@ -43,4 +45,6 @@ public class ArtistObjects {
     public void addGenre(String genre) {
         genres.add(genre);
     }
+
+
 }

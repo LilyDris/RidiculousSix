@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class LibraryMain {
 
-    final static String menu = "1. Search\n2. Add new records\n3. Order items\n4. Edit records\n5. Useful reports\n6. Quit";
+    final static String menu = "Main Menu\n1. Search\n2. Add new records\n3. Order items\n4. Edit records\n5. Useful reports\n6. Quit";
     public static Scanner keyboard = new Scanner(System.in);
     public static int choice;
     public static List<ArtistOjects> artistInventory = new ArrayList<>();
@@ -33,6 +33,7 @@ public class LibraryMain {
                     usefulReports();
                     break;
                 case 6:
+                    System.out.println("Goodbye!");
                     break;
                 default:
                     System.out.println("Invalid Option");
@@ -43,7 +44,7 @@ public class LibraryMain {
 
     // Displays useful reports the user might need
     private static void usefulReports() {
-        final String reportMenu = "1. Tracks by ARTIST released before YEAR\n"
+        final String reportMenu = "Reports Menu\n1. Tracks by ARTIST released before YEAR\n"
                 + "2. Number of albums checked out by a single patron\n" + "3. Most popular actor in the database\n"
                 + "4. Most listened to artist in the database\n" + "5. Patron who has checked out the most videos";
         System.out.println(reportMenu);
@@ -54,35 +55,61 @@ public class LibraryMain {
     // User selects an artist (provide the name), edit any field of the artist and
     // then save it, updating your internal structure that storage the artist.
     private static void editRecords() {
-        final String editMenu = "1. Edit an Artist";
+        final String editMenu = "Record Menu\n1. Edit an Artist";
         System.out.println(editMenu);
         System.out.println("Enter number option would you like?");
         choice = keyboard.nextInt();
+        switch (choice){
+            case 1:
+                break;
+            case 2:
+                break;
+            default:
+                System.out.println("Invalid Option");
+        }
     }
 
     // The user enter the information to order a new movie, with number of copies
     // purchase, price and an estimated date of arrival
     private static void orderItems() {
-        final String orderMenu = "1. Order a Movie\n2. Activate item recieved";
+        final String orderMenu = "Order Menu\n1. Order a Movie\n2. Activate item recieved";
         System.out.println(orderMenu);
         System.out.println("Enter number option would you like?");
         choice = keyboard.nextInt();
+        switch (choice){
+            case 1:
+                break;
+            case 2:
+                break;
+            default:
+                System.out.println("Invalid Option");
+        }
     }
 
     // The user provides all the info needed to enter a new artist or a new Song
     // (track). Use the attributes that you defined in your relational schema
     private static void addNewRecords() {
-        final String recordsMenu = "1. Add an artist\n2. Add a Track";
+        final String recordsMenu = "New Record Menu\n1. Add an artist\n2. Add a Track";
         System.out.println(recordsMenu);
         System.out.println("Enter number option would you like?");
         choice = keyboard.nextInt();
+        switch (choice){
+            case 1:
+                break;
+            case 2:
+                break;
+            default:
+                System.out.println("Invalid Option");
+                break;
+        }
+
     }
     // 1a. The user provides an artist, the program retrieves the information
     // available
     // 1b. The user provides a track name to search information about it.
 
     private static void searchRecords() {
-        final String searchMenu = "1. Artist\n2. Track";
+        final String searchMenu = "Search Menu\n1. Artist\n2. Track";
         System.out.println(searchMenu);
         System.out.println("Enter number option would you like?");
         choice = keyboard.nextInt();
