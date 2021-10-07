@@ -3,11 +3,11 @@ public class TrackObject {
     public int length, year;
 
     // constructors
-    public TrackObject(String trackName, String genre, int length, int year) {
-        this.trackName = trackName;
-        this.genre = genre;
-        this.length = length;
-        this.year = year;
+    public TrackObject(String setTrackName, String setGenre, int setLength, int setYear) {
+        trackName = setTrackName;
+        genre = setGenre;
+        length = setLength;
+        year = setYear;
     }
 
     // getters
@@ -28,28 +28,28 @@ public class TrackObject {
     }
 
     // setters
-    public void setTrackname(String name) {
-        this.trackName = name;
+    public void setTrackname(String setName) {
+        trackName = setName;
     }
 
-    public void setGenre(String genre) {
-        this.genre = genre;
+    public void setGenre(String setGenre) {
+        genre = setGenre;
     }
 
-    public void setLength(int length) {
-        this.length = length;
+    public void setLength(int setLength) {
+        length = setLength;
     }
 
-    public void setYear(int year) {
-        this.year = year;
+    public void setYear(int setYear) {
+        year = setYear;
     }
 
-    //print Track
-    public void printTrackInfo(){
-        System.out.println("Name: "+trackName);
-        System.out.println("Genre: "+genre);
-        System.out.println("Length: "+length);
-        System.out.println("Year: "+year);
+    // print Track
+    public void printTrackInfo() {
+        System.out.println("Name: " + trackName);
+        System.out.println("Genre: " + genre);
+        System.out.println("Length: " + length);
+        System.out.println("Year: " + year);
     }
 
 }

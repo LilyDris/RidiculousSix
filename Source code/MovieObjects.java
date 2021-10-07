@@ -1,19 +1,20 @@
 import java.util.List;
 
 public class MovieObjects {
-    public String name, director;
-    public int length, year;
-    public double rating;
+    String name, director;
+    int length, year;
+    double rating;
     List<String> genres;
 
     // constructor
-    public MovieObjects(String name, String director, int length, int year, double rating, List<String> genres) {
-        this.name = name;
-        this.director = director;
-        this.length = length;
-        this.year = year;
-        this.rating = rating;
-        this.genres = genres;
+    public MovieObjects(String setName, String setDirector, int setLength, int setYear, double setRating,
+            List<String> setGenres) {
+        name = setName;
+        director = setDirector;
+        length = setLength;
+        year = setYear;
+        rating = setRating;
+        genres = setGenres;
     }
 
     // getters
@@ -42,32 +43,32 @@ public class MovieObjects {
     }
 
     // setters
-    public void setName(String name) {
-        this.name = name;
+    public void setName(String setName) {
+        name = setName;
     }
 
-    public void setDirector(String director) {
-        this.director = director;
+    public void setDirector(String setDirector) {
+        director = setDirector;
     }
 
-    public void setLength(int length) {
-        this.length = length;
+    public void setLength(int setLength) {
+        length = setLength;
     }
 
-    public void setYear(int year) {
-        this.year = year;
+    public void setYear(int setYear) {
+        year = setYear;
     }
 
-    public void setRating(double rating) {
-        this.rating = rating;
+    public void setRating(double setRating) {
+        rating = setRating;
     }
 
-    public void setGenres(List<String> genres) {
-        this.genres = genres;
+    public void setGenres(List<String> setGenres) {
+        genres = setGenres;
     }
 
     // adders
     public void addGenre(String genre) {
-        this.genres.add(genre);
+        genres.add(genre);
     }
 }

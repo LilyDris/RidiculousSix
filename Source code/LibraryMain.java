@@ -94,7 +94,7 @@ public class LibraryMain {
                 String artist = keyboard.nextLine();
 
                 for (int i = 0; i < artistInventory.size(); i++) {
-                    if (1 == artist.compareToIgnoreCase(artistInventory.get(i).name)) {
+                    if (1 == artist.compareToIgnoreCase(artistInventory.get(i).getName())) {
                         artistInventory.get(i).printArtistInfo();
                         found = true;
                     }
@@ -108,12 +108,12 @@ public class LibraryMain {
                 String track = keyboard.nextLine();
 
                 for (int i = 0; i < artistInventory.size(); i++) {
-                    for(int j=0;j<artistInventory.get(i).getTracks().size();j++){
-                    if (1 == track.compareToIgnoreCase(artistInventory.get(i).getTracks().get(j).trackName)) {
-                        artistInventory.get(i).getTracks().get(j).printTrackInfo();
-                        found = true;
+                    for (int j = 0; j < artistInventory.get(i).getTracks().size(); j++) {
+                        if (1 == track.compareToIgnoreCase(artistInventory.get(i).getTracks().get(j).getTrackName())) {
+                            artistInventory.get(i).getTracks().get(j).printTrackInfo();
+                            found = true;
+                        }
                     }
-                }
                 }
                 if (!found) {
                     System.out.println("No Track found with that name");
