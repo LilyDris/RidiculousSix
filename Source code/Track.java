@@ -1,9 +1,9 @@
-public class TrackObjects {
-    public String trackName, genre;
-    public int length, year;
+public class Track {
+    private String trackName, genre;
+    private int length, year;
 
     // constructors
-    public TrackObjects(String setTrackName, String setGenre, int setLength, int setYear) {
+    public Track(String setTrackName, String setGenre, int setLength, int setYear) {
         trackName = setTrackName;
         genre = setGenre;
         length = setLength;

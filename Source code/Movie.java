@@ -1,13 +1,13 @@
 import java.util.List;
 
-public class MovieObjects {
-    String name, director;
-    int length, year, price = 5;
-    double rating;
-    List<String> genres;
+public class Movie {
+    private String name, director;
+    private int length, year, price = 5;
+    private double rating;
+    private List<String> genres;
 
     // constructor
-    public MovieObjects(String setName, String setDirector, int setLength, int setYear, double setRating,
+    public Movie(String setName, String setDirector, int setLength, int setYear, double setRating,
             List<String> setGenres) {
         name = setName;
         director = setDirector;
@@ -41,10 +41,11 @@ public class MovieObjects {
     public List<String> getGenres() {
         return genres;
     }
-	
-	public int getPrice() {
-			return price;
-	}
+
+    public int getPrice() {
+        return price;
+    }
+
     // setters
     public void setName(String setName) {
         name = setName;
@@ -69,10 +70,11 @@ public class MovieObjects {
     public void setGenres(List<String> setGenres) {
         genres = setGenres;
     }
-	
-	public void setPrice(int newPrice) {
-			price = newPrice;
-	}
+
+    public void setPrice(int newPrice) {
+        price = newPrice;
+    }
+
     // adders
     public void addGenre(String genre) {
         genres.add(genre);

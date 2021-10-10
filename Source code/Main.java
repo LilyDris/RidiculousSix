@@ -2,14 +2,14 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class LibraryMain {
+public class Main {
 
-    final static String menu = "Main Menu\n1. Search\n2. Add new records\n3. Order items\n4. Edit records\n5. Useful reports\n6. Quit";
+    final static String menu = "\nMain Menu\n1. Search\n2. Add new records\n3. Order items\n4. Edit records\n5. Useful reports\n6. Quit";
     public static Scanner keyboard = new Scanner(System.in);
     public static int choice;
-    public static List<ArtistObjects> artistInventory = new ArrayList<>();
-    public static List<MovieObjects> movieInventory = new ArrayList<>();
-	public static List<TrackObjects> trackinventory = new ArrayList<>();
+    public static List<Artist> artistInventory = new ArrayList<>();
+    public static List<Movie> movieInventory = new ArrayList<>();
+    public static List<Track> trackinventory = new ArrayList<>();
 
     public static void main(String[] args) {
 
@@ -17,6 +17,7 @@ public class LibraryMain {
             System.out.println(menu);
             System.out.println("Enter number option would you like?");
             choice = keyboard.nextInt();
+            keyboard.nextLine();
             switch (choice) {
                 case 1:
                     searchRecords();
@@ -51,7 +52,8 @@ public class LibraryMain {
         System.out.println(reportMenu);
         System.out.println("Enter number option would you like?");
         choice = keyboard.nextInt();
-		//TODO: Rest not to be implemented this checkpoint (3)
+        keyboard.nextLine();
+        // TODO: Rest not to be implemented this checkpoint (3)
     }
 
     // User selects an artist (provide the name), edit any field of the artist and
@@ -61,43 +63,40 @@ public class LibraryMain {
         System.out.println(editMenu);
         System.out.println("Enter number option would you like?");
         choice = keyboard.nextInt();
-        switch (choice){
+        keyboard.nextLine();
+        switch (choice) {
             case 1:
-				System.out.println("Which artist do you want to edit?");
-				String artistString = keyboard.nextLine();
-				ArtistObjects artist = new ArtistObjects("",0,null,null);
-				boolean found = false;
-				for (int i = 0; i < artistInventory.size(); i++) {
-                    if (1 == artistString.compareToIgnoreCase(artistInventory.get(i).getName())) {
+                System.out.println("Which artist do you want to edit?");
+                String artistString = keyboard.nextLine();
+                Artist artist = new Artist("", null, null);
+                boolean found = false;
+                for (int i = 0; i < artistInventory.size(); i++) {
+                    if (artistString.compareToIgnoreCase(artistInventory.get(i).getName()) == 0) {
                         artist = artistInventory.get(i);
                         found = true;
                     }
                 }
                 if (!found) {
                     System.out.println("No Artist found with that name");
-                }else{
-					System.out.println("What would you like to edit about the artist?\n1. Name\n2. Age\n3. Genres");
-					int editChoice = keyboard.nextInt();
-					switch (editChoice){
-						case 1:
-							System.out.println("Enter new name:");
-							String name = keyboard.nextLine();
-							artist.setName(name);
-							break;
-						case 2:
-							System.out.println("Enter new age:");
-							int age = keyboard.nextInt();
-							artist.setAge(age);
-							break;
-						case 3:
-							System.out.println("Enter new genre:");
-							String genre = keyboard.nextLine();
-							artist.addGenre(genre);
-							break;
-						default:
-							System.out.println("Invalid Option");
-					}
-				}
+                } else {
+                    System.out.println("What would you like to edit about the artist?\n1. Name\n2. Genres");
+                    int editChoice = keyboard.nextInt();
+                    keyboard.nextLine();
+                    switch (editChoice) {
+                        case 1:
+                            System.out.println("Enter new name:");
+                            String name = keyboard.nextLine();
+                            artist.setName(name);
+                            break;
+                        case 2:
+                            System.out.println("Enter new genre:");
+                            String genre = keyboard.nextLine();
+                            artist.addGenre(genre);
+                            break;
+                        default:
+                            System.out.println("Invalid Option");
+                    }
+                }
                 break;
             default:
                 System.out.println("Invalid Option");
@@ -111,30 +110,33 @@ public class LibraryMain {
         System.out.println(orderMenu);
         System.out.println("Enter number option would you like?");
         choice = keyboard.nextInt();
-        switch (choice){
+        keyboard.nextLine();
+        switch (choice) {
             case 1:
-				System.out.println("What movie do you want to order?");
-				String movieName = keyboard.nextLine();
-				MovieObjects movie = new MovieObjects("","",0,0,0.0,null);
-				boolean found = false;
-				for (int i = 0; i < movieInventory.size(); i++) {
-                    if (1 == movieName.compareToIgnoreCase(movieInventory.get(i).getName())) {
-						movie = movieInventory.get(i);
+                System.out.println("What movie do you want to order?");
+                String movieName = keyboard.nextLine();
+                Movie movie = new Movie("", "", 0, 0, 0.0, null);
+                boolean found = false;
+                for (int i = 0; i < movieInventory.size(); i++) {
+                    if (movieName.compareToIgnoreCase(movieInventory.get(i).getName()) == 0) {
+                        movie = movieInventory.get(i);
                         found = true;
                     }
                 }
                 if (!found) {
                     System.out.println("No Movie found with that name");
-                }else{
-						System.out.println("How many copies do you want?");
-						int copies = keyboard.nextInt();
-						int price = copies*movie.getPrice();
-						System.out.println(copies+" copies of "+movie.getName()+" will cost $"+price+".00");
-						System.out.println("Your order will arive in one business week."); //TODO: maybe implement date system?
-				}
+                } else {
+                    System.out.println("How many copies do you want?");
+                    int copies = keyboard.nextInt();
+                    keyboard.nextLine();
+                    int price = copies * movie.getPrice();
+                    System.out.println(copies + " copies of " + movie.getName() + " will cost $" + price + ".00");
+                    System.out.println("Your order will arive in one business week.");
+                    // TODO: maybe implement date system?
+                }
                 break;
             case 2:
-				//TODO: Not to be implemented this checkpoint (3)
+                // TODO: Not to be implemented this checkpoint (3)
                 break;
             default:
                 System.out.println("Invalid Option");
@@ -148,28 +150,32 @@ public class LibraryMain {
         System.out.println(recordsMenu);
         System.out.println("Enter number option would you like?");
         choice = keyboard.nextInt();
-        switch (choice){
+        keyboard.nextLine();
+        switch (choice) {
             case 1:
-				System.out.println("Name of artist:");
-				String artistName = keyboard.nextLine();
-				System.out.println("Age of artist:");
-				int artistAge = keyboard.nextInt();
-				List<String> artistGenres = new ArrayList<>();
-				List<TrackObjects> artistTracks = new ArrayList<>();
-				ArtistObjects newArtist = new ArtistObjects(artistName, artistAge, artistGenres, artistTracks);
-				artistInventory.add(newArtist);
+                System.out.println("Name of artist:");
+                String artistName = keyboard.nextLine();
+                System.out.println("Enter exactly 1 genre the artist performs:");
+                String genre = keyboard.nextLine();
+                List<String> artistGenres = new ArrayList<>();
+                artistGenres.add(genre);
+                List<Track> artistTracks = new ArrayList<>();
+                Artist newArtist = new Artist(artistName, artistGenres, artistTracks);
+                artistInventory.add(newArtist);
                 break;
             case 2:
-				System.out.println("Name of track:");
-				String trackName = keyboard.nextLine();
-				System.out.println("Genre of track:");
-				String trackGenre = keyboard.nextLine();
-				System.out.println("Age of length:");
-				int trackLength = keyboard.nextInt();
-				System.out.println("Year of length:");
-				int trackYear = keyboard.nextInt();
-				TrackObjects newTrack = new TrackObjects(trackName, trackGenre, trackLength, trackYear);
-				trackinventory.add(newTrack);
+                System.out.println("Name of track:");
+                String trackName = keyboard.nextLine();
+                System.out.println("Genre of track:");
+                String trackGenre = keyboard.nextLine();
+                System.out.println("Length of track (seconds):");
+                int trackLength = keyboard.nextInt();
+                keyboard.nextLine();
+                System.out.println("Year track was released:");
+                int trackYear = keyboard.nextInt();
+                keyboard.nextLine();
+                Track newTrack = new Track(trackName, trackGenre, trackLength, trackYear);
+                trackinventory.add(newTrack);
                 break;
             default:
                 System.out.println("Invalid Option");
@@ -186,6 +192,7 @@ public class LibraryMain {
         System.out.println(searchMenu);
         System.out.println("Enter number option would you like?");
         choice = keyboard.nextInt();
+        keyboard.nextLine();
         boolean found = false;
         switch (choice) {
 
@@ -194,7 +201,7 @@ public class LibraryMain {
                 String artist = keyboard.nextLine();
 
                 for (int i = 0; i < artistInventory.size(); i++) {
-                    if (1 == artist.compareToIgnoreCase(artistInventory.get(i).getName())) {
+                    if (artist.compareToIgnoreCase(artistInventory.get(i).getName()) == 0) {
                         artistInventory.get(i).printArtistInfo();
                         found = true;
                     }
@@ -209,7 +216,7 @@ public class LibraryMain {
 
                 for (int i = 0; i < artistInventory.size(); i++) {
                     for (int j = 0; j < artistInventory.get(i).getTracks().size(); j++) {
-                        if (1 == track.compareToIgnoreCase(artistInventory.get(i).getTracks().get(j).getTrackName())) {
+                        if (track.compareToIgnoreCase(artistInventory.get(i).getTracks().get(j).getTrackName()) == 0) {
                             artistInventory.get(i).getTracks().get(j).printTrackInfo();
                             found = true;
                         }
