@@ -7,8 +7,9 @@ public class LibraryMain {
     final static String menu = "Main Menu\n1. Search\n2. Add new records\n3. Order items\n4. Edit records\n5. Useful reports\n6. Quit";
     public static Scanner keyboard = new Scanner(System.in);
     public static int choice;
-    public static List<ArtistOjects> artistInventory = new ArrayList<>();
+    public static List<ArtistObjects> artistInventory = new ArrayList<>();
     public static List<MovieObjects> movieInventory = new ArrayList<>();
+	public static List<TrackObjects> trackinventory = new ArrayList<>()
 
     public static void main(String[] args) {
 
@@ -50,6 +51,7 @@ public class LibraryMain {
         System.out.println(reportMenu);
         System.out.println("Enter number option would you like?");
         choice = keyboard.nextInt();
+		//TODO: Rest not to be implemented this checkpoint
     }
 
     // User selects an artist (provide the name), edit any field of the artist and
@@ -61,8 +63,10 @@ public class LibraryMain {
         choice = keyboard.nextInt();
         switch (choice){
             case 1:
+				//TODO: Edit artist
                 break;
             case 2:
+				//TODO: Decide if we need this switch statement
                 break;
             default:
                 System.out.println("Invalid Option");
@@ -78,8 +82,10 @@ public class LibraryMain {
         choice = keyboard.nextInt();
         switch (choice){
             case 1:
+				//TODO: Order a movie
                 break;
             case 2:
+				//TODO: Not to be implemented this checkpoint (3)
                 break;
             default:
                 System.out.println("Invalid Option");
@@ -95,8 +101,10 @@ public class LibraryMain {
         choice = keyboard.nextInt();
         switch (choice){
             case 1:
+				//TODO: Add an artist
                 break;
             case 2:
+				//TODO: Add a track
                 break;
             default:
                 System.out.println("Invalid Option");
@@ -131,7 +139,7 @@ public class LibraryMain {
                 }
                 break;
             case 2:
-                System.out.println("Enter name of Artist:");
+                System.out.println("Enter name of Track:");
                 String track = keyboard.nextLine();
 
                 for (int i = 0; i < artistInventory.size(); i++) {
