@@ -9,7 +9,7 @@ public class LibraryMain {
     public static int choice;
     public static List<ArtistObjects> artistInventory = new ArrayList<>();
     public static List<MovieObjects> movieInventory = new ArrayList<>();
-	public static List<TrackObjects> trackinventory = new ArrayList<>()
+	public static List<TrackObjects> trackinventory = new ArrayList<>();
 
     public static void main(String[] args) {
 
@@ -51,7 +51,7 @@ public class LibraryMain {
         System.out.println(reportMenu);
         System.out.println("Enter number option would you like?");
         choice = keyboard.nextInt();
-		//TODO: Rest not to be implemented this checkpoint
+		//TODO: Rest not to be implemented this checkpoint (3)
     }
 
     // User selects an artist (provide the name), edit any field of the artist and
@@ -63,10 +63,41 @@ public class LibraryMain {
         choice = keyboard.nextInt();
         switch (choice){
             case 1:
-				//TODO: Edit artist
-                break;
-            case 2:
-				//TODO: Decide if we need this switch statement
+				System.out.println("Which artist do you want to edit?");
+				String artistString = keyboard.nextLine();
+				ArtistObjects artist = new ArtistObjects("",0,null,null);
+				boolean found = false;
+				for (int i = 0; i < artistInventory.size(); i++) {
+                    if (1 == artistString.compareToIgnoreCase(artistInventory.get(i).getName())) {
+                        artist = artistInventory.get(i);
+                        found = true;
+                    }
+                }
+                if (!found) {
+                    System.out.println("No Artist found with that name");
+                }else{
+					System.out.println("What would you like to edit about the artist?\n1. Name\n2. Age\n3. Genres");
+					int editChoice = keyboard.nextInt();
+					switch (editChoice){
+						case 1:
+							System.out.println("Enter new name:");
+							String name = keyboard.nextLine();
+							artist.setName(name);
+							break;
+						case 2:
+							System.out.println("Enter new age:");
+							int age = keyboard.nextInt();
+							artist.setAge(age);
+							break;
+						case 3:
+							System.out.println("Enter new genre:");
+							String genre = keyboard.nextLine();
+							artist.addGenre(genre);
+							break;
+						default:
+							System.out.println("Invalid Option");
+					}
+				}
                 break;
             default:
                 System.out.println("Invalid Option");
@@ -82,7 +113,25 @@ public class LibraryMain {
         choice = keyboard.nextInt();
         switch (choice){
             case 1:
-				//TODO: Order a movie
+				System.out.println("What movie do you want to order?");
+				String movieName = keyboard.nextLine();
+				MovieObjects movie = new MovieObjects("","",0,0,0.0,null);
+				boolean found = false;
+				for (int i = 0; i < movieInventory.size(); i++) {
+                    if (1 == movieName.compareToIgnoreCase(movieInventory.get(i).getName())) {
+						movie = movieInventory.get(i);
+                        found = true;
+                    }
+                }
+                if (!found) {
+                    System.out.println("No Movie found with that name");
+                }else{
+						System.out.println("How many copies do you want?");
+						int copies = keyboard.nextInt();
+						int price = copies*movie.getPrice();
+						System.out.println(copies+" copies of "+movie.getName()+" will cost $"+price+".00");
+						System.out.println("Your order will arive in one business week."); //TODO: maybe implement date system?
+				}
                 break;
             case 2:
 				//TODO: Not to be implemented this checkpoint (3)
@@ -101,10 +150,26 @@ public class LibraryMain {
         choice = keyboard.nextInt();
         switch (choice){
             case 1:
-				//TODO: Add an artist
+				System.out.println("Name of artist:");
+				String artistName = keyboard.nextLine();
+				System.out.println("Age of artist:");
+				int artistAge = keyboard.nextInt();
+				List<String> artistGenres = new ArrayList<>();
+				List<TrackObjects> artistTracks = new ArrayList<>();
+				ArtistObjects newArtist = new ArtistObjects(artistName, artistAge, artistGenres, artistTracks);
+				artistInventory.add(newArtist);
                 break;
             case 2:
-				//TODO: Add a track
+				System.out.println("Name of track:");
+				String trackName = keyboard.nextLine();
+				System.out.println("Genre of track:");
+				String trackGenre = keyboard.nextLine();
+				System.out.println("Age of length:");
+				int trackLength = keyboard.nextInt();
+				System.out.println("Year of length:");
+				int trackYear = keyboard.nextInt();
+				TrackObjects newTrack = new TrackObjects(trackName, trackGenre, trackLength, trackYear);
+				trackinventory.add(newTrack);
                 break;
             default:
                 System.out.println("Invalid Option");

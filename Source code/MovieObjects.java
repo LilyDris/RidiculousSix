@@ -2,7 +2,7 @@ import java.util.List;
 
 public class MovieObjects {
     String name, director;
-    int length, year;
+    int length, year, price = 5;
     double rating;
     List<String> genres;
 
@@ -41,7 +41,10 @@ public class MovieObjects {
     public List<String> getGenres() {
         return genres;
     }
-
+	
+	public int getPrice() {
+			return price;
+	}
     // setters
     public void setName(String setName) {
         name = setName;
@@ -66,7 +69,10 @@ public class MovieObjects {
     public void setGenres(List<String> setGenres) {
         genres = setGenres;
     }
-
+	
+	public void setPrice(int newPrice) {
+			price = newPrice;
+	}
     // adders
     public void addGenre(String genre) {
         genres.add(genre);
