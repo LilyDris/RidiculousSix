@@ -42,10 +42,17 @@ public class Artist {
         tracks.add(track);
     }
 
+    public void printArtistTracks() {
+        for (int i = 0; i < tracks.size(); i++) {
+            System.out.println(tracks.get(i).getTrackName());
+        }
+    }
+
     // print Artist
     public void printArtistInfo() {
         System.out.println("Artist: " + name);
         System.out.println("Genres: " + genres);
-        System.out.println("Tracks: " + tracks);
+        System.out.print("Tracks: ");
+        printArtistTracks();
     }
 }

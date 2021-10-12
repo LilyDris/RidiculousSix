@@ -167,7 +167,7 @@ public class Main {
                 String trackArtist = keyboard.nextLine();
                 Artist artist = null;
                 for (int i = 0; i < artistInventory.size(); i++) {
-                    if (trackArtist.compareToIgnoreCase(artistInventory.get(i).getName()) > 0) {
+                    if (trackArtist.compareToIgnoreCase(artistInventory.get(i).getName()) == 0) {
                         artist = artistInventory.get(i);
                     }
                 }
