@@ -1,13 +1,11 @@
 public class Track {
-    private String trackName, genre;
-    private int length, year;
+    private String trackName, genre, artist;
 
     // constructors
-    public Track(String setTrackName, String setGenre, int setLength, int setYear) {
+    public Track(String setTrackName, String setGenre, String setArtist) {
         trackName = setTrackName;
         genre = setGenre;
-        length = setLength;
-        year = setYear;
+        artist = setArtist;
     }
 
     // getters
@@ -19,12 +17,8 @@ public class Track {
         return genre;
     }
 
-    public int getLength() {
-        return length;
-    }
-
-    public int getYear() {
-        return year;
+    public String getArtist() {
+        return artist;
     }
 
     // setters
@@ -36,20 +30,11 @@ public class Track {
         genre = setGenre;
     }
 
-    public void setLength(int setLength) {
-        length = setLength;
-    }
-
-    public void setYear(int setYear) {
-        year = setYear;
-    }
-
     // print Track
     public void printTrackInfo() {
         System.out.println("Name: " + trackName);
         System.out.println("Genre: " + genre);
-        System.out.println("Length: " + length);
-        System.out.println("Year: " + year);
+        System.out.println("Artist: " + artist);
     }
 
 }

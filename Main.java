@@ -9,7 +9,6 @@ public class Main {
     public static int choice;
     public static List<Artist> artistInventory = new ArrayList<>();
     public static List<Movie> movieInventory = new ArrayList<>();
-    public static List<Track> trackinventory = new ArrayList<>();
 
     public static void main(String[] args) {
 
@@ -46,7 +45,7 @@ public class Main {
 
     // Displays useful reports the user might need
     private static void usefulReports() {
-        final String reportMenu = "Reports Menu\n1. Tracks by ARTIST released before YEAR\n"
+        final String reportMenu = "\nReports Menu\n1. Tracks by ARTIST released before YEAR\n"
                 + "2. Number of albums checked out by a single patron\n" + "3. Most popular actor in the database\n"
                 + "4. Most listened to artist in the database\n" + "5. Patron who has checked out the most videos";
         System.out.println(reportMenu);
@@ -59,7 +58,7 @@ public class Main {
     // User selects an artist (provide the name), edit any field of the artist and
     // then save it, updating your internal structure that storage the artist.
     private static void editRecords() {
-        final String editMenu = "Record Menu\n1. Edit an Artist";
+        final String editMenu = "\nRecord Menu\n1. Edit an Artist";
         System.out.println(editMenu);
         System.out.println("Enter number option would you like?");
         choice = keyboard.nextInt();
@@ -106,7 +105,7 @@ public class Main {
     // The user enter the information to order a new movie, with number of copies
     // purchase, price and an estimated date of arrival
     private static void orderItems() {
-        final String orderMenu = "Order Menu\n1. Order a Movie\n2. Activate item recieved";
+        final String orderMenu = "\nOrder Menu\n1. Order a Movie\n2. Activate item recieved";
         System.out.println(orderMenu);
         System.out.println("Enter number option would you like?");
         choice = keyboard.nextInt();
@@ -146,7 +145,7 @@ public class Main {
     // The user provides all the info needed to enter a new artist or a new Song
     // (track). Use the attributes that you defined in your relational schema
     private static void addNewRecords() {
-        final String recordsMenu = "New Record Menu\n1. Add an artist\n2. Add a Track";
+        final String recordsMenu = "\nNew Record Menu\n1. Add an artist\n2. Add a Track";
         System.out.println(recordsMenu);
         System.out.println("Enter number option would you like?");
         choice = keyboard.nextInt();
@@ -164,18 +163,24 @@ public class Main {
                 artistInventory.add(newArtist);
                 break;
             case 2:
-                System.out.println("Name of track:");
-                String trackName = keyboard.nextLine();
-                System.out.println("Genre of track:");
-                String trackGenre = keyboard.nextLine();
-                System.out.println("Length of track (seconds):");
-                int trackLength = keyboard.nextInt();
-                keyboard.nextLine();
-                System.out.println("Year track was released:");
-                int trackYear = keyboard.nextInt();
-                keyboard.nextLine();
-                Track newTrack = new Track(trackName, trackGenre, trackLength, trackYear);
-                trackinventory.add(newTrack);
+                System.out.println("Artist of track:");
+                String trackArtist = keyboard.nextLine();
+                Artist artist = null;
+                for (int i = 0; i < artistInventory.size(); i++) {
+                    if (trackArtist.compareToIgnoreCase(artistInventory.get(i).getName()) > 0) {
+                        artist = artistInventory.get(i);
+                    }
+                }
+                if (artist == null) {
+                    System.out.println("No such artist exists. Please add the artist first.");
+                } else {
+                    System.out.println("Name of track:");
+                    String trackName = keyboard.nextLine();
+                    System.out.println("Genre of track:");
+                    String trackGenre = keyboard.nextLine();
+                    Track newTrack = new Track(trackName, trackGenre, trackArtist);
+                    artist.addTrack(newTrack);
+                }
                 break;
             default:
                 System.out.println("Invalid Option");
@@ -188,7 +193,7 @@ public class Main {
     // 1b. The user provides a track name to search information about it.
 
     private static void searchRecords() {
-        final String searchMenu = "Search Menu\n1. Artist\n2. Track";
+        final String searchMenu = "\nSearch Menu\n1. Artist\n2. Track";
         System.out.println(searchMenu);
         System.out.println("Enter number option would you like?");
         choice = keyboard.nextInt();

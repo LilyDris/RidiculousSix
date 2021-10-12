@@ -38,6 +38,10 @@ public class Artist {
         genres.add(genre);
     }
 
+    public void addTrack(Track track) {
+        tracks.add(track);
+    }
+
     // print Artist
     public void printArtistInfo() {
         System.out.println("Artist: " + name);
