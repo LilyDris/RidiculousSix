@@ -1,1 +1,17 @@
-Test
+CREATE TABLE Media_Item ();
+CREATE TABLE Media_Genres (ID CHAR(10) NOT NULL, Genres VARCHAR(12) NOT NULL, PrimaryKey(ID, Genres), ForeignKey(Genres) REFERENCES Media_Item(ID));
+CREATE TABLE Artist_Genres ();
+CREATE TABLE Branch ();
+CREATE TABLE Order ();
+CREATE TABLE Patron ();
+CREATE TABLE Chapter ();
+CREATE TABLE Author ();
+CREATE TABLE Actor ();
+CREATE TABLE Game_Studio ();
+CREATE TABLE Artist ();
+CREATE TABLE Track ();
+CREATE TABLE Author_Writes ();
+CREATE TABLE Actor_Stars ();
+CREATE TABLE Studio_Creates ();
+CREATE TABLE Artist_Authors ();
+CREATE TABLE Album_Contains ();
