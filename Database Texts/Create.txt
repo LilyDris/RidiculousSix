@@ -10,8 +10,8 @@ CREATE TABLE Actor (Name VARCHAR(12) NOT NULL, Sex CHAR(1) NOT NULL, Age INT, Pr
 CREATE TABLE Game_Studio (Name VARCHAR(12) NOT NULL, PrimaryKey(Name));
 CREATE TABLE Artist (Name VARCHAR(12) NOT NULL, PrimaryKey(Name));
 CREATE TABLE Track ();
-CREATE TABLE Author_Writes ();
-CREATE TABLE Actor_Stars ();
-CREATE TABLE Studio_Creates ();
-CREATE TABLE Artist_Authors ();
-CREATE TABLE Album_Contains ();
+CREATE TABLE Author_Writes (Name VARCHAR(12) NOT NULL, ID CHAR(10) NOT NULL, PrimaryKey(Name, ID), ForeignKey(Name) REFERENCES Author(Name), ForeignKey(ID) REFERENCES Media_Item(ID));
+CREATE TABLE Actor_Stars (Name VARCHAR(12) NOT NULL, ID CHAR(10) NOT NULL, PrimaryKey(Name, ID), ForeignKey(Name) REFERENCES Actor(Name), ForeignKey(ID) REFERENCES Media_Item(ID));
+CREATE TABLE Studio_Creates (Name VARCHAR(12) NOT NULL, ID CHAR(10) NOT NULL, PrimaryKey(Name, ID), ForeignKey(Name) REFERENCES Game_Studio(Name), ForeignKey(ID) REFERENCES Media_Item(ID));
+CREATE TABLE Artist_Authors (Name VARCHAR(12) NOT NULL, ID CHAR(10) NOT NULL, PrimaryKey(Name, ID), ForeignKey(Name) REFERENCES Artist(Name), ForeignKey(ID) REFERENCES Media_Item(ID));
+CREATE TABLE Album_Contains (Name VARCHAR(12) NOT NULL, ID CHAR(10) NOT NULL, PrimaryKey(Name, ID), ForeignKey(Name) REFERENCES Track(Name), ForeignKey(ID) REFERENCES Media_Item(ID));
