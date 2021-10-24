@@ -1,0 +1,14 @@
+/*	Find the titles of all tracks by ARTIST released before YEAR*/
+SELECT Name
+FROM Track
+WHERE ArtistName="Name" AND Year>200
+
+/* Give all the movies and their date of their checkout from a single patron (you choose how to designate the patron)*/
+
+/*	List all the albums and their unique identifiers with less than 2 copies held by the library. */
+
+/*	Give all the patrons who checked out a movie by ACTOR and the movies they checked out.*/
+
+/*	Find the total number of albums checked out by a single patron (you choose how to designate the patron)*/
+
+/*	Find the patron who has checked out the most videos and the total number of videos they have checked out.*/
