@@ -1,9 +1,9 @@
 CREATE TABLE Media_Item (ID CHAR(10) NOT NULL, Copy_Number INT NOT NULL, Name VARCHAR(50), Year INT, Length VARCHAR(12), Audiobook_Flag INT, Album_Flag INT, Publisher VARCHAR(15), Movie_Flag INT, Director VARCHAR(20), Game_Flag INT, Console VARCHAR(20), Rating VARCHAR(5), Status INT, Order_Number INT, Due_Date DATE, Email_Address VARCHAR(50), PrimaryKey(ID, Copy_Number), ForeignKey(Order_Number) REFERENCES Order(Order_Number), ForeignKey(Email_Address) REFERENCES Patron(Email_Address));
 CREATE TABLE Media_Genres (ID CHAR(10) NOT NULL, Genres VARCHAR(20) NOT NULL, PrimaryKey(ID, Genres), ForeignKey(Genres) REFERENCES Media_Item(ID));
 CREATE TABLE Artist_Genres (Name VARCHAR(50) NOT NULL, Genres VARCHAR(20) NOT NULL, PrimaryKey(Name, Genres), ForeignKey(Name) REFERENCES Artist(Name));
-CREATE TABLE Branch (City VARCHAR(12) NOT NULL, State VARCHAR(12) NOT NULL, PrimaryKey(City, State));
-CREATE TABLE Order (Order_Number INT NOT NULL, Price VARCHAR(10), Quantity INT, Arrival_Date DATE, City VARCHAR(12) NOT NULL, State VARCHAR(12) NOT NULL, PrimaryKey(Order_Number), ForeignKey(City) REFERENCES Branch(City), ForeignKey(State) REFERENCES Branch(State));
-CREATE TABLE Patron (Email_Address VARCHAR(50) NOT NULL, First_Name VARCHAR(20) NOT NULL, Last_Name VARCHAR(20) NOT NULL, Address VARCHAR(50), City VARCHAR(12) NOT NULL, State VARCHAR(12) NOT NULL, PrimaryKey(Email_Address), ForeignKey(City) REFERENCES Branch(City), ForeignKey(State) REFERENCES Branch(State));
+CREATE TABLE Branch (City VARCHAR(20) NOT NULL, State VARCHAR(20) NOT NULL, PrimaryKey(City, State));
+CREATE TABLE Order (Order_Number INT NOT NULL, Price VARCHAR(10), Quantity INT, Arrival_Date DATE, City VARCHAR(20) NOT NULL, State VARCHAR(20) NOT NULL, PrimaryKey(Order_Number), ForeignKey(City) REFERENCES Branch(City), ForeignKey(State) REFERENCES Branch(State));
+CREATE TABLE Patron (Email_Address VARCHAR(50) NOT NULL, First_Name VARCHAR(20) NOT NULL, Last_Name VARCHAR(20) NOT NULL, Address VARCHAR(50), City VARCHAR(20) NOT NULL, State VARCHAR(20) NOT NULL, PrimaryKey(Email_Address), ForeignKey(City) REFERENCES Branch(City), ForeignKey(State) REFERENCES Branch(State));
 CREATE TABLE Chapter (Name VARCHAR(50) NOT NULL, Number INT NOT NULL, ID CHAR(10) NOT NULL, PrimaryKey(Name, Number), ForeignKey(ID) REFERENCES Media_Item(ID));
 CREATE TABLE Author (Name VARCHAR(50) NOT NULL, Age INT, PrimaryKey(Name));
 CREATE TABLE Actor (Name VARCHAR(50) NOT NULL, Sex CHAR(1), Age INT, PrimaryKey(Name));
