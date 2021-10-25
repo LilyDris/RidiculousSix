@@ -11,7 +11,7 @@ INSERT INTO Media_Item VALUES ('7678906543', 1, 'Star Wars IV: A New Hope', 1977
 INSERT INTO Media_Item VALUES ('7678906543', 2, 'Star Wars IV: A New Hope', 1977, '2:01:00', 0, 0, NULL, 1, 'George Lucas', 0, NULL, NULL, 1, NULL, NULL, NULL);
 INSERT INTO Media_Item VALUES ('1358594289', 1, 'Star Wars V: The Empire Strikes Back', 1980, '2:04:00', 0, 0, NULL, 1, 'Irvin Kershner', 0, NULL, NULL, 1, NULL, NULL, NULL);
 INSERT INTO Media_Item VALUES ('1358594289', 2, 'Star Wars V: The Empire Strikes Back', 1980, '2:04:00', 0, 0, NULL, 1, 'Irvin Kershner', 0, NULL, NULL, 1, NULL, NULL, NULL);
-INSERT INTO Media_Item VALUES ('1358594289', 3, 'Star Wars V: The Empire Strikes Back', 1980, '2:04:00', 0, 0, NULL, 1, 'Irvin Kershner', 0, NULL, NULL, 1, NULL, NULL, NULL);
+INSERT INTO Media_Item VALUES ('1358594284', 3, 'Star Wars III: Revenge of the Sith', 1980, '2:04:00', 0, 0, NULL, 1, 'IGeorge Lucas', 0, NULL, NULL, 1, NULL, NULL, NULL);
 INSERT INTO Media_Item VALUES ('8752312283', 1, 'Star Wars VI: Return of the Jedi', 1983, '2:11:00', 0, 0, NULL, 1, 'Richard Marquand', 0, NULL, NULL, 1, NULL, NULL, NULL);
 INSERT INTO Media_Item VALUES ('6421358790', 1, 'The Legend of Zelda: Breath of the Wild', 2017, '40:00:00', 0, 0, NULL, 0, NULL, 1, 'Nintendo Switch', 'E10+', 0, NULL, 2020-08-23, 'patron2@yahoo.com');
 INSERT INTO Media_Item VALUES ('6312832925', 1, "Assassin's Creed IV: Black Flag", 2013, '30:00:00', 0, 0, NULL, 0, NULL, 1, 'Playstation 4', 'M', 1, NULL, NULL, NULL);
@@ -139,19 +139,95 @@ INSERT INTO Patron VALUES ('bestasgardian@gmail.com', 'Thor', 'Odinson', '1234 E
 
 CREATE TABLE Chapter (Name VARCHAR(50) NOT NULL, Number INT NOT NULL, ID CHAR(10) NOT NULL);
 
-
+INSERT INTO Chapter ('The Boy Who Lived', 1,'1234567890');
+INSERT INTO Chapter ('The Vanishing Glass', 2,'1234567890');
+INSERT INTO Chapter ('The Letters From No One', 3,'1234567890');
+INSERT INTO Chapter ('The Keeper of Keys', 4,'1234567890');
+INSERT INTO Chapter ('Diagon Alley', 5,'1234567890');
+INSERT INTO Chapter ('The Journey from Platform Nine and Three-Quarters', 6,'1234567890');
+INSERT INTO Chapter ('The Sorting Hat', 7,'1234567890');
+INSERT INTO Chapter ('The Potions Master', 8,'1234567890');
+INSERT INTO Chapter ('The Midnight Duel', 9,'1234567890');
+INSERT INTO Chapter ('Hallowe'en', 10,'1234567890');
+INSERT INTO Chapter ('A Place for Demons', 1,'4563153215');
+INSERT INTO Chapter ('A Beautiful Day', 2,'4563153215');
+INSERT INTO Chapter ('Wood and Word', 3,'4563153215');
+INSERT INTO Chapter ('Halfway to Newarre', 4,'4563153215');
+INSERT INTO Chapter ('Notes', 5,'4563153215');
+INSERT INTO Chapter ('The Price of Remembering', 6,'4563153215');
+INSERT INTO Chapter ('Of Beginnings and the Names of Things', 7,'4563153215');
+INSERT INTO Chapter ('Thieves, Heretics, and Whores', 8,'4563153215');
+INSERT INTO Chapter ('Riding in the Wagon with Ben', 9,'4563153215');
+INSERT INTO Chapter ('Alar and Several Stones', 10,'4563153215');
 
 CREATE TABLE Author (Name VARCHAR(50) NOT NULL, Age INT);
 
-
+INSERT INTO Author ('Joanne K. Rowling', 56);
+INSERT INTO Author ('Patrick James Rothfuss', 48);
+INSERT INTO Author ('John Ronald Reuel Tolkien', 81);
+INSERT INTO Author ('James Patterson', 74);
+INSERT INTO Author ('Rick Rioridan', 57);
+INSERT INTO Author ('Steven Callahan', 69);
+INSERT INTO Author ('Suzanne Collins', 59);
+INSERT INTO Author ('Agatha Christie', 85);
+INSERT INTO Author ('Danielle Steel', 74);
+INSERT INTO Author ('Ernest Hemingway', 61);
+INSERT INTO Author ('John Grisham', 66);
+INSERT INTO Author ('Nora Roberts', 71);
+INSERT INTO Author ('Dan Brown', 57);
+INSERT INTO Author ('Jane Austen', 41);
+INSERT INTO Author ('Leo Tolstoy', 82);
+INSERT INTO Author ('Theodor Seuss Geisel', 87);
+INSERT INTO Author ('Mark Twain', 75);
+INSERT INTO Author ('George R. R. Martin', 73);
+INSERT INTO Author ('F. Scott Fitzgerald', 44);
+INSERT INTO Author ('George Orwell', 47);
 
 CREATE TABLE Actor (Name VARCHAR(50) NOT NULL, Sex CHAR(1) NOT NULL, Age INT);
 
-
+INSERT INTO Actor ('Mark Hamill', 'M', 70);
+INSERT INTO Actor ('Carrie Fisher', 'F', 60);
+INSERT INTO Actor ('Harrison Ford', 'M', 79);
+INSERT INTO Actor ('Peter Mayhew', 'M', 75);
+INSERT INTO Actor ('Anthony Daniels', 'M', 75);
+INSERT INTO Actor ('Kenny Baker', 'M', 82);
+INSERT INTO Actor ('Alec Guinness', 'M', 86);
+INSERT INTO Actor ('Frank Oz', 'M', 77);
+INSERT INTO Actor ('Billy Dee Williams', 'M', 84);
+INSERT INTO Actor ('David Prowse', 'M', 85);
+INSERT INTO Actor ('Peter Cushing', 'M', 81);
+INSERT INTO Actor ('Larry Ward', 'M', 60);
+INSERT INTO Actor ('Jeremy Bulloch', 'M', 75);
+INSERT INTO Actor ('Hayden Christensen', 'M', 40);
+INSERT INTO Actor ('Ewan McGregor', 'M', 50);
+INSERT INTO Actor ('Christopher Lee', 'M', 93);
+INSERT INTO Actor ('Samuel L. Jackson', 'M', 72);
+INSERT INTO Actor ('Ahmed Best', 'M', 48);
+INSERT INTO Actor ('Natalie Portman', 'F', 40);
+INSERT INTO Actor ('Ian McDiarmid', 'M', 77);
 
 CREATE TABLE Game_Studio (Name VARCHAR(50) NOT NULL);
 
-
+INSERT INTO Game_Studio ('NineHertz');
+INSERT INTO Game_Studio ('iTechArt');
+INSERT INTO Game_Studio ('Zero Games Studio');
+INSERT INTO Game_Studio ('Electronic Arts');
+INSERT INTO Game_Studio ('Nintendo');
+INSERT INTO Game_Studio ('Ubisoft');
+INSERT INTO Game_Studio ('Sony Interactive Entertainment');
+INSERT INTO Game_Studio ('Activision Blizzard');
+INSERT INTO Game_Studio ('Epic Games');
+INSERT INTO Game_Studio ('Gameloft');
+INSERT INTO Game_Studio ('Square Enix');
+INSERT INTO Game_Studio ('Bungie Inc');
+INSERT INTO Game_Studio ('Bethesda');
+INSERT INTO Game_Studio ('Obsidian Entertainment');
+INSERT INTO Game_Studio ('Concerned Ape');
+INSERT INTO Game_Studio ('Toby Fox');
+INSERT INTO Game_Studio ('CD Projekt Red');
+INSERT INTO Game_Studio ('FromSoftware');
+INSERT INTO Game_Studio ('Valve');
+INSERT INTO Game_Studio ('Rockstar Games');
 
 CREATE TABLE Artist (Name VARCHAR(50) NOT NULL);
 
@@ -182,15 +258,37 @@ CREATE TABLE Track (Name VARCHAR(50) NOT NULL, Genre VARCHAR(20), ArtistName VAR
 
 CREATE TABLE Author_Writes (Name VARCHAR(50) NOT NULL, ID CHAR(10) NOT NULL);
 
-
+INSERT INTO Author_Writes ('Patrick Rothfuss', 4563153215);
+INSERT INTO Author_Writes ('Joanne K. Rowling', 1234567890);
 
 CREATE TABLE Actor_Stars (Name VARCHAR(50) NOT NULL, ID CHAR(10) NOT NULL);
 
-
+INSERT INTO Actor_Stars ('Mark Hamill', 7678906543);
+INSERT INTO Actor_Stars ('Carrie Fisher', 7678906543);
+INSERT INTO Actor_Stars ('Harrison Ford', 7678906543);
+INSERT INTO Actor_Stars ('Peter Mayhew', 7678906543);
+INSERT INTO Actor_Stars ('Anthony Daniels', 7678906543);
+INSERT INTO Actor_Stars ('Kenny Baker', 76789065432);
+INSERT INTO Actor_Stars ('Alec Guinness', 7678906543);
+INSERT INTO Actor_Stars ('Frank Oz', 7678906543);
+INSERT INTO Actor_Stars ('Billy Dee Williams', 1358594289);
+INSERT INTO Actor_Stars ('David Prowse', 7678906543);
+INSERT INTO Actor_Stars ('Peter Cushing', 7678906543);
+INSERT INTO Actor_Stars ('Larry Ward', 7678906543);
+INSERT INTO Actor_Stars ('Jeremy Bulloch', 7678906543);
+INSERT INTO Actor_Stars ('Hayden Christensen', 1358594284);
+INSERT INTO Actor_Stars ('Ewan McGregor', 1358594284);
+INSERT INTO Actor_Stars ('Christopher Lee', 13585942843);
+INSERT INTO Actor_Stars ('Samuel L. Jackson', 1358594284);
+INSERT INTO Actor_Stars ('Ahmed Best', 1358594284);
+INSERT INTO Actor_Stars ('Natalie Portman', 1358594284);
+INSERT INTO Actor_Stars ('Ian McDiarmid', 1358594284);
 
 CREATE TABLE Studio_Creates (Name VARCHAR(50) NOT NULL, ID CHAR(10) NOT NULL);
 
-
+INSERT INTO Studio_Creates ('Nintendo', 6421358790);
+INSERT INTO Studio_Creates ('Ubisoft', 7541236554);
+INSERT INTO Studio_Creates ('Ubisoft', 6312832925);
 
 CREATE TABLE Artist_Authors (Name VARCHAR(50) NOT NULL, ID CHAR(10) NOT NULL);
 
