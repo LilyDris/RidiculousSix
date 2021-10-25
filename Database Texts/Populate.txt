@@ -21,7 +21,7 @@ INSERT INTO Media_Item VALUES ('2469762156', 1, 'A Rush of Blood to the Head', 2
 INSERT INTO Media_Item VALUES ('2469762156', 2, 'A Rush of Blood to the Head', 2002, '54:08', 0, 1, 'Parlophone', 0, NULL, 0, NULL, NULL, 1, NULL, NULL, NULL);
 INSERT INTO Media_Item VALUES ('1265472654', 1, 'Greatest Hits', 1985, '1:53:45', 0, 1, 'Columbia', 0, NULL, 0, NULL, NULL, 1, NULL, NULL, NULL);
 
-CREATE TABLE Media_Genres (ID CHAR(10) PRIMARY KEY NOT NULL, Genres VARCHAR(20) PRIMARY KEY NOT NULL);
+CREATE TABLE Media_Genres (ID CHAR(10) NOT NULL, Genres VARCHAR(20) NOT NULL);
 
 INSERT INTO Media_Genres VALUES ('1234567890', 'Fantasy');
 INSERT INTO Media_Genres VALUES ('4563153215', 'Fantasy');
