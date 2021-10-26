@@ -288,26 +288,8 @@ INSERT INTO Studio_Creates VALUES ('Ubisoft', '7541236554');
 INSERT INTO Studio_Creates VALUES ('Ubisoft', '6312832925');
 
 /*Needs to reference to add value Media ID along with copy as stated previously*/
-INSERT INTO Artist_Authors VALUES ('Coldplay', 'Politik');
-INSERT INTO Artist_Authors VALUES ('Coldplay', 'In My Place');
-INSERT INTO Artist_Authors VALUES ('Coldplay', 'God Put a Smile upon your Face');
-INSERT INTO Artist_Authors VALUES ('Coldplay', 'The Scientist');
-INSERT INTO Artist_Authors VALUES ('Coldplay', 'Clocks');
-INSERT INTO Artist_Authors VALUES ('Coldplay', 'Daylight');
-INSERT INTO Artist_Authors VALUES ('Coldplay', 'Green Eyes');
-INSERT INTO Artist_Authors VALUES ('Coldplay', 'Warning Sign');
-INSERT INTO Artist_Authors VALUES ('Coldplay', 'A Whisper');
-INSERT INTO Artist_Authors VALUES ('Coldplay', 'A Rush of Blood to the Head');
-INSERT INTO Artist_Authors VALUES ('Billy Joel', 'Piano Man');
-INSERT INTO Artist_Authors VALUES ('Billy Joel', 'Captain Jack');
-INSERT INTO Artist_Authors VALUES ('Billy Joel', 'The Entertainer');
-INSERT INTO Artist_Authors VALUES ('Billy Joel', 'Say Goodbye to Hollywood');
-INSERT INTO Artist_Authors VALUES ('Billy Joel', 'New York State of Mind');
-INSERT INTO Artist_Authors VALUES ('Billy Joel', 'The Stranger');
-INSERT INTO Artist_Authors VALUES ('Billy Joel', 'Scenes from an Italian Restaurant');
-INSERT INTO Artist_Authors VALUES ('Billy Joel', 'Just the Way You Are');
-INSERT INTO Artist_Authors VALUES ('Billy Joel', "Movin' Out (Anthony's Song)");
-INSERT INTO Artist_Authors VALUES ('Billy Joel', 'Only the Good Die Young');
+INSERT INTO Artist_Authors VALUES ('Coldplay', '2469762156');
+INSERT INTO Artist_Authors VALUES ('Billy Joel', '1265472654');
 
 /*Needs media copy*/
 INSERT INTO Album_Contains VALUES ('Politik', '2469762156', 'Coldplay');
