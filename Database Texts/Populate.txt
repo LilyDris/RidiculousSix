@@ -1,4 +1,5 @@
-/*Must insert in this exact order to not break foreign key restraints*/
+/*Must insert in this exact order to not break foreign key restraints, must also enter in only a section at a time to
+prevent errors*/
 
 INSERT INTO Branch VALUES ('Cleveland', 'Ohio');
 INSERT INTO Branch VALUES ('Columbus', 'Ohio');
@@ -301,7 +302,6 @@ INSERT INTO Chapter VALUES ("Hallowe'en", 10,'1234567890',3);
 INSERT INTO Author_Writes VALUES ('Patrick James Rothfuss', '4563153215',1);
 INSERT INTO Author_Writes VALUES ('Joanne K. Rowling', '1234567890',1);
 INSERT INTO Author_Writes VALUES ('Joanne K. Rowling', '5555555555',1);
-
 INSERT INTO Author_Writes VALUES ('Patrick James Rothfuss', '4563153215',2);
 INSERT INTO Author_Writes VALUES ('Joanne K. Rowling', '1234567890',2);
 INSERT INTO Author_Writes VALUES ('Joanne K. Rowling', '1234567890',3);
@@ -335,7 +335,6 @@ INSERT INTO Actor_Stars VALUES ('Jeremy Bulloch', '7678906543',2);
 
 INSERT INTO Actor_Stars VALUES ('Billy Dee Williams', '1358594289',1);
 INSERT INTO Actor_Stars VALUES ('Billy Dee Williams', '1358594289',2);
-
 INSERT INTO Actor_Stars VALUES ('Hayden Christensen', '1358594284',3);
 INSERT INTO Actor_Stars VALUES ('Ewan McGregor', '1358594284',3);
 INSERT INTO Actor_Stars VALUES ('Christopher Lee', '1358594284',3);
@@ -349,7 +348,6 @@ INSERT INTO Studio_Creates VALUES ('Nintendo', '6421358790',1);
 INSERT INTO Studio_Creates VALUES ('Ubisoft', '7541236554',1);
 INSERT INTO Studio_Creates VALUES ('Ubisoft', '6312832925',1);
 INSERT INTO Studio_Creates VALUES ('Ubisoft', '6312832925',2);
-
 INSERT INTO Artist_Authors VALUES ('Coldplay', '2469762156',1);
 INSERT INTO Artist_Authors VALUES ('Coldplay', '2469762156',2);
 INSERT INTO Artist_Authors VALUES ('Billy Joel', '1265472654',1);
