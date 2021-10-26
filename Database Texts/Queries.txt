@@ -1,11 +1,12 @@
 /*	Find the titles of all tracks by ARTIST released before YEAR*/
-SELECT Name
-FROM Track
-WHERE ArtistName="Name" AND Year>200
+SELECT DISTINCT Name
+FROM Album_Contains, Media_Item
+Where Media_Item.Year<2000 AND Album_Contains.ArtistName='Billy Joel';
 
 /* Give all the movies and their date of their checkout from a single patron (you choose how to designate the patron)*/
-SELECT Name
-/* Problem here - we may need to modify our ER Model to have a checkout date */
+SELECT Name, Checkout_Date
+FROM Media_Item
+WHERE email_address='librarypatron@gmail.com';
 
 /*	List all the albums and their unique identifiers with less than 2 copies held by the library. */
 SELECT Name, ID
