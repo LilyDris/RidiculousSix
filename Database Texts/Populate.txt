@@ -1,66 +1,4 @@
-INSERT INTO Media_Item VALUES ('1234567890', 1, "Harry Potter and the Sorcerer's Stone", 1997, '4:29:30', 1, 0, 'Bloomsbury', 0, NULL, 0, NULL, NULL, 1, NULL, NULL, NULL, NULL);
-INSERT INTO Media_Item VALUES ('1234567890', 2, "Harry Potter and the Sorcerer's Stone", 1997, '4:29:30', 1, 0, 'Bloomsbury', 0, NULL, 0, NULL, NULL, 0, 2011, NULL, NULL, NULL);
-INSERT INTO Media_Item VALUES ('1234567890', 3, "Harry Potter and the Sorcerer's Stone", 1997, '4:29:30', 1, 0, 'Bloomsbury', 0, NULL, 0, NULL, NULL, 0, NULL, 2021-12-23, 2021-11-23, 'librarypatron@gmail.com');
-INSERT INTO Media_Item VALUES ('4563153215', 1, 'The Name of the Wind', 2007, '6:32:15', 1, 0, 'DAW Books', 0, NULL, 0, NULL, NULL, 1, NULL, NULL, NULL, NULL);
-INSERT INTO Media_Item VALUES ('4563153215', 2, 'The Name of the Wind', 2007, '6:32:15', 1, 0, 'DAW Books', 0, NULL, 0, NULL, NULL, 1, NULL, NULL, NULL, NULL);
-INSERT INTO Media_Item VALUES ('1544752156', 1, "Harry Potter and the Sorcerer's Stone", 2001, '2:32:00', 0, 0, NULL, 1, 'Chris Columbus', 0, NULL, NULL, 1, NULL, NULL, NULL, NULL);
-INSERT INTO Media_Item VALUES ('5555555555', 1, 'Harry Potter and the Order of the Phoenix', 2003, '12:57:46', 1, 0, 'Bloomsbury', 0, NULL, 0, NULL, NULL, 1, NULL, NULL, NULL, NULL);
-INSERT INTO Media_Item VALUES ('7678906543', 1, 'Star Wars IV: A New Hope', 1977, '2:01:00', 0, 0, NULL, 1, 'George Lucas', 0, NULL, NULL, 1, NULL, NULL, NULL, NULL);
-INSERT INTO Media_Item VALUES ('7678906543', 2, 'Star Wars IV: A New Hope', 1977, '2:01:00', 0, 0, NULL, 1, 'George Lucas', 0, NULL, NULL, 1, NULL, NULL, NULL, NULL);
-INSERT INTO Media_Item VALUES ('1358594289', 1, 'Star Wars V: The Empire Strikes Back', 1980, '2:04:00', 0, 0, NULL, 1, 'Irvin Kershner', 0, NULL, NULL, 1, NULL, NULL, NULL, NULL);
-INSERT INTO Media_Item VALUES ('1358594289', 2, 'Star Wars V: The Empire Strikes Back', 1980, '2:04:00', 0, 0, NULL, 1, 'Irvin Kershner', 0, NULL, NULL, 1, NULL, NULL, NULL, NULL);
-INSERT INTO Media_Item VALUES ('1358594284', 3, 'Star Wars III: Revenge of the Sith', 1980, '2:04:00', 0, 0, NULL, 1, 'IGeorge Lucas', 0, NULL, NULL, 1, NULL, NULL, NULL, NULL);
-INSERT INTO Media_Item VALUES ('8752312283', 1, 'Star Wars VI: Return of the Jedi', 1983, '2:11:00', 0, 0, NULL, 1, 'Richard Marquand', 0, NULL, NULL, 1, NULL, NULL, NULL, NULL);
-INSERT INTO Media_Item VALUES ('6421358790', 1, 'The Legend of Zelda: Breath of the Wild', 2017, '40:00:00', 0, 0, NULL, 0, NULL, 1, 'Nintendo Switch', 'E10+', 0, NULL, 2020-08-23, 2020-07-23, 'patron2@yahoo.com');
-INSERT INTO Media_Item VALUES ('6312832925', 1, "Assassin's Creed IV: Black Flag", 2013, '30:00:00', 0, 0, NULL, 0, NULL, 1, 'Playstation 4', 'M', 1, NULL, NULL, NULL, NULL);
-INSERT INTO Media_Item VALUES ('6312832925', 2, "Assassin's Creed IV: Black Flag", 2013, '30:00:00', 0, 0, NULL, 0, NULL, 1, 'Playstation 4', 'M', 0, 4021, NULL, NULL, NULL);
-INSERT INTO Media_Item VALUES ('7541236554', 1, "Assassin's Creed III", 2012, '33:15:00', 0, 0, NULL, 0, NULL, 1, 'Xbox One', 'M', 1, NULL, NULL, NULL, NULL);
-INSERT INTO Media_Item VALUES ('2469762156', 1, 'A Rush of Blood to the Head', 2002, '54:08', 0, 1, 'Parlophone', 0, NULL, 0, NULL, NULL, 1, NULL, NULL, NULL, NULL);
-INSERT INTO Media_Item VALUES ('2469762156', 2, 'A Rush of Blood to the Head', 2002, '54:08', 0, 1, 'Parlophone', 0, NULL, 0, NULL, NULL, 1, NULL, NULL, NULL, NULL);
-INSERT INTO Media_Item VALUES ('1265472654', 1, 'Greatest Hits', 1985, '1:53:45', 0, 1, 'Columbia', 0, NULL, 0, NULL, NULL, 1, NULL, NULL, NULL, NULL);
-
-INSERT INTO Media_Genres VALUES ('1234567890', 'Fantasy');
-INSERT INTO Media_Genres VALUES ('4563153215', 'Fantasy');
-INSERT INTO Media_Genres VALUES ('1544752156', 'Fantasy');
-INSERT INTO Media_Genres VALUES ('1544752156', 'Family');
-INSERT INTO Media_Genres VALUES ('5555555555', 'Fantasy');
-INSERT INTO Media_Genres VALUES ('7678906543', 'Sci-Fi');
-INSERT INTO Media_Genres VALUES ('7678906543', 'Action');
-INSERT INTO Media_Genres VALUES ('1358594289', 'Sci-Fi');
-INSERT INTO Media_Genres VALUES ('1358594289', 'Action');
-INSERT INTO Media_Genres VALUES ('8752312283', 'Sci-Fi');
-INSERT INTO Media_Genres VALUES ('8752312283', 'Action');
-INSERT INTO Media_Genres VALUES ('6421358790', 'Action');
-INSERT INTO Media_Genres VALUES ('6421358790', 'Adventure');
-INSERT INTO Media_Genres VALUES ('6312832925', 'Action');
-INSERT INTO Media_Genres VALUES ('6312832925', 'Adventure');
-INSERT INTO Media_Genres VALUES ('6312832925', 'Stealth');
-INSERT INTO Media_Genres VALUES ('7541236554', 'Action');
-INSERT INTO Media_Genres VALUES ('7541236554', 'Adventure');
-INSERT INTO Media_Genres VALUES ('7541236554', 'Stealth');
-INSERT INTO Media_Genres VALUES ('2469762156', 'Rock');
-INSERT INTO Media_Genres VALUES ('1265472654', 'Rock');
-
-INSERT INTO Artist_Genres VALUES ('Coldplay', 'Rock');
-INSERT INTO Artist_Genres VALUES ('Billy Joel', 'Rock');
-INSERT INTO Artist_Genres VALUES ('Taylor Swift', 'Country');
-INSERT INTO Artist_Genres VALUES ('Taylor Swift', 'Pop');
-INSERT INTO Artist_Genres VALUES ('Journey', 'Rock');
-INSERT INTO Artist_Genres VALUES ('AC/DC', 'Rock');
-INSERT INTO Artist_Genres VALUES ('Bee Gees', 'Disco');
-INSERT INTO Artist_Genres VALUES ('Bee Gees', 'Soul');
-INSERT INTO Artist_Genres VALUES ('Bon Jovi', 'Rock');
-INSERT INTO Artist_Genres VALUES ('Bruno Mars', 'Pop');
-INSERT INTO Artist_Genres VALUES ('Bruno Mars', 'Reggae');
-INSERT INTO Artist_Genres VALUES ('Elton John', 'Rock');
-INSERT INTO Artist_Genres VALUES ('Elton John', 'Pop');
-INSERT INTO Artist_Genres VALUES ('Fun', 'Alternative');
-INSERT INTO Artist_Genres VALUES ('Gotye', 'Alternative');
-INSERT INTO Artist_Genres VALUES ('Green Day', 'Rock');
-INSERT INTO Artist_Genres VALUES ('John Legend', 'R&B');
-INSERT INTO Artist_Genres VALUES ('John Legend', 'Soul');
-INSERT INTO Artist_Genres VALUES ('Maroon 5', 'Rock');
-INSERT INTO Artist_Genres VALUES ('Plain White T's', 'Rock');
+/*Must insert in this exact order to not break foreign key restraints*/
 
 INSERT INTO Branch VALUES ('Cleveland', 'Ohio');
 INSERT INTO Branch VALUES ('Columbus', 'Ohio');
@@ -83,27 +21,6 @@ INSERT INTO Branch VALUES ('Tuscon', 'Arizona');
 INSERT INTO Branch VALUES ('Dublin', 'Ohio');
 INSERT INTO Branch VALUES ('Montgomery', 'Alabama');
 
-INSERT INTO Orders VALUES (2011, '$15', 1, 2022-01-04, 'Columbus', 'Ohio');
-INSERT INTO Orders VALUES (4021, '$20', 1, 2021-11-27, 'Cleveland', 'Ohio');
-INSERT INTO Orders VALUES (320, '$50', 2, 2021-11-25, 'Cleveland', 'Ohio');
-INSERT INTO Orders VALUES (1222, '$120', 4, 2021-12-27, 'Phoenix', 'Arizona');
-INSERT INTO Orders VALUES (2100, '$10', 1, 2022-02-01, 'Madison', 'Wisconsin');
-INSERT INTO Orders VALUES (3309, '$34', 2, 2022-01-27, 'Las Vegas', 'Nevada');
-INSERT INTO Orders VALUES (6702, '$15', 2, 2022-01-05, 'Cleveland', 'Ohio');
-INSERT INTO Orders VALUES (4576, '$200', 1, 2021-11-30, 'Memphis', 'Tennessee');
-INSERT INTO Orders VALUES (3201, '$500', 2, 2021-11-27, 'Chicago', 'Illinois');
-INSERT INTO Orders VALUES (23, '$20', 1, 2021-10-20, 'Columbus', 'Ohio');
-INSERT INTO Orders VALUES (4750, '$29', 2, 2021-10-09, 'Lexington', 'Kentucky');
-INSERT INTO Orders VALUES (3020, '$60', 1, 2021-12-03, 'Boston', 'Massachusetts');
-INSERT INTO Orders VALUES (1000, '$74', 3, 2022-03-03, 'Dublin', 'Ohio');
-INSERT INTO Orders VALUES (3403, '$5', 1, 2021-11-29, 'Tuscon', 'Arizona');
-INSERT INTO Orders VALUES (6805, '$20', 1, 2021-11-27, 'Cleveland', 'Ohio');
-INSERT INTO Orders VALUES (3876, '$11', 1, 2021-11-09, 'New York', 'New York');
-INSERT INTO Orders VALUES (6785, '$30', 2, 2021-12-05, 'Buffalo', 'New York');
-INSERT INTO Orders VALUES (1, '$42', 3, 2022-01-29, 'Iowa City', 'Iowa');
-INSERT INTO Orders VALUES (390, '$100', 10, 2022-02-14, 'Toledo', 'Ohio');
-INSERT INTO Orders VALUES (5647, '$20', 2, 2021-12-17, 'Toledo', 'Ohio');
-
 INSERT INTO Patron VALUES ('librarypatron@gmail.com', 'Jacob', 'Woodhouse', '55 W Lane Avenue, Columbus, OH 43210', 'Columbus', 'Ohio');
 INSERT INTO Patron VALUES ('patron2@yahoo.com', 'Lily', 'Driscoll', '123 Fake Street, Columbus, OH 43201', 'Columbus', 'Ohio');
 INSERT INTO Patron VALUES ('myemail@gmail.com', 'Isaac', 'Mattern', '2972 N High Street, Columbus, OH 43210', 'Columbus', 'Ohio');
@@ -125,89 +42,110 @@ INSERT INTO Patron VALUES ('secrets@gmail.com', 'Natasha', 'Romanoff', '1234 Bac
 INSERT INTO Patron VALUES ('family@yahoo.com', 'Clint', 'Barton', '36 Country Lane, Memphis, TN 21789', 'Memphis', 'Tennessee');
 INSERT INTO Patron VALUES ('bestasgardian@gmail.com', 'Thor', 'Odinson', '1234 Earth Road, Buffalo, NY 36271', 'Buffalo', 'New York');
 
-INSERT INTO Chapter ('The Boy Who Lived', 1,'1234567890');
-INSERT INTO Chapter ('The Vanishing Glass', 2,'1234567890');
-INSERT INTO Chapter ('The Letters From No One', 3,'1234567890');
-INSERT INTO Chapter ('The Keeper of Keys', 4,'1234567890');
-INSERT INTO Chapter ('Diagon Alley', 5,'1234567890');
-INSERT INTO Chapter ('The Journey from Platform Nine and Three-Quarters', 6,'1234567890');
-INSERT INTO Chapter ('The Sorting Hat', 7,'1234567890');
-INSERT INTO Chapter ('The Potions Master', 8,'1234567890');
-INSERT INTO Chapter ('The Midnight Duel', 9,'1234567890');
-INSERT INTO Chapter ('Hallowe'en', 10,'1234567890');
-INSERT INTO Chapter ('A Place for Demons', 1,'4563153215');
-INSERT INTO Chapter ('A Beautiful Day', 2,'4563153215');
-INSERT INTO Chapter ('Wood and Word', 3,'4563153215');
-INSERT INTO Chapter ('Halfway to Newarre', 4,'4563153215');
-INSERT INTO Chapter ('Notes', 5,'4563153215');
-INSERT INTO Chapter ('The Price of Remembering', 6,'4563153215');
-INSERT INTO Chapter ('Of Beginnings and the Names of Things', 7,'4563153215');
-INSERT INTO Chapter ('Thieves, Heretics, and Whores', 8,'4563153215');
-INSERT INTO Chapter ('Riding in the Wagon with Ben', 9,'4563153215');
-INSERT INTO Chapter ('Alar and Several Stones', 10,'4563153215');
+INSERT INTO Orders VALUES (2011, '$15', 1, 2022-01-04, 'Columbus', 'Ohio');
+INSERT INTO Orders VALUES (4021, '$20', 1, 2021-11-27, 'Cleveland', 'Ohio');
+INSERT INTO Orders VALUES (320, '$50', 2, 2021-11-25, 'Cleveland', 'Ohio');
+INSERT INTO Orders VALUES (1222, '$120', 4, 2021-12-27, 'Phoenix', 'Arizona');
+INSERT INTO Orders VALUES (2100, '$10', 1, 2022-02-01, 'Madison', 'Wisconsin');
+INSERT INTO Orders VALUES (3309, '$34', 2, 2022-01-27, 'Las Vegas', 'Nevada');
+INSERT INTO Orders VALUES (6702, '$15', 2, 2022-01-05, 'Cleveland', 'Ohio');
+INSERT INTO Orders VALUES (4576, '$200', 1, 2021-11-30, 'Memphis', 'Tennessee');
+INSERT INTO Orders VALUES (3201, '$500', 2, 2021-11-27, 'Chicago', 'Illinois');
+INSERT INTO Orders VALUES (23, '$20', 1, 2021-10-20, 'Columbus', 'Ohio');
+INSERT INTO Orders VALUES (4750, '$29', 2, 2021-10-09, 'Lexington', 'Kentucky');
+INSERT INTO Orders VALUES (3020, '$60', 1, 2021-12-03, 'Boston', 'Massachusetts');
+INSERT INTO Orders VALUES (1000, '$74', 3, 2022-03-03, 'Dublin', 'Ohio');
+INSERT INTO Orders VALUES (3403, '$5', 1, 2021-11-29, 'Tuscon', 'Arizona');
+INSERT INTO Orders VALUES (6805, '$20', 1, 2021-11-27, 'Cleveland', 'Ohio');
+INSERT INTO Orders VALUES (3876, '$11', 1, 2021-11-09, 'New York', 'New York');
+INSERT INTO Orders VALUES (6785, '$30', 2, 2021-12-05, 'Buffalo', 'New York');
+INSERT INTO Orders VALUES (1, '$42', 3, 2022-01-29, 'Iowa City', 'Iowa');
+INSERT INTO Orders VALUES (390, '$100', 10, 2022-02-14, 'Toledo', 'Ohio');
+INSERT INTO Orders VALUES (5647, '$20', 2, 2021-12-17, 'Toledo', 'Ohio');
 
-INSERT INTO Author ('Joanne K. Rowling', 56);
-INSERT INTO Author ('Patrick James Rothfuss', 48);
-INSERT INTO Author ('John Ronald Reuel Tolkien', 81);
-INSERT INTO Author ('James Patterson', 74);
-INSERT INTO Author ('Rick Rioridan', 57);
-INSERT INTO Author ('Steven Callahan', 69);
-INSERT INTO Author ('Suzanne Collins', 59);
-INSERT INTO Author ('Agatha Christie', 85);
-INSERT INTO Author ('Danielle Steel', 74);
-INSERT INTO Author ('Ernest Hemingway', 61);
-INSERT INTO Author ('John Grisham', 66);
-INSERT INTO Author ('Nora Roberts', 71);
-INSERT INTO Author ('Dan Brown', 57);
-INSERT INTO Author ('Jane Austen', 41);
-INSERT INTO Author ('Leo Tolstoy', 82);
-INSERT INTO Author ('Theodor Seuss Geisel', 87);
-INSERT INTO Author ('Mark Twain', 75);
-INSERT INTO Author ('George R. R. Martin', 73);
-INSERT INTO Author ('F. Scott Fitzgerald', 44);
-INSERT INTO Author ('George Orwell', 47);
+INSERT INTO Media_Item VALUES ('1234567890', 1, "Harry Potter and the Sorcerer's Stone", 1997, '4:29:30', 1, 0, 'Bloomsbury', 0, NULL, 0, NULL, NULL, 1, NULL, NULL, NULL, NULL);
+INSERT INTO Media_Item VALUES ('1234567890', 2, "Harry Potter and the Sorcerer's Stone", 1997, '4:29:30', 1, 0, 'Bloomsbury', 0, NULL, 0, NULL, NULL, 0, 2011, NULL, NULL, NULL);
+INSERT INTO Media_Item VALUES ('1234567890', 3, "Harry Potter and the Sorcerer's Stone", 1997, '4:29:30', 1, 0, 'Bloomsbury', 0, NULL, 0, NULL, NULL, 0, NULL, 2021-12-23, 2021-11-23, 'librarypatron@gmail.com');
+INSERT INTO Media_Item VALUES ('4563153215', 1, 'The Name of the Wind', 2007, '6:32:15', 1, 0, 'DAW Books', 0, NULL, 0, NULL, NULL, 1, NULL, NULL, NULL, NULL);
+INSERT INTO Media_Item VALUES ('4563153215', 2, 'The Name of the Wind', 2007, '6:32:15', 1, 0, 'DAW Books', 0, NULL, 0, NULL, NULL, 1, NULL, NULL, NULL, NULL);
+INSERT INTO Media_Item VALUES ('1544752156', 1, "Harry Potter and the Sorcerer's Stone", 2001, '2:32:00', 0, 0, NULL, 1, 'Chris Columbus', 0, NULL, NULL, 1, NULL, NULL, NULL, NULL);
+INSERT INTO Media_Item VALUES ('5555555555', 1, 'Harry Potter and the Order of the Phoenix', 2003, '12:57:46', 1, 0, 'Bloomsbury', 0, NULL, 0, NULL, NULL, 1, NULL, NULL, NULL, NULL);
+INSERT INTO Media_Item VALUES ('7678906543', 1, 'Star Wars IV: A New Hope', 1977, '2:01:00', 0, 0, NULL, 1, 'George Lucas', 0, NULL, NULL, 1, NULL, NULL, NULL, NULL);
+INSERT INTO Media_Item VALUES ('7678906543', 2, 'Star Wars IV: A New Hope', 1977, '2:01:00', 0, 0, NULL, 1, 'George Lucas', 0, NULL, NULL, 1, NULL, NULL, NULL, NULL);
+INSERT INTO Media_Item VALUES ('1358594289', 1, 'Star Wars V: The Empire Strikes Back', 1980, '2:04:00', 0, 0, NULL, 1, 'Irvin Kershner', 0, NULL, NULL, 1, NULL, NULL, NULL, NULL);
+INSERT INTO Media_Item VALUES ('1358594289', 2, 'Star Wars V: The Empire Strikes Back', 1980, '2:04:00', 0, 0, NULL, 1, 'Irvin Kershner', 0, NULL, NULL, 1, NULL, NULL, NULL, NULL);
+INSERT INTO Media_Item VALUES ('1358594284', 3, 'Star Wars III: Revenge of the Sith', 1980, '2:04:00', 0, 0, NULL, 1, 'IGeorge Lucas', 0, NULL, NULL, 1, NULL, NULL, NULL, NULL);
+INSERT INTO Media_Item VALUES ('8752312283', 1, 'Star Wars VI: Return of the Jedi', 1983, '2:11:00', 0, 0, NULL, 1, 'Richard Marquand', 0, NULL, NULL, 1, NULL, NULL, NULL, NULL);
+INSERT INTO Media_Item VALUES ('6421358790', 1, 'The Legend of Zelda: Breath of the Wild', 2017, '40:00:00', 0, 0, NULL, 0, NULL, 1, 'Nintendo Switch', 'E10+', 0, NULL, 2020-08-23, 2020-07-23, 'patron2@yahoo.com');
+INSERT INTO Media_Item VALUES ('6312832925', 1, "Assassin's Creed IV: Black Flag", 2013, '30:00:00', 0, 0, NULL, 0, NULL, 1, 'Playstation 4', 'M', 1, NULL, NULL, NULL, NULL);
+INSERT INTO Media_Item VALUES ('6312832925', 2, "Assassin's Creed IV: Black Flag", 2013, '30:00:00', 0, 0, NULL, 0, NULL, 1, 'Playstation 4', 'M', 0, 4021, NULL, NULL, NULL);
+INSERT INTO Media_Item VALUES ('7541236554', 1, "Assassin's Creed III", 2012, '33:15:00', 0, 0, NULL, 0, NULL, 1, 'Xbox One', 'M', 1, NULL, NULL, NULL, NULL);
+INSERT INTO Media_Item VALUES ('2469762156', 1, 'A Rush of Blood to the Head', 2002, '54:08', 0, 1, 'Parlophone', 0, NULL, 0, NULL, NULL, 1, NULL, NULL, NULL, NULL);
+INSERT INTO Media_Item VALUES ('2469762156', 2, 'A Rush of Blood to the Head', 2002, '54:08', 0, 1, 'Parlophone', 0, NULL, 0, NULL, NULL, 1, NULL, NULL, NULL, NULL);
+INSERT INTO Media_Item VALUES ('1265472654', 1, 'Greatest Hits', 1985, '1:53:45', 0, 1, 'Columbia', 0, NULL, 0, NULL, NULL, 1, NULL, NULL, NULL, NULL);
 
-INSERT INTO Actor ('Mark Hamill', 'M', 70);
-INSERT INTO Actor ('Carrie Fisher', 'F', 60);
-INSERT INTO Actor ('Harrison Ford', 'M', 79);
-INSERT INTO Actor ('Peter Mayhew', 'M', 75);
-INSERT INTO Actor ('Anthony Daniels', 'M', 75);
-INSERT INTO Actor ('Kenny Baker', 'M', 82);
-INSERT INTO Actor ('Alec Guinness', 'M', 86);
-INSERT INTO Actor ('Frank Oz', 'M', 77);
-INSERT INTO Actor ('Billy Dee Williams', 'M', 84);
-INSERT INTO Actor ('David Prowse', 'M', 85);
-INSERT INTO Actor ('Peter Cushing', 'M', 81);
-INSERT INTO Actor ('Larry Ward', 'M', 60);
-INSERT INTO Actor ('Jeremy Bulloch', 'M', 75);
-INSERT INTO Actor ('Hayden Christensen', 'M', 40);
-INSERT INTO Actor ('Ewan McGregor', 'M', 50);
-INSERT INTO Actor ('Christopher Lee', 'M', 93);
-INSERT INTO Actor ('Samuel L. Jackson', 'M', 72);
-INSERT INTO Actor ('Ahmed Best', 'M', 48);
-INSERT INTO Actor ('Natalie Portman', 'F', 40);
-INSERT INTO Actor ('Ian McDiarmid', 'M', 77);
+INSERT INTO Author VALUES ('Joanne K. Rowling', 56);
+INSERT INTO Author VALUES ('Patrick James Rothfuss', 48);
+INSERT INTO Author VALUES ('John Ronald Reuel Tolkien', 81);
+INSERT INTO Author VALUES ('James Patterson', 74);
+INSERT INTO Author VALUES ('Rick Rioridan', 57);
+INSERT INTO Author VALUES ('Steven Callahan', 69);
+INSERT INTO Author VALUES ('Suzanne Collins', 59);
+INSERT INTO Author VALUES ('Agatha Christie', 85);
+INSERT INTO Author VALUES ('Danielle Steel', 74);
+INSERT INTO Author VALUES ('Ernest Hemingway', 61);
+INSERT INTO Author VALUES ('John Grisham', 66);
+INSERT INTO Author VALUES ('Nora Roberts', 71);
+INSERT INTO Author VALUES ('Dan Brown', 57);
+INSERT INTO Author VALUES ('Jane Austen', 41);
+INSERT INTO Author VALUES ('Leo Tolstoy', 82);
+INSERT INTO Author VALUES ('Theodor Seuss Geisel', 87);
+INSERT INTO Author VALUES ('Mark Twain', 75);
+INSERT INTO Author VALUES ('George R. R. Martin', 73);
+INSERT INTO Author VALUES ('F. Scott Fitzgerald', 44);
+INSERT INTO Author VALUES ('George Orwell', 47);
 
-INSERT INTO Game_Studio ('NineHertz');
-INSERT INTO Game_Studio ('iTechArt');
-INSERT INTO Game_Studio ('Zero Games Studio');
-INSERT INTO Game_Studio ('Electronic Arts');
-INSERT INTO Game_Studio ('Nintendo');
-INSERT INTO Game_Studio ('Ubisoft');
-INSERT INTO Game_Studio ('Sony Interactive Entertainment');
-INSERT INTO Game_Studio ('Activision Blizzard');
-INSERT INTO Game_Studio ('Epic Games');
-INSERT INTO Game_Studio ('Gameloft');
-INSERT INTO Game_Studio ('Square Enix');
-INSERT INTO Game_Studio ('Bungie Inc');
-INSERT INTO Game_Studio ('Bethesda');
-INSERT INTO Game_Studio ('Obsidian Entertainment');
-INSERT INTO Game_Studio ('Concerned Ape');
-INSERT INTO Game_Studio ('Toby Fox');
-INSERT INTO Game_Studio ('CD Projekt Red');
-INSERT INTO Game_Studio ('FromSoftware');
-INSERT INTO Game_Studio ('Valve');
-INSERT INTO Game_Studio ('Rockstar Games');
+INSERT INTO Actor VALUES ('Mark Hamill', 'M', 70);
+INSERT INTO Actor VALUES ('Carrie Fisher', 'F', 60);
+INSERT INTO Actor VALUES ('Harrison Ford', 'M', 79);
+INSERT INTO Actor VALUES ('Peter Mayhew', 'M', 75);
+INSERT INTO Actor VALUES ('Anthony Daniels', 'M', 75);
+INSERT INTO Actor VALUES ('Kenny Baker', 'M', 82);
+INSERT INTO Actor VALUES ('Alec Guinness', 'M', 86);
+INSERT INTO Actor VALUES ('Frank Oz', 'M', 77);
+INSERT INTO Actor VALUES ('Billy Dee Williams', 'M', 84);
+INSERT INTO Actor VALUES ('David Prowse', 'M', 85);
+INSERT INTO Actor VALUES ('Peter Cushing', 'M', 81);
+INSERT INTO Actor VALUES ('Larry Ward', 'M', 60);
+INSERT INTO Actor VALUES ('Jeremy Bulloch', 'M', 75);
+INSERT INTO Actor VALUES ('Hayden Christensen', 'M', 40);
+INSERT INTO Actor VALUES ('Ewan McGregor', 'M', 50);
+INSERT INTO Actor VALUES ('Christopher Lee', 'M', 93);
+INSERT INTO Actor VALUES ('Samuel L. Jackson', 'M', 72);
+INSERT INTO Actor VALUES ('Ahmed Best', 'M', 48);
+INSERT INTO Actor VALUES ('Natalie Portman', 'F', 40);
+INSERT INTO Actor VALUES ('Ian McDiarmid', 'M', 77);
+
+INSERT INTO Game_Studio VALUES ('NineHertz');
+INSERT INTO Game_Studio VALUES ('iTechArt');
+INSERT INTO Game_Studio VALUES ('Zero Games Studio');
+INSERT INTO Game_Studio VALUES ('Electronic Arts');
+INSERT INTO Game_Studio VALUES ('Nintendo');
+INSERT INTO Game_Studio VALUES ('Ubisoft');
+INSERT INTO Game_Studio VALUES ('Sony Interactive Entertainment');
+INSERT INTO Game_Studio VALUES ('Activision Blizzard');
+INSERT INTO Game_Studio VALUES ('Epic Games');
+INSERT INTO Game_Studio VALUES ('Gameloft');
+INSERT INTO Game_Studio VALUES ('Square Enix');
+INSERT INTO Game_Studio VALUES ('Bungie Inc');
+INSERT INTO Game_Studio VALUES ('Bethesda');
+INSERT INTO Game_Studio VALUES ('Obsidian Entertainment');
+INSERT INTO Game_Studio VALUES ('Concerned Ape');
+INSERT INTO Game_Studio VALUES ('Toby Fox');
+INSERT INTO Game_Studio VALUES ('CD Projekt Red');
+INSERT INTO Game_Studio VALUES ('FromSoftware');
+INSERT INTO Game_Studio VALUES ('Valve');
+INSERT INTO Game_Studio VALUES ('Rockstar Games');
 
 INSERT INTO Artist VALUES ('Coldplay');
 INSERT INTO Artist VALUES ('Billy Joel');
@@ -228,96 +166,167 @@ INSERT INTO Artist VALUES ('Green Day');
 INSERT INTO Artist VALUES ('Ed Sheeran');
 INSERT INTO Artist VALUES ('John Legend');
 INSERT INTO Artist VALUES ('Maroon 5');
-INSERT INTO Artist VALUES ('Plain White T's');
+INSERT INTO Artist VALUES ("Plain White T's");
 
-INSERT INTO Track ('Politik', 'Rock', 'Coldplay')
-INSERT INTO Track ('In My Place', 'Rock', 'Coldplay')
-INSERT INTO Track ('God Put a Smile upon your Face', 'Rock', 'Coldplay')
-INSERT INTO Track ('The Scientist', 'Rock', 'Coldplay')
-INSERT INTO Track ('Clocks', 'Rock', 'Coldplay')
-INSERT INTO Track ('Daylight', 'Rock', 'Coldplay')
-INSERT INTO Track ('Green Eyes', 'Rock', 'Coldplay')
-INSERT INTO Track ('Warning Sign', 'Rock', 'Coldplay')
-INSERT INTO Track ('A Whisper', 'Rock', 'Coldplay')
-INSERT INTO Track ('A Rush of Blood to the Head', 'Rock', 'Coldplay')
-INSERT INTO Track ('Piano Man', 'Rock', 'Billy Joel')
-INSERT INTO Track ('Captain Jack', 'Rock', 'Billy Joel')
-INSERT INTO Track ('The Entertainer', 'Rock', 'Billy Joel')
-INSERT INTO Track ('Say Goodbye to Hollywood', 'Rock', 'Billy Joel')
-INSERT INTO Track ('New York State of Mind', 'Rock', 'Billy Joel')
-INSERT INTO Track ('The Stranger', 'Rock', 'Billy Joel')
-INSERT INTO Track ('Scenes from an Italian Restaurant', 'Rock', 'Billy Joel')
-INSERT INTO Track ('Just the Way You Are', 'Rock', 'Billy Joel')
-INSERT INTO Track ("Movin' Out (Anthony's Song)", 'Rock', 'Billy Joel')
-INSERT INTO Track ('Only the Good Die Young', 'Rock', 'Billy Joel')
+INSERT INTO Artist_Genres VALUES ('Coldplay', 'Rock');
+INSERT INTO Artist_Genres VALUES ('Billy Joel', 'Rock');
+INSERT INTO Artist_Genres VALUES ('Taylor Swift', 'Country');
+INSERT INTO Artist_Genres VALUES ('Taylor Swift', 'Pop');
+INSERT INTO Artist_Genres VALUES ('Journey', 'Rock');
+INSERT INTO Artist_Genres VALUES ('AC/DC', 'Rock');
+INSERT INTO Artist_Genres VALUES ('Bee Gees', 'Disco');
+INSERT INTO Artist_Genres VALUES ('Bee Gees', 'Soul');
+INSERT INTO Artist_Genres VALUES ('Bon Jovi', 'Rock');
+INSERT INTO Artist_Genres VALUES ('Bruno Mars', 'Pop');
+INSERT INTO Artist_Genres VALUES ('Bruno Mars', 'Reggae');
+INSERT INTO Artist_Genres VALUES ('Elton John', 'Rock');
+INSERT INTO Artist_Genres VALUES ('Elton John', 'Pop');
+INSERT INTO Artist_Genres VALUES ('Fun', 'Alternative');
+INSERT INTO Artist_Genres VALUES ('Gotye', 'Alternative');
+INSERT INTO Artist_Genres VALUES ('Green Day', 'Rock');
+INSERT INTO Artist_Genres VALUES ('John Legend', 'R&B');
+INSERT INTO Artist_Genres VALUES ('John Legend', 'Soul');
+INSERT INTO Artist_Genres VALUES ('Maroon 5', 'Rock');
+INSERT INTO Artist_Genres VALUES ("Plain White T's", 'Rock');
 
-INSERT INTO Author_Writes ('Patrick Rothfuss', '4563153215');
-INSERT INTO Author_Writes ('Joanne K. Rowling', 1234567890);
-INSERT INTO Author_Writes ('Joanne K. Rowling', 5555555555);
+INSERT INTO Track VALUES ('Politik', 'Rock', 'Coldplay');
+INSERT INTO Track VALUES ('In My Place', 'Rock', 'Coldplay');
+INSERT INTO Track VALUES ('God Put a Smile upon your Face', 'Rock', 'Coldplay');
+INSERT INTO Track VALUES ('The Scientist', 'Rock', 'Coldplay');
+INSERT INTO Track VALUES ('Clocks', 'Rock', 'Coldplay');
+INSERT INTO Track VALUES ('Daylight', 'Rock', 'Coldplay');
+INSERT INTO Track VALUES ('Green Eyes', 'Rock', 'Coldplay');
+INSERT INTO Track VALUES ('Warning Sign', 'Rock', 'Coldplay');
+INSERT INTO Track VALUES ('A Whisper', 'Rock', 'Coldplay');
+INSERT INTO Track VALUES ('A Rush of Blood to the Head', 'Rock', 'Coldplay');
+INSERT INTO Track VALUES ('Piano Man', 'Rock', 'Billy Joel');
+INSERT INTO Track VALUES ('Captain Jack', 'Rock', 'Billy Joel');
+INSERT INTO Track VALUES ('The Entertainer', 'Rock', 'Billy Joel');
+INSERT INTO Track VALUES ('Say Goodbye to Hollywood', 'Rock', 'Billy Joel');
+INSERT INTO Track VALUES ('New York State of Mind', 'Rock', 'Billy Joel');
+INSERT INTO Track VALUES ('The Stranger', 'Rock', 'Billy Joel');
+INSERT INTO Track VALUES ('Scenes from an Italian Restaurant', 'Rock', 'Billy Joel');
+INSERT INTO Track VALUES ('Just the Way You Are', 'Rock', 'Billy Joel');
+INSERT INTO Track VALUES ("Movin' Out (Anthony's Song)", 'Rock', 'Billy Joel');
+INSERT INTO Track VALUES ('Only the Good Die Young', 'Rock', 'Billy Joel');
 
-INSERT INTO Actor_Stars ('Mark Hamill', '7678906543');
-INSERT INTO Actor_Stars ('Carrie Fisher', '7678906543');
-INSERT INTO Actor_Stars ('Harrison Ford', '7678906543');
-INSERT INTO Actor_Stars ('Peter Mayhew', '7678906543');
-INSERT INTO Actor_Stars ('Anthony Daniels', '7678906543');
-INSERT INTO Actor_Stars ('Kenny Baker', '76789065432');
-INSERT INTO Actor_Stars ('Alec Guinness', '7678906543');
-INSERT INTO Actor_Stars ('Frank Oz', '7678906543');
-INSERT INTO Actor_Stars ('Billy Dee Williams', '1358594289');
-INSERT INTO Actor_Stars ('David Prowse', '7678906543');
-INSERT INTO Actor_Stars ('Peter Cushing', '7678906543');
-INSERT INTO Actor_Stars ('Larry Ward', '7678906543');
-INSERT INTO Actor_Stars ('Jeremy Bulloch', '7678906543');
-INSERT INTO Actor_Stars ('Hayden Christensen', '1358594284');
-INSERT INTO Actor_Stars ('Ewan McGregor', '1358594284');
-INSERT INTO Actor_Stars ('Christopher Lee', '13585942843');
-INSERT INTO Actor_Stars ('Samuel L. Jackson', '1358594284');
-INSERT INTO Actor_Stars ('Ahmed Best', '1358594284');
-INSERT INTO Actor_Stars ('Natalie Portman', '1358594284');
-INSERT INTO Actor_Stars ('Ian McDiarmid', '1358594284');
+/*Since using foreign key ID from Media_Item we also need the copy number*/
+INSERT INTO Media_Genres VALUES ('1234567890', 'Fantasy');
+INSERT INTO Media_Genres VALUES ('4563153215', 'Fantasy');
+INSERT INTO Media_Genres VALUES ('1544752156', 'Fantasy');
+INSERT INTO Media_Genres VALUES ('1544752156', 'Family');
+INSERT INTO Media_Genres VALUES ('5555555555', 'Fantasy');
+INSERT INTO Media_Genres VALUES ('7678906543', 'Sci-Fi');
+INSERT INTO Media_Genres VALUES ('7678906543', 'Action');
+INSERT INTO Media_Genres VALUES ('1358594289', 'Sci-Fi');
+INSERT INTO Media_Genres VALUES ('1358594289', 'Action');
+INSERT INTO Media_Genres VALUES ('8752312283', 'Sci-Fi');
+INSERT INTO Media_Genres VALUES ('8752312283', 'Action');
+INSERT INTO Media_Genres VALUES ('6421358790', 'Action');
+INSERT INTO Media_Genres VALUES ('6421358790', 'Adventure');
+INSERT INTO Media_Genres VALUES ('6312832925', 'Action');
+INSERT INTO Media_Genres VALUES ('6312832925', 'Adventure');
+INSERT INTO Media_Genres VALUES ('6312832925', 'Stealth');
+INSERT INTO Media_Genres VALUES ('7541236554', 'Action');
+INSERT INTO Media_Genres VALUES ('7541236554', 'Adventure');
+INSERT INTO Media_Genres VALUES ('7541236554', 'Stealth');
+INSERT INTO Media_Genres VALUES ('2469762156', 'Rock');
+INSERT INTO Media_Genres VALUES ('1265472654', 'Rock');
 
-INSERT INTO Studio_Creates ('Nintendo', '6421358790');
-INSERT INTO Studio_Creates ('Ubisoft', '7541236554');
-INSERT INTO Studio_Creates ('Ubisoft', '6312832925');
+/*ALso needs to refer to copy*/
+INSERT INTO Chapter VALUES ('The Boy Who Lived', 1,'1234567890');
+INSERT INTO Chapter VALUES ('The Vanishing Glass', 2,'1234567890');
+INSERT INTO Chapter VALUES ('The Letters From No One', 3,'1234567890');
+INSERT INTO Chapter VALUES ('The Keeper of Keys', 4,'1234567890');
+INSERT INTO Chapter VALUES ('Diagon Alley', 5,'1234567890');
+INSERT INTO Chapter VALUES ('The Journey from Platform Nine and Three-Quarters', 6,'1234567890');
+INSERT INTO Chapter VALUES ('The Sorting Hat', 7,'1234567890');
+INSERT INTO Chapter VALUES ('The Potions Master', 8,'1234567890');
+INSERT INTO Chapter VALUES ('The Midnight Duel', 9,'1234567890');
+INSERT INTO Chapter VALUES ("Hallowe'en", 10,'1234567890');
+INSERT INTO Chapter VALUES ('A Place for Demons', 1,'4563153215');
+INSERT INTO Chapter VALUES ('A Beautiful Day', 2,'4563153215');
+INSERT INTO Chapter VALUES ('Wood and Word', 3,'4563153215');
+INSERT INTO Chapter VALUES ('Halfway to Newarre', 4,'4563153215');
+INSERT INTO Chapter VALUES ('Notes', 5,'4563153215');
+INSERT INTO Chapter VALUES ('The Price of Remembering', 6,'4563153215');
+INSERT INTO Chapter VALUES ('Of Beginnings and the Names of Things', 7,'4563153215');
+INSERT INTO Chapter VALUES ('Thieves, Heretics, and Whores', 8,'4563153215');
+INSERT INTO Chapter VALUES ('Riding in the Wagon with Ben', 9,'4563153215');
+INSERT INTO Chapter VALUES ('Alar and Several Stones', 10,'4563153215');
 
-INSERT INTO Artist_Authors ('Coldplay', 'Politik')
-INSERT INTO Artist_Authors ('Coldplay', 'In My Place')
-INSERT INTO Artist_Authors ('Coldplay', 'God Put a Smile upon your Face')
-INSERT INTO Artist_Authors ('Coldplay', 'The Scientist')
-INSERT INTO Artist_Authors ('Coldplay', 'Clocks')
-INSERT INTO Artist_Authors ('Coldplay', 'Daylight')
-INSERT INTO Artist_Authors ('Coldplay', 'Green Eyes')
-INSERT INTO Artist_Authors ('Coldplay', 'Warning Sign')
-INSERT INTO Artist_Authors ('Coldplay', 'A Whisper')
-INSERT INTO Artist_Authors ('Coldplay', 'A Rush of Blood to the Head')
-INSERT INTO Artist_Authors ('Billy Joel', 'Piano Man')
-INSERT INTO Artist_Authors ('Billy Joel', 'Captain Jack')
-INSERT INTO Artist_Authors ('Billy Joel', 'The Entertainer')
-INSERT INTO Artist_Authors ('Billy Joel', 'Say Goodbye to Hollywood')
-INSERT INTO Artist_Authors ('Billy Joel', 'New York State of Mind')
-INSERT INTO Artist_Authors ('Billy Joel', 'The Stranger')
-INSERT INTO Artist_Authors ('Billy Joel', 'Scenes from an Italian Restaurant')
-INSERT INTO Artist_Authors ('Billy Joel', 'Just the Way You Are')
-INSERT INTO Artist_Authors ('Billy Joel', "Movin' Out (Anthony's Song)")
-INSERT INTO Artist_Authors ('Billy Joel', 'Only the Good Die Young')
+/*Needs media copy*/
+INSERT INTO Author_Writes VALUES ('Patrick Rothfuss', '4563153215');
+INSERT INTO Author_Writes VALUES ('Joanne K. Rowling', 1234567890);
+INSERT INTO Author_Writes VALUES ('Joanne K. Rowling', 5555555555);
 
-INSERT INTO Album_Contains ('Politik', '2469762156', 'Coldplay');
-INSERT INTO Album_Contains ('In My Place', '2469762156', 'Coldplay');
-INSERT INTO Album_Contains ('God Put a Smile upon your Face', '2469762156', 'Coldplay');
-INSERT INTO Album_Contains ('The Scientist', '2469762156', 'Coldplay');
-INSERT INTO Album_Contains ('Clocks', '2469762156', 'Coldplay');
-INSERT INTO Album_Contains ('Daylight', '2469762156', 'Coldplay');
-INSERT INTO Album_Contains ('Green Eyes', '2469762156', 'Coldplay');
-INSERT INTO Album_Contains ('Warning Sign', '2469762156', 'Coldplay');
-INSERT INTO Album_Contains ('A Whisper', '2469762156', 'Coldplay');
-INSERT INTO Album_Contains ('A Rush of Blood to the Head', '2469762156', 'Coldplay');
-INSERT INTO Album_Contains ('Piano Man', '1265472654', 'Billy Joel');
-INSERT INTO Album_Contains ('Captain Jack', '1265472654', 'Billy Joel');
-INSERT INTO Album_Contains ('The Entertainer', '1265472654', 'Billy Joel');
-INSERT INTO Album_Contains ('Say Goodbye to Hollywood', '1265472654', 'Billy Joel');
-INSERT INTO Album_Contains ('New York State of Mind', '1265472654', 'Billy Joel');
-INSERT INTO Album_Contains ('The Stranger', '1265472654', 'Billy Joel');
-INSERT INTO Album_Contains ('Scenes from an Italian Restaurant', '1265472654', 'Billy Joel');
-INSERT INTO Album_Contains ('Just the Way You Are', '1265472654', 'Billy Joel');
-INSERT INTO Album_Contains ("Movin' Out (Anthony's Song)", '1265472654', 'Billy Joel');
-INSERT INTO Album_Contains ('Only the Good Die Young', '1265472654', 'Billy Joel');
+/*Needs media copy*/
+INSERT INTO Actor_Stars VALUES ('Mark Hamill', '7678906543');
+INSERT INTO Actor_Stars VALUES ('Carrie Fisher', '7678906543');
+INSERT INTO Actor_Stars VALUES ('Harrison Ford', '7678906543');
+INSERT INTO Actor_Stars VALUES ('Peter Mayhew', '7678906543');
+INSERT INTO Actor_Stars VALUES ('Anthony Daniels', '7678906543');
+INSERT INTO Actor_Stars VALUES ('Kenny Baker', '76789065432');
+INSERT INTO Actor_Stars VALUES ('Alec Guinness', '7678906543');
+INSERT INTO Actor_Stars VALUES ('Frank Oz', '7678906543');
+INSERT INTO Actor_Stars VALUES ('Billy Dee Williams', '1358594289');
+INSERT INTO Actor_Stars VALUES ('David Prowse', '7678906543');
+INSERT INTO Actor_Stars VALUES ('Peter Cushing', '7678906543');
+INSERT INTO Actor_Stars VALUES ('Larry Ward', '7678906543');
+INSERT INTO Actor_Stars VALUES ('Jeremy Bulloch', '7678906543');
+INSERT INTO Actor_Stars VALUES ('Hayden Christensen', '1358594284');
+INSERT INTO Actor_Stars VALUES ('Ewan McGregor', '1358594284');
+INSERT INTO Actor_Stars VALUES ('Christopher Lee', '13585942843');
+INSERT INTO Actor_Stars VALUES ('Samuel L. Jackson', '1358594284');
+INSERT INTO Actor_Stars VALUES ('Ahmed Best', '1358594284');
+INSERT INTO Actor_Stars VALUES ('Natalie Portman', '1358594284');
+INSERT INTO Actor_Stars VALUES ('Ian McDiarmid', '1358594284');
+
+/*Needs media copy*/
+INSERT INTO Studio_Creates VALUES ('Nintendo', '6421358790');
+INSERT INTO Studio_Creates VALUES ('Ubisoft', '7541236554');
+INSERT INTO Studio_Creates VALUES ('Ubisoft', '6312832925');
+
+/*Needs to reference to add value Media ID along with copy as stated previously*/
+INSERT INTO Artist_Authors VALUES ('Coldplay', 'Politik');
+INSERT INTO Artist_Authors VALUES ('Coldplay', 'In My Place');
+INSERT INTO Artist_Authors VALUES ('Coldplay', 'God Put a Smile upon your Face');
+INSERT INTO Artist_Authors VALUES ('Coldplay', 'The Scientist');
+INSERT INTO Artist_Authors VALUES ('Coldplay', 'Clocks');
+INSERT INTO Artist_Authors VALUES ('Coldplay', 'Daylight');
+INSERT INTO Artist_Authors VALUES ('Coldplay', 'Green Eyes');
+INSERT INTO Artist_Authors VALUES ('Coldplay', 'Warning Sign');
+INSERT INTO Artist_Authors VALUES ('Coldplay', 'A Whisper');
+INSERT INTO Artist_Authors VALUES ('Coldplay', 'A Rush of Blood to the Head');
+INSERT INTO Artist_Authors VALUES ('Billy Joel', 'Piano Man');
+INSERT INTO Artist_Authors VALUES ('Billy Joel', 'Captain Jack');
+INSERT INTO Artist_Authors VALUES ('Billy Joel', 'The Entertainer');
+INSERT INTO Artist_Authors VALUES ('Billy Joel', 'Say Goodbye to Hollywood');
+INSERT INTO Artist_Authors VALUES ('Billy Joel', 'New York State of Mind');
+INSERT INTO Artist_Authors VALUES ('Billy Joel', 'The Stranger');
+INSERT INTO Artist_Authors VALUES ('Billy Joel', 'Scenes from an Italian Restaurant');
+INSERT INTO Artist_Authors VALUES ('Billy Joel', 'Just the Way You Are');
+INSERT INTO Artist_Authors VALUES ('Billy Joel', "Movin' Out (Anthony's Song)");
+INSERT INTO Artist_Authors VALUES ('Billy Joel', 'Only the Good Die Young');
+
+/*Needs media copy*/
+INSERT INTO Album_Contains VALUES ('Politik', '2469762156', 'Coldplay');
+INSERT INTO Album_Contains VALUES ('In My Place', '2469762156', 'Coldplay');
+INSERT INTO Album_Contains VALUES ('God Put a Smile upon your Face', '2469762156', 'Coldplay');
+INSERT INTO Album_Contains VALUES ('The Scientist', '2469762156', 'Coldplay');
+INSERT INTO Album_Contains VALUES ('Clocks', '2469762156', 'Coldplay');
+INSERT INTO Album_Contains VALUES ('Daylight', '2469762156', 'Coldplay');
+INSERT INTO Album_Contains VALUES ('Green Eyes', '2469762156', 'Coldplay');
+INSERT INTO Album_Contains VALUES ('Warning Sign', '2469762156', 'Coldplay');
+INSERT INTO Album_Contains VALUES ('A Whisper', '2469762156', 'Coldplay');
+INSERT INTO Album_Contains VALUES ('A Rush of Blood to the Head', '2469762156', 'Coldplay');
+INSERT INTO Album_Contains VALUES ('Piano Man', '1265472654', 'Billy Joel');
+INSERT INTO Album_Contains VALUES ('Captain Jack', '1265472654', 'Billy Joel');
+INSERT INTO Album_Contains VALUES ('The Entertainer', '1265472654', 'Billy Joel');
+INSERT INTO Album_Contains VALUES ('Say Goodbye to Hollywood', '1265472654', 'Billy Joel');
+INSERT INTO Album_Contains VALUES ('New York State of Mind', '1265472654', 'Billy Joel');
+INSERT INTO Album_Contains VALUES ('The Stranger', '1265472654', 'Billy Joel');
+INSERT INTO Album_Contains VALUES ('Scenes from an Italian Restaurant', '1265472654', 'Billy Joel');
+INSERT INTO Album_Contains VALUES ('Just the Way You Are', '1265472654', 'Billy Joel');
+INSERT INTO Album_Contains VALUES ("Movin' Out (Anthony's Song)", '1265472654', 'Billy Joel');
+INSERT INTO Album_Contains VALUES ('Only the Good Die Young', '1265472654', 'Billy Joel');
