@@ -19,7 +19,12 @@ FROM Patron, Media_Item, Actor_Stars
 WHERE Patron.Email_Address = Media_Item.Email_Address AND Actor_Stars.Name = ACTOR
 
 /*	Find the total number of albums checked out by a single patron (you choose how to designate the patron)*/
-/* Count aggregate function here????? */
+SELECT COUNT(Media_Item)
+FROM Media_Item
+WHERE Media_Item.Email_Address = Given_Patron_Email_Address AND Album_Flag=1
+/* not sure how to designate patron */
 
 /*	Find the patron who has checked out the most videos and the total number of videos they have checked out.*/
-/* Also probably an aggregate function */
+SELECT Patron, COUNT(Media_Item)
+FROM Patron, Media_Item
+WHERE Patron.Email_Address = Media_Item.Email_Address AND Movie_Flag=1
