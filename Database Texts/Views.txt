@@ -1,4 +1,4 @@
-SUM(SELECT Copy# FROM Media_Item,Email_Address WHERE City=[city] AND State=[state])
+SUM(SELECT Copy_Number FROM Media_Item,Email_Address WHERE City=[city] AND State=[state])
 Counts the total number of media items within a certain branch
 
 COUNT(SELECT * FROM Order,Media_Item WHERE Arrival_Date=[Tomorrow] AND AudiobookFlag=1)
