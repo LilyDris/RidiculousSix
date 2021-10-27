@@ -11,7 +11,7 @@ WHERE email_address='librarypatron@gmail.com' and Movie_Flag=1;
 /*	List all the albums and their unique identifiers with less than 2 copies held by the library. */
 SELECT Name, ID
 FROM Media_Item
-WHERE Album_Flag=1 AND COUNT()
+WHERE Album_Flag=1 Copy_Number<2
 /* Not done here */
 
 /*	Give all the patrons who checked out a movie by ACTOR and the movies they checked out.*/
