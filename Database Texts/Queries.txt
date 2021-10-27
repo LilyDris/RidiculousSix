@@ -22,9 +22,9 @@ WHERE Patron.Email_Address = Media_Item.Email_Address AND Actor_Stars.Name = ACT
 /*	Find the total number of albums checked out by a single patron (you choose how to designate the patron)*/
 SELECT COUNT(Media_Item)
 FROM Media_Item
-WHERE Media_Item.Email_Address = "johnappleseed@email.com" AND Album_Flag=1;
+WHERE Media_Item.Email_Address='librarypatron@gmail.com' AND Album_Flag=1;
 
 /*	Find the patron who has checked out the most videos and the total number of videos they have checked out.*/
 SELECT Patron, COUNT(Media_Item)
 FROM Patron, Media_Item
-WHERE Patron.Email_Address = Media_Item.Email_Address AND Movie_Flag=1;
+WHERE Media_Item.Email_Address='librarypatron@gmail.com' AND Movie_Flag=1;
