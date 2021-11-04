@@ -66,7 +66,7 @@ INSERT INTO Artist_Genres VALUES ('Green Day', 'Rock');
 INSERT INTO Artist_Genres VALUES ('John Legend', 'R&B');
 INSERT INTO Artist_Genres VALUES ('John Legend', 'Soul');
 INSERT INTO Artist_Genres VALUES ('Maroon 5', 'Rock');
-INSERT INTO Artist_Genres VALUES ('Plain White T's', 'Rock');
+INSERT INTO Artist_Genres VALUES ('Plain White Ts', 'Rock');
 
 CREATE TABLE Branch (City VARCHAR(15) NOT NULL, State VARCHAR(15) NOT NULL);
 
