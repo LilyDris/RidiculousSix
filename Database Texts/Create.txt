@@ -2,7 +2,7 @@ CREATE TABLE Media_Item (ID CHAR(10) NOT NULL, Copy_Number INT NOT NULL, Name VA
 CREATE TABLE Media_Genres (ID CHAR(10) NOT NULL, Genres VARCHAR(20) NOT NULL, Primary Key(ID, Genres), Foreign Key(Genres) REFERENCES Media_Item(ID));
 CREATE TABLE Artist_Genres (Name VARCHAR(50) NOT NULL, Genres VARCHAR(20) NOT NULL, Primary Key(Name, Genres), Foreign Key(Name) REFERENCES Artist(Name));
 CREATE TABLE Branch (City VARCHAR(20) NOT NULL, State VARCHAR(20) NOT NULL, Primary Key(City, State));
-CREATE TABLE Order (Order_Number INT NOT NULL, Price VARCHAR(10), Quantity INT, Arrival_Date DATE, City VARCHAR(20) NOT NULL, State VARCHAR(20) NOT NULL, Primary Key(Order_Number), Foreign Key(City) REFERENCES Branch(City), Foreign Key(State) REFERENCES Branch(State));
+CREATE TABLE "Order" (Order_Number INT NOT NULL, Price VARCHAR(10), Quantity INT, Arrival_Date DATE, City VARCHAR(20) NOT NULL, State VARCHAR(20) NOT NULL, Primary Key(Order_Number), Foreign Key(City) REFERENCES Branch(City), Foreign Key(State) REFERENCES Branch(State));
 CREATE TABLE Patron (Email_Address VARCHAR(50) NOT NULL, First_Name VARCHAR(20) NOT NULL, Last_Name VARCHAR(20) NOT NULL, Address VARCHAR(50), City VARCHAR(20) NOT NULL, State VARCHAR(20) NOT NULL, Primary Key(Email_Address), Foreign Key(City) REFERENCES Branch(City), Foreign Key(State) REFERENCES Branch(State));
 CREATE TABLE Chapter (Name VARCHAR(50) NOT NULL, Number INT NOT NULL, ID CHAR(10) NOT NULL, Primary Key(Name, Number), Foreign Key(ID) REFERENCES Media_Item(ID));
 CREATE TABLE Author (Name VARCHAR(50) NOT NULL, Age INT, Primary Key(Name));
