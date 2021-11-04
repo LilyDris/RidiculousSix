@@ -91,7 +91,7 @@ INSERT INTO Branch VALUES ('Tuscon', 'Arizona');
 INSERT INTO Branch VALUES ('Dublin', 'Ohio');
 INSERT INTO Branch VALUES ('Montgomery', 'Alabama');
 
-CREATE TABLE Orders (Order_Number INT NOT NULL, Price VARCHAR(10), Quantity INT, Arrival_Date DATE, City VARCHAR(12) NOT NULL, State VARCHAR(12) NOT NULL);
+CREATE TABLE "Order" (Order_Number INT NOT NULL, Price VARCHAR(10), Quantity INT, Arrival_Date DATE, City VARCHAR(12) NOT NULL, State VARCHAR(12) NOT NULL);
 
 
 
