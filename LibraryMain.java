@@ -232,7 +232,7 @@ public class LibraryMain {
         case 1:
 			System.out.println("Which artist do you want to edit?");
 			String artistString = keyboard.next();
-			
+			//TODO: test feature
 				update= conn.prepareStatement("UPDATE Artist Set ?=? WHERE Name= ?");
 				update.setString(3, artistString);
 				System.out.println("What would you like to edit about the artist?\n1. Name\n2. Age\n3. Sex");
