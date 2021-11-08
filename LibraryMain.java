@@ -124,13 +124,98 @@ public class LibraryMain {
     }
 
     // Displays useful reports the user might need
-    private static void usefulReports() {
-        final String reportMenu = "1. Tracks by ARTIST released before YEAR\n"
+    private static void usefulReports() throws SQLException {
+        final String reportMenu = "1. Tracks by Billy Joel released before 2000\n"
                 + "2. Number of albums checked out by a single patron\n" + "3. Most popular actor in the database\n"
                 + "4. Most listened to artist in the database\n" + "5. Patron who has checked out the most videos";
         System.out.println(reportMenu);
         System.out.println("Enter number option would you like?");
         choice = keyboard.nextInt();
+        PreparedStatement stmt=null;
+    	ResultSet rs=null;
+        switch (choice) {
+        case 1:
+        	//This query comes from [Checkpoint #4]: Find the titles of all tracks by ARTIST released before YEAR.
+
+        	try {
+        		stmt= conn.prepareStatement("SELECT DISTINCT Album_Contains.Name FROM Album_Contains, Media_Item WHERE Media_Item.Year<2000 AND Album_Contains.ArtistName = 'Billy Joel'");
+        		
+        		rs= stmt.executeQuery();
+        		
+        		while(rs.next()) {
+        			
+        			System.out.println(rs.getString(1));
+        		}
+        		
+        	}catch(SQLException e) {
+        		e.printStackTrace();
+        	}finally {
+        		if(stmt!=null) {stmt.close();}
+        		if(rs!=null) {rs.close();}
+        	}
+        	break;
+        case 2:
+        	//[Checkpoint #4]: Find the total number of albums checked out by a single patron (user designates the patron)
+        	System.out.println("Patron email to search: ");
+        	String patron=keyboard.next();
+        	try {
+        		stmt= conn.prepareStatement("SELECT COUNT(Name)\r\n"
+        				+ "FROM Media_Item\r\n"
+        				+ "WHERE Media_Item.Email_Address=? AND Album_Flag=1");
+        		
+        		stmt.setString(1,patron);
+        		rs= stmt.executeQuery();
+        		
+        		System.out.print("Number of albums "+patron+" checked out is: ");
+        		
+        		while(rs.next()) {
+        			
+        			System.out.println(rs.getString(1));
+        		}
+        		
+        	}catch(SQLException e) {
+        		e.printStackTrace();
+        	}finally {
+        		if(stmt!=null) {stmt.close();}
+        		if(rs!=null) {rs.close();}
+        	}
+        	break;
+        case 3:
+        	//TODO: [Checkpoint #5]: Find the most popular actor in the database (i.e. the one who has had the most lent movies)
+        	break;
+        case 4:
+        	//TODO: [Checkpoint #5]: Find the most listened to artist in the database (use the running time of the album and number of times the album has been lent out to calculate)
+        	break;
+        case 5:
+        	//TODO: [Checkpoint #4]: Find the patron who has checked out the most videos and the total number of videos they have checked out. 
+        	try {
+        		stmt= conn.prepareStatement("SELECT Email_Address,COUNT(Name)\r\n"
+        				+ "FROM  Media_Item\r\n"
+        				+ "WHERE  Movie_Flag=1 AND Email_Address!='NULL'\r\n"
+        				+ "Group By Email_Address\r\n"
+        				+ "LIMIT 1");
+        		
+        	
+        		rs= stmt.executeQuery();
+        		
+        		
+        		
+        		while(rs.next()) {
+        			
+        			System.out.println("Patron: "+rs.getString(1)+" has checked out the most videos: "+rs.getInt(2));
+        		}
+        		
+        	}catch(SQLException e) {
+        		e.printStackTrace();
+        	}finally {
+        		if(stmt!=null) {stmt.close();}
+        		if(rs!=null) {rs.close();}
+        	}
+        	break;
+        default:
+        	System.out.println("Invalid Option");
+        
+        }
     }
 
     // User selects an artist (provide the name), edit any field of the artist and
@@ -140,6 +225,42 @@ public class LibraryMain {
         System.out.println(editMenu);
         System.out.println("Enter number option would you like?");
         choice = keyboard.nextInt();
+        switch (choice){
+        case 1:
+			System.out.println("Which artist do you want to edit?");
+			String artistString = keyboard.next();
+			boolean found = false;
+			//TODO: Use 'UPDATE' statements for these
+            if (!found) {
+                System.out.println("No Artist found with that name");
+            }else{
+				System.out.println("What would you like to edit about the artist?\n1. Name\n2. Age\n3. Genres");
+				int editChoice = keyboard.nextInt();
+				switch (editChoice){
+					case 1:
+						System.out.println("Enter new name:");
+						String name = keyboard.next();
+						//TODO: Set name
+						break;
+					case 2:
+						System.out.println("Enter new age:");
+						int age = keyboard.nextInt();
+						//TODO: Set age
+						break;
+					case 3:
+						System.out.println("Enter new genre:");
+						String genre = keyboard.next();
+						//TODO: Add genre
+						break;
+					default:
+						System.out.println("Invalid Option");
+				}
+			}
+            break;
+        default:
+            System.out.println("Invalid Option");
+    }
+        
     }
 
     // The user enter the information to order a new movie, with number of copies
@@ -149,6 +270,28 @@ public class LibraryMain {
         System.out.println(orderMenu);
         System.out.println("Enter number option would you like?");
         choice = keyboard.nextInt();
+        switch (choice){
+        case 1:
+			System.out.println("What movie do you want to order?");
+			String movieName = keyboard.next();
+			boolean found = false;
+			//TODO: Find movie
+			// SELECT * FROM Media_Item WHERE MovieFlag = 1 AND Name = [movieName];
+            if (!found) {
+                System.out.println("No Movie found with that name");
+            }else{
+					System.out.println("How many copies do you want?");
+					int copies = keyboard.nextInt();
+					//TODO: Get [copies] copies of movie
+					System.out.println("Your order will arive in one business week."); //TODO: maybe implement date system?
+			}
+            break;
+        case 2:
+			//TODO: Activate item received
+            break;
+        default:
+            System.out.println("Invalid Option");
+    }
     }
 
     // The user provides all the info needed to enter a new artist or a new Song
@@ -161,15 +304,58 @@ public class LibraryMain {
         switch (choice) {
 
         case 1:
-        	
+        	PreparedStatement addArtist=null;
+        	System.out.println("Name of artist:");
+			String artistName = keyboard.next();
+			try {
+				addArtist=conn.prepareStatement("INSERT INTO Artist VALUES(?)");
+				addArtist.setString(1, artistName);
+				int res=addArtist.executeUpdate();
+				if(res>0) {
+					System.out.println(res+" records added");
+				}else {
+					System.out.println("Unable to add artist");
+				}
+				
+			}
+			catch(SQLException e){
+				e.printStackTrace();
+			}finally {
+				if (addArtist!=null) { addArtist.close();}
+			}
+
             
             break;
         case 2:
-            System.out.println("Enter name of Track:");
-            String track = keyboard.nextLine();
-            //TODO: Replace with prepared statements
-            sqlQuery(conn, "SELECT * FROM Track WHERE Name = "+track+";");
-            
+        	PreparedStatement addTrack=null;
+        	//TODO: Fix reading line in statements
+        	System.out.println("Name of track:");
+			String trackName = keyboard.next();
+			System.out.println("Genre of track:");
+			String trackGenre = keyboard.nextLine();
+			System.out.println("Name of Artist: ");
+			artistName = keyboard.next();
+			try {
+			addTrack=conn.prepareStatement("INSERT INTO Track VALUES(?,?,?)");
+			addTrack.setString(1, trackName);
+			addTrack.setString(2, trackGenre);
+			addTrack.setString(3, artistName);
+			
+			int res=addTrack.executeUpdate();
+			if(res>0) {
+				System.out.println(res+" records added");
+			}else {
+				System.out.println("Unable to add track");
+			}
+			}
+			catch(SQLException e) {
+				e.printStackTrace();
+
+			}
+			finally {
+				 if(addTrack!=null) { addTrack.close();}
+			}
+			
             break;
         default:
             System.out.println("Invalid Option");
