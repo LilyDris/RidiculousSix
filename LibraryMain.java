@@ -187,7 +187,7 @@ public class LibraryMain {
         	//TODO: [Checkpoint #5]: Find the most listened to artist in the database (use the running time of the album and number of times the album has been lent out to calculate)
         	break;
         case 5:
-        	//TODO: [Checkpoint #4]: Find the patron who has checked out the most videos and the total number of videos they have checked out. 
+        	//[Checkpoint #4]: Find the patron who has checked out the most videos and the total number of videos they have checked out. 
         	try {
         		stmt= conn.prepareStatement("SELECT Email_Address,COUNT(Name)\r\n"
         				+ "FROM  Media_Item\r\n"
@@ -225,43 +225,63 @@ public class LibraryMain {
         System.out.println(editMenu);
         System.out.println("Enter number option would you like?");
         choice = keyboard.nextInt();
+        
+        PreparedStatement update=null;
+        try {
         switch (choice){
         case 1:
 			System.out.println("Which artist do you want to edit?");
 			String artistString = keyboard.next();
-			boolean found = false;
-			//TODO: Use 'UPDATE' statements for these
-            if (!found) {
-                System.out.println("No Artist found with that name");
-            }else{
-				System.out.println("What would you like to edit about the artist?\n1. Name\n2. Age\n3. Genres");
+			
+				update= conn.prepareStatement("UPDATE Artist Set ?=? WHERE Name= ?");
+				update.setString(3, artistString);
+				System.out.println("What would you like to edit about the artist?\n1. Name\n2. Age\n3. Sex");
 				int editChoice = keyboard.nextInt();
 				switch (editChoice){
 					case 1:
+						update.setString(1, "Name");
+						
 						System.out.println("Enter new name:");
 						String name = keyboard.next();
-						//TODO: Set name
+						update.setString(2, name);
+						int res=update.executeUpdate();
+						System.out.println(res+" record updated");
 						break;
 					case 2:
+						
+						update.setString(1, "Age");
 						System.out.println("Enter new age:");
 						int age = keyboard.nextInt();
-						//TODO: Set age
+						update.setInt(2, age);
+						res=update.executeUpdate();
+						System.out.println(res+" record updated");
 						break;
 					case 3:
-						System.out.println("Enter new genre:");
-						String genre = keyboard.next();
-						//TODO: Add genre
+						update.setString(1, "Sex");
+						System.out.println("Enter new sex:");
+						String sex = keyboard.next();
+						update.setString(2, sex);
+						res=update.executeUpdate();
+						System.out.println(res+" record updated");
+					
 						break;
 					default:
 						System.out.println("Invalid Option");
-				}
+				
 			}
             break;
         default:
             System.out.println("Invalid Option");
     }
+        }
+        catch(SQLException e) {
+        	
+        }
+        finally {
+        }
+        }
         
-    }
+    
 
     // The user enter the information to order a new movie, with number of copies
     // purchase, price and an estimated date of arrival
