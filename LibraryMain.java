@@ -226,43 +226,35 @@ public class LibraryMain {
         System.out.println("Enter number option would you like?");
         choice = keyboard.nextInt();
         
-        PreparedStatement update=null;
-        try {
+       
         switch (choice){
         case 1:
 			System.out.println("Which artist do you want to edit?");
 			String artistString = keyboard.next();
 			//TODO: test feature
-				update= conn.prepareStatement("UPDATE Artist Set ?=? WHERE Name= ?");
-				update.setString(3, artistString);
+				
 				System.out.println("What would you like to edit about the artist?\n1. Name\n2. Age\n3. Sex");
 				int editChoice = keyboard.nextInt();
 				switch (editChoice){
 					case 1:
-						update.setString(1, "Name");
+						
 						
 						System.out.println("Enter new name:");
 						String name = keyboard.next();
-						update.setString(2, name);
-						int res=update.executeUpdate();
-						System.out.println(res+" record updated");
+						
+						
 						break;
 					case 2:
 						
-						update.setString(1, "Age");
 						System.out.println("Enter new age:");
 						int age = keyboard.nextInt();
-						update.setInt(2, age);
-						res=update.executeUpdate();
-						System.out.println(res+" record updated");
+						
 						break;
 					case 3:
-						update.setString(1, "Sex");
+						
 						System.out.println("Enter new sex:");
 						String sex = keyboard.next();
-						update.setString(2, sex);
-						res=update.executeUpdate();
-						System.out.println(res+" record updated");
+						
 					
 						break;
 					default:
@@ -273,12 +265,7 @@ public class LibraryMain {
         default:
             System.out.println("Invalid Option");
     }
-        }
-        catch(SQLException e) {
-        	
-        }
-        finally {
-        }
+        
         }
         
     
@@ -328,7 +315,7 @@ public class LibraryMain {
         	System.out.println("Name of artist:");
 			String artistName = keyboard.next();
 			try {
-				addArtist=conn.prepareStatement("INSERT INTO Artist VALUES(?)");
+				addArtist=conn.prepareStatement("INSERT INTO Artist VALUES(?,null,null)");
 				addArtist.setString(1, artistName);
 				int res=addArtist.executeUpdate();
 				if(res>0) {
