@@ -354,7 +354,7 @@ public class LibraryMain {
 			System.out.println("Genre of track:");
 			String trackGenre = keyboard.nextLine();
 			System.out.println("Name of Artist: ");
-			artistName = keyboard.next();
+			artistName = keyboard.nextLine();
 			try {
 			addTrack=conn.prepareStatement("INSERT INTO Track VALUES(?,?,?)");
 			addTrack.setString(1, trackName);
@@ -398,16 +398,20 @@ public class LibraryMain {
         	PreparedStatement getArtist=null;
         	ResultSet artistResult= null;
 			try {
-				getArtist = conn.prepareStatement("SELECT Name FROM Track WHERE ArtistName = ?" );
+				
+				keyboard.next();
+				getArtist = conn.prepareStatement("SELECT * FROM Artist WHERE Name = ?" );
 				System.out.println("Enter name of Artist:");
-	            String artist = keyboard.next();
+	            String artist=keyboard.nextLine();
 	            getArtist.setString(1,artist);
 
 	            artistResult= getArtist.executeQuery();
 	            if(!artistResult.next()) {
 	            	System.out.println("No artist found");
 	            }else {
-	            	System.out.println("Tracks sang by "+artist+":");
+	            	System.out.println("Name: "+artist
+	            			+ "Age: "+artistResult.getInt(2)
+	            			+ "Sex: "+artistResult.getString(3));
 	            }
 	            while(artistResult.next()){  
 	            	System.out.println(artistResult.getString(1));  
@@ -429,7 +433,7 @@ public class LibraryMain {
         	try {
         		getTrack=conn.prepareStatement("SELECT * FROM Track WHERE Name = ?" );
         		System.out.println("Enter name of Track:");
-        		String track = keyboard.next();
+        		String track = keyboard.nextLine();
         		getTrack.setString(1, track);
         		trackResult=getTrack.executeQuery();
         		if(!trackResult.next()) {
