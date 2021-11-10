@@ -95,7 +95,7 @@ public class LibraryMain {
         while (choice != 6) {
             System.out.println(menu);
             System.out.println("Enter number option would you like?");
-            choice = keyboard.nextInt();
+            choice = keyboard.nextInt();keyboard.nextLine();
             
             switch (choice) {
                 case 1:
@@ -130,7 +130,7 @@ public class LibraryMain {
                 + "4. Most listened to artist in the database\n" + "5. Patron who has checked out the most videos";
         System.out.println(reportMenu);
         System.out.println("Enter number option would you like?");
-        choice = keyboard.nextInt();
+        choice = keyboard.nextInt();keyboard.nextLine();
         PreparedStatement stmt=null;
     	ResultSet rs=null;
         switch (choice) {
@@ -157,7 +157,7 @@ public class LibraryMain {
         case 2:
         	//[Checkpoint #4]: Find the total number of albums checked out by a single patron (user designates the patron)
         	System.out.println("Patron email to search: ");
-        	String patron=keyboard.next();
+        	String patron=keyboard.nextLine();
         	try {
         		stmt= conn.prepareStatement("SELECT COUNT(Name)\r\n"
         				+ "FROM Media_Item\r\n"
@@ -271,41 +271,93 @@ public class LibraryMain {
 
     // User selects an artist (provide the name), edit any field of the artist and
     // then save it, updating your internal structure that storage the artist.
-    private static void editRecords() {
+    private static void editRecords() throws SQLException {
         final String editMenu = "1. Edit an Artist";
         System.out.println(editMenu);
         System.out.println("Enter number option would you like?");
-        choice = keyboard.nextInt();
+        choice = keyboard.nextInt();keyboard.nextLine();
         
        
         switch (choice){
         case 1:
 			System.out.println("Which artist do you want to edit?");
-			String artistString = keyboard.next();
-			//TODO: test feature
+			String artistString = keyboard.nextLine();
+			
 				
 				System.out.println("What would you like to edit about the artist?\n1. Name\n2. Age\n3. Sex");
-				int editChoice = keyboard.nextInt();
+				int editChoice = keyboard.nextInt();keyboard.nextLine();
 				switch (editChoice){
 					case 1:
-						
-						
 						System.out.println("Enter new name:");
-						String name = keyboard.next();
-						
-						
+						String name = keyboard.nextLine();
+								PreparedStatement stmt=null;
+								int rs=0;
+						try {
+			        		stmt= conn.prepareStatement("UPDATE Artist SET Name=? WHERE Name= ?");
+			        		stmt.setString(1,name);
+			        		stmt.setString(2, artistString);
+			        		rs= stmt.executeUpdate();     		
+			        		if(rs>0) {
+			        			System.out.println(rs+" record(s) edited");
+							}else {
+								System.out.println("Unable to edit artist");
+							}
+			        		
+			        	}catch(SQLException e) {
+			        		e.printStackTrace();
+			        	}finally {
+			        		if(stmt!=null) {stmt.close();}
+			        		
+			        	}
 						break;
 					case 2:
-						
+						stmt=null;
+						rs=0;
 						System.out.println("Enter new age:");
-						int age = keyboard.nextInt();
+						int age = keyboard.nextInt();keyboard.nextLine();
+						
+				try {
+	        		stmt= conn.prepareStatement("UPDATE Artist SET Age=? WHERE Name= ?");
+	        		stmt.setInt(1,age);
+	        		stmt.setString(2, artistString);
+	        		rs= stmt.executeUpdate();     		
+	        		if(rs>0) {
+	        			System.out.println(rs+" record(s) edited");
+					}else {
+						System.out.println("Unable to edit artist");
+					}
+	        		
+	        	}catch(SQLException e) {
+	        		e.printStackTrace();
+	        	}finally {
+	        		if(stmt!=null) {stmt.close();}
+	        		
+	        	}
 						
 						break;
 					case 3:
 						
 						System.out.println("Enter new sex:");
-						String sex = keyboard.next();
-						
+						String sex = keyboard.nextLine();
+						stmt=null;
+						rs=0;
+				try {
+	        		stmt= conn.prepareStatement("UPDATE Artist SET Sex=? WHERE Name= ?");
+	        		stmt.setString(1,sex);
+	        		stmt.setString(2, artistString);
+	        		rs= stmt.executeUpdate();     		
+	        		if(rs>0) {
+	        			System.out.println(rs+" record(s) edited");
+					}else {
+						System.out.println("Unable to edit artist");
+					}
+	        		
+	        	}catch(SQLException e) {
+	        		e.printStackTrace();
+	        	}finally {
+	        		if(stmt!=null) {stmt.close();}
+	        		
+	        	}
 					
 						break;
 					default:
@@ -327,11 +379,11 @@ public class LibraryMain {
         final String orderMenu = "1. Order a Movie\n2. Activate item recieved";
         System.out.println(orderMenu);
         System.out.println("Enter number option would you like?");
-        choice = keyboard.nextInt();
+        choice = keyboard.nextInt();keyboard.nextLine();
         switch (choice){
         case 1:
 			System.out.println("What movie do you want to order?");
-			String movieName = keyboard.next();
+			String movieName = keyboard.nextLine();
 			boolean found = false;
 			//TODO: Find movie
 			// SELECT * FROM Media_Item WHERE MovieFlag = 1 AND Name = [movieName];
@@ -339,7 +391,7 @@ public class LibraryMain {
                 System.out.println("No Movie found with that name");
             }else{
 					System.out.println("How many copies do you want?");
-					int copies = keyboard.nextInt();
+					int copies = keyboard.nextInt();keyboard.nextLine();
 					//TODO: Get [copies] copies of movie
 					System.out.println("Your order will arive in one business week."); //TODO: maybe implement date system?
 			}
@@ -358,13 +410,13 @@ public class LibraryMain {
         final String recordsMenu = "1. Add an artist\n2. Add a Track";
         System.out.println(recordsMenu);
         System.out.println("Enter number option would you like?");
-        choice = keyboard.nextInt();
+        choice = keyboard.nextInt();keyboard.nextLine();
         switch (choice) {
 
         case 1:
         	PreparedStatement addArtist=null;
         	System.out.println("Name of artist:");
-			String artistName = keyboard.next();
+			String artistName = keyboard.nextLine();
 			try {
 				addArtist=conn.prepareStatement("INSERT INTO Artist VALUES(?,null,null)");
 				addArtist.setString(1, artistName);
@@ -388,7 +440,7 @@ public class LibraryMain {
         	PreparedStatement addTrack=null;
         	//TODO: Fix reading line in statements
         	System.out.println("Name of track:");
-			String trackName = keyboard.next();
+			String trackName = keyboard.nextLine();
 			System.out.println("Genre of track:");
 			String trackGenre = keyboard.nextLine();
 			System.out.println("Name of Artist: ");
@@ -427,7 +479,7 @@ public class LibraryMain {
         final String searchMenu = "1. Artist\n2. Track";
         System.out.println(searchMenu);
         System.out.println("Enter number option would you like?");
-        choice = keyboard.nextInt();
+        choice = keyboard.nextInt();keyboard.nextLine();
 
       
         switch (choice) {
@@ -437,7 +489,7 @@ public class LibraryMain {
         	ResultSet artistResult= null;
 			try {
 				
-				keyboard.next();
+				keyboard.nextLine();
 				getArtist = conn.prepareStatement("SELECT * FROM Artist WHERE Name = ?" );
 				System.out.println("Enter name of Artist:");
 	            String artist=keyboard.nextLine();
