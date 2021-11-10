@@ -375,7 +375,7 @@ public class LibraryMain {
 
     // The user enter the information to order a new movie, with number of copies
     // purchase, price and an estimated date of arrival
-    private static void orderItems() {
+    private static void orderItems() throws SQLException {
         final String orderMenu = "1. Order a Movie\n2. Activate item recieved";
         System.out.println(orderMenu);
         System.out.println("Enter number option would you like?");
@@ -383,21 +383,79 @@ public class LibraryMain {
         switch (choice){
         case 1:
 			System.out.println("What movie do you want to order?");
-			String movieName = keyboard.nextLine();
-			boolean found = false;
-			//TODO: Find movie
-			// SELECT * FROM Media_Item WHERE MovieFlag = 1 AND Name = [movieName];
-            if (!found) {
-                System.out.println("No Movie found with that name");
-            }else{
-					System.out.println("How many copies do you want?");
-					int copies = keyboard.nextInt();keyboard.nextLine();
-					//TODO: Get [copies] copies of movie
-					System.out.println("Your order will arive in one business week."); //TODO: maybe implement date system?
-			}
+			String movie = keyboard.nextLine();
+			System.out.println("Order number: ");
+			int orderNum=keyboard.nextInt(); keyboard.nextLine();
+			System.out.println("How many copies? ");
+			int copies=keyboard.nextInt(); keyboard.nextLine();
+			System.out.println("Price of order in the format of \'$50\': ");
+			String price=keyboard.nextLine();
+			System.out.println("Shipping city: ");
+			String city=keyboard.nextLine();
+			System.out.println("Shipping state: ");
+			String state= keyboard.nextLine();
+			
+			
+			PreparedStatement stmt=null;
+			int rs=0;
+			try {
+        		stmt= conn.prepareStatement("INSERT INTO Orders VALUES (?,?,?,null,?,?)");
+        		stmt.setInt(1,orderNum);
+        		stmt.setString(2, price);
+        		stmt.setInt(3, copies);
+        		stmt.setString(4,city);
+        		stmt.setString(5, state);
+        		rs= stmt.executeUpdate();     		
+        		if(rs>0) {
+        			System.out.println(rs+" record(s) edited");
+				}else {
+					System.out.println("Unable to edit artist");
+				}
+        		
+        	}catch(SQLException e) {
+        		e.printStackTrace();
+        	}finally {
+        		if(stmt!=null) {stmt.close();}
+        		
+        	}
             break;
         case 2:
-			//TODO: Activate item received
+        	PreparedStatement stmt2=null;
+        	ResultSet res=null;
+        	stmt=null;
+        	
+			System.out.println("Order number: ");
+			orderNum=keyboard.nextInt(); keyboard.nextLine();
+			System.out.println("Media ID for Movie: ");
+			int id=keyboard.nextInt();keyboard.nextLine();
+			
+        	try {
+        		stmt2=conn.prepareStatement( "SELECT City,State FROM Orders WHERE Orders_Number=?");
+        		stmt= conn.prepareStatement("INSERT INTO Media_Item VALUES (?,1,null,null,null,0,0,null,1,null,0,null,null,1,?,?,?)");
+        		stmt2.setInt(1, orderNum);
+        		res=stmt2.executeQuery();
+        		stmt.setInt(1,id);
+        		stmt.setInt(2,orderNum);
+        		if(res.next()) {
+        			stmt.setString(3,res.getString(1));
+        			stmt.setString(4,res.getString(2));
+        		}
+        		rs= stmt.executeUpdate();     		
+        		if(rs>0) {
+        			System.out.println(rs+" record(s) edited");
+        			stmt=conn.prepareStatement("DELETE FROM Orders WHERE Orders_Number=?");
+        			stmt.setInt(1, id);
+        			stmt.executeUpdate();
+				}else {
+					System.out.println("Unable to edit artist");
+				}
+        		
+        	}catch(SQLException e) {
+        		e.printStackTrace();
+        	}finally {
+        		if(stmt!=null) {stmt.close();}
+        		
+        	}
             break;
         default:
             System.out.println("Invalid Option");
@@ -438,7 +496,7 @@ public class LibraryMain {
             break;
         case 2:
         	PreparedStatement addTrack=null;
-        	//TODO: Fix reading line in statements
+        	
         	System.out.println("Name of track:");
 			String trackName = keyboard.nextLine();
 			System.out.println("Genre of track:");
@@ -517,7 +575,7 @@ public class LibraryMain {
             
             break;
         case 2:
-        	//TODO: Fix the track info printing out
+        	
         	PreparedStatement getTrack=null;
         	ResultSet trackResult=null;
         	try {
@@ -526,18 +584,16 @@ public class LibraryMain {
         		String track = keyboard.nextLine();
         		getTrack.setString(1, track);
         		trackResult=getTrack.executeQuery();
-        		if(!trackResult.next()) {
-        			System.out.println("No Track found");
-        		}else {
-        			System.out.println("Track info:");
-        		}
+        		
 
-        		while(trackResult.next()){  
-	            	String name=trackResult.getString("Name");
-	            	String genre=trackResult.getString("Genre");
-	            	String artistName=trackResult.getString("ArtistName");
+        		if(trackResult.next()){  
+	            	String name=trackResult.getString(1);
+	            	String genre=trackResult.getString(2);
+	            	String artistName=trackResult.getString(3);
 	            	System.out.println("Name: "+name+", Genre: "+ genre+", Artist Name: "+artistName);
-	            	} 
+	            	} else {
+	            		System.out.println("No track found");
+	            	}
         	}
         	catch (SQLException e){
         		e.printStackTrace();
