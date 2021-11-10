@@ -21,7 +21,7 @@ b.
 c. 
 SELECT Name, Copy_Number, ID
 FROM Media_Item, Checkouts
-WHERE Media_Item.ID = Checkouts.ID AND Media_Item.Copy_Number = Checkouts.Copy_Number AND DATE('now') < Due_Date AND DATE('now') > Checkout_Date
+WHERE Media_Item.ID = Checkouts.ID AND Media_Item.Movie_Flag = 1 AND Media_Item.Copy_Number = Checkouts.Copy_Number AND DATE('now') < Due_Date AND DATE('now') > Checkout_Date
 ORDER BY (SELECT COUNT(DISTINCT ID) FROM Checkouts) ASC;
 
 d. by Isaac - incorrect at the moment
