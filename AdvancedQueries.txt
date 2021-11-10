@@ -18,11 +18,11 @@ SELECT First_Name, Last_Name, SUM(Length) FROM Patron, Checkouts, Media_Item WHE
 
 b.
 
-c. by Isaac - incorrect at the moment
-SELECT Name, Copy_Number
+c. 
+SELECT Name, Copy_Number, ID
 FROM Media_Item, Checkouts
-WHERE Media_Item.ID = Checkouts.ID AND Movie_Flag = 1 AND DATE('now') > Due_Date 
-ORDER BY (DATE('now') - Due_Date) ASC
+WHERE Media_Item.ID = Checkouts.ID AND Media_Item.Copy_Number = Checkouts.Copy_Number AND DATE('now') < Due_Date AND DATE('now') > Checkout_Date
+ORDER BY (SELECT COUNT(DISTINCT ID) FROM Checkouts) ASC;
 
 d. by Isaac - incorrect at the moment
 SELECT Name
