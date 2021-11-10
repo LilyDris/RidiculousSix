@@ -9,7 +9,7 @@ WHERE Game_Flag=1 AND Studio_Creates.Name="EA";
 /* 2. Find how many movies [actor/ress] has played in that are RATING and are in stock */
 /* F_COUNT(σ[Rating=RATING](σ[Movie_Flag=1]Media_Item ⨝[ID=ID] σ[Name=ACTOR]Actor_Stars)) */
 
-SELECT COUNT(Media_Item)
+SELECT COUNT(*)
 FROM Media_Item, Actor_Stars
 WHERE Rating=5 AND Movie_Flag=1 AND Actor_Stars.Name="Brad Pitt";
 
