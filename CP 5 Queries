@@ -1,0 +1,22 @@
+a.
+
+b.
+
+c.
+
+d.
+
+e.
+MAX(SELECT Name FROM Artist_Authors,Checkouts WHERE ID = CheckoutID)
+f.
+X AS MAX(Y*Z)
+Y AS COUNT(Length) FROM (SELECT * FROM Media_Item,Checkouts WHERE AlbumFlag = 1 AND CheckoutID = ID)
+Z AS SELECT Name FROM Artist_Authors,Checkouts WHERE ID = CheckoutID
+g.
+SELECT * FROM Patron WHERE Patron.Email_Address = Y.Email_Address
+Y AS SELECT Email_Address FROM Chechouts WHERE CheckoutID = Z.ID
+Z AS SELECT * FROM Artist Authors WHERE Artist_Authors.Name = f.Name (where ‘f’ is DB from question f)
+h.
+SELECT * FROM Artist WHERE Artist.Name = Y.Name
+Y AS SELECT ID FROM Artist_Authors WHERE Artist_Authors.ID = X.ID
+X AS SELECT * FROM Media_Item WHERE AlbumFlag = 1 AND ID IN (SELECT CheckoutID FROM (SELECT Email_Address FROM  Patron WHERE COUNT(SELECT * FROM Checkouts WHERE Checkout.Email_Address = Patron.Email_Address) > COUNT(SELECT * FROM Checkouts WHERE Checkout.Email_Address = Patron.Email_Address)/COUNT(SELECT * FROM Patron)))
