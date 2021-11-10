@@ -181,10 +181,61 @@ public class LibraryMain {
         	}
         	break;
         case 3:
-        	//TODO: [Checkpoint #5]: Find the most popular actor in the database (i.e. the one who has had the most lent movies)
+        	//[Checkpoint #5]: Find the most popular actor in the database (i.e. the one who has had the most lent movies)
+        	try {
+        		stmt= conn.prepareStatement("SELECT Name, COUNT(*)\r\n"
+        				+ "FROM Actor_Stars, Checkouts\r\n"
+        				+ "WHERE Checkouts.ID=Actor_Stars.ID\r\n"
+        				+ "GROUP BY Name\r\n"
+        				+ "ORDER BY COUNT(*) DESC\r\n"
+        				+ "LIMIT 1");
+        		
+        	
+        		rs= stmt.executeQuery();
+        		
+        		
+        		
+        		while(rs.next()) {
+        			
+        			System.out.println("Most watched actor/actress is "+rs.getString(1));
+        		}
+        		
+        	}catch(SQLException e) {
+        		e.printStackTrace();
+        	}finally {
+        		if(stmt!=null) {stmt.close();}
+        		if(rs!=null) {rs.close();}
+        	}
         	break;
         case 4:
-        	//TODO: [Checkpoint #5]: Find the most listened to artist in the database (use the running time of the album and number of times the album has been lent out to calculate)
+        	//[Checkpoint #5]: Find the most listened to artist in the database (use the running time of the album and number of times the album has been lent out to calculate)
+        	try {
+        		stmt= conn.prepareStatement("SELECT DISTINCT Name\r\n"
+        				+ "FROM Artist_Authors\r\n"
+        				+ "WHERE Artist_Authors.ID=\r\n"
+        				+ "(SELECT ID FROM\r\n"
+        				+ "(SELECT DISTINCT Media_Item.ID, SUM(length)\r\n"
+        				+ "FROM Media_Item, Checkouts\r\n"
+        				+ "WHERE Checkouts.ID=Media_Item.ID AND Album_flag=1\r\n"
+        				+ "GROUP BY Name\r\n"
+        				+ "LIMIT 1))");
+        		
+        	
+        		rs= stmt.executeQuery();
+        		
+        		
+        		
+        		while(rs.next()) {
+        			
+        			System.out.println("Most listened to artist is "+rs.getString(1));
+        		}
+        		
+        	}catch(SQLException e) {
+        		e.printStackTrace();
+        	}finally {
+        		if(stmt!=null) {stmt.close();}
+        		if(rs!=null) {rs.close();}
+        	}
         	break;
         case 5:
         	//[Checkpoint #4]: Find the patron who has checked out the most videos and the total number of videos they have checked out. 
