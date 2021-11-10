@@ -19,18 +19,19 @@ SELECT First_Name, Last_Name, SUM(Length) FROM Patron, Checkouts, Media_Item WHE
 b.
 
 c. 
-SELECT Name, Copy_Number, ID
+SELECT Name, (SELECT COUNT(Media_Item.ID) FROM Checkouts, Media_Item WHERE Media_Item.ID = Checkouts.ID AND Media_Item.Album_Flag = 1 AND Media_Item.Copy_Number = Checkouts.Copy_Number AND Media_Item.Name = Name AND DATE('now') < Due_Date AND DATE('now') > Checkout_Date GROUP BY Media_Item.ID)
 FROM Media_Item, Checkouts
 WHERE Media_Item.ID = Checkouts.ID AND Media_Item.Movie_Flag = 1 AND Media_Item.Copy_Number = Checkouts.Copy_Number AND DATE('now') < Due_Date AND DATE('now') > Checkout_Date
 ORDER BY (SELECT COUNT(DISTINCT ID) FROM Checkouts) ASC;
 
-d. by Isaac - incorrect at the moment
-SELECT Name
+d. 
+SELECT Name, (SELECT COUNT(Media_Item.ID) FROM Checkouts, Media_Item WHERE Media_Item.ID = Checkouts.ID AND Media_Item.Album_Flag = 1 AND Media_Item.Copy_Number = Checkouts.Copy_Number AND Media_Item.Name = Name AND DATE('now') < Due_Date AND DATE('now') > Checkout_Date GROUP BY Media_Item.ID)
 FROM Media_Item, Checkouts
-WHERE Album_Flag = 1 AND Media_Item.ID = Checkouts.ID
+WHERE Media_Item.ID = Checkouts.ID AND Media_Item.Album_Flag = 1 AND Media_Item.Copy_Number = Checkouts.Copy_Number AND DATE('now') < Due_Date AND DATE('now') > Checkout_Date
+ORDER BY (SELECT COUNT(DISTINCT ID) FROM Checkouts) ASC;
 
 e.
-MAX(SELECT Name FROM Artist_Authors,Checkouts WHERE ID = CheckoutID)
+SELECT Name FROM Actor_Stars, Checkouts WHERE Actor_Stars.ID = Checkouts.ID AND Actor_Stars.Copy_Number = Checkouts.Copy_Number GROUP BY Name ORDER BY COUNT(NAME) DESC LIMIT 1;
 
 f.
 X AS MAX(Y*Z)
