@@ -1,11 +1,12 @@
-We were instructed to fix extra query #2 from Checkpoint 4:
+Checkpoint 5 Advanced Queries
 
+We were instructed to fix extra query #2 from Checkpoint 4:
 
 We were instructed to fix our generated view from Checkpoint 4:
 
-
 a.
 SELECT First_Name, Last_Name, SUM(Length) FROM Patron, Checkouts, Media_Item WHERE Patron.Email_Address = Checkouts.Email_Address AND Checkouts.ID = Media_Item.ID AND Checkouts.Copy_Number = Media_Item.Copy_Number AND Media_Item.Movie_Flag = 1 GROUP BY Patron.Email_Address;
+
 b.
 
 c. by Isaac - incorrect at the moment
@@ -21,14 +22,17 @@ WHERE Album_Flag = 1 AND Media_Item.ID = Checkouts.ID
 
 e.
 MAX(SELECT Name FROM Artist_Authors,Checkouts WHERE ID = CheckoutID)
+
 f.
 X AS MAX(Y*Z)
 Y AS COUNT(Length) FROM (SELECT * FROM Media_Item,Checkouts WHERE AlbumFlag = 1 AND CheckoutID = ID)
 Z AS SELECT Name FROM Artist_Authors,Checkouts WHERE ID = CheckoutID
+
 g.
 SELECT * FROM Patron WHERE Patron.Email_Address = Y.Email_Address
 Y AS SELECT Email_Address FROM Chechouts WHERE CheckoutID = Z.ID
 Z AS SELECT * FROM Artist Authors WHERE Artist_Authors.Name = f.Name (where ‘f’ is DB from question f)
+
 h.
 SELECT * FROM Artist WHERE Artist.Name = Y.Name
 Y AS SELECT ID FROM Artist_Authors WHERE Artist_Authors.ID = X.ID
