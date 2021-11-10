@@ -40,9 +40,8 @@ f.
 SELECT Artist_Authors.Name FROM Artist_Authors, Checkouts, Media_Item WHERE Artist_Authors.ID = Checkouts.ID AND Artist_Authors.Copy_Number = Checkouts.Copy_Number AND Media_Item.ID = Checkouts.ID AND Media_Item.Copy_Number = Checkouts.Copy_Number GROUP BY Artist_Authors.Name ORDER BY (Media_Item.Length * COUNT(Checkouts.ID)) DESC LIMIT 1;
 
 g.
-SELECT * FROM Patron WHERE Patron.Email_Address = Y.Email_Address
-Y AS SELECT Email_Address FROM Chechouts WHERE CheckoutID = Z.ID
-Z AS SELECT * FROM Artist Authors WHERE Artist_Authors.Name = f.Name (where ‘f’ is DB from question f)
+SELECT * FROM Patron WHERE Patron.Email_Address = (SELECT Email_Address FROM Checkouts WHERE Checkouts.ID = (SELECT ID FROM Actor_Stars WHERE Name = (SELECT Name FROM Actor_Stars, Checkouts WHERE Actor_Stars.ID = Checkouts.ID AND Actor_Stars.Copy_Number = Checkouts.Copy_Number GROUP BY Name ORDER BY COUNT(NAME) DESC LIMIT 1)));
+
 
 h.
 SELECT * FROM Artist WHERE Artist.Name = Y.Name
