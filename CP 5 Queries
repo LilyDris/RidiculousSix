@@ -2,9 +2,16 @@ a.
 
 b.
 
-c.
+c. by Isaac - incorrect at the moment
+SELECT Name, Copy_Number
+FROM Media_Item, Checkouts
+WHERE Media_Item.ID = Checkouts.ID AND Movie_Flag = 1 AND DATE('now') > Due_Date 
+ORDER BY (DATE('now') - Due_Date) ASC
 
-d.
+d. by Isaac - incorrect at the moment
+SELECT Name
+FROM Media_Item, Checkouts
+WHERE Album_Flag = 1 AND Media_Item.ID = Checkouts.ID
 
 e.
 MAX(SELECT Name FROM Artist_Authors,Checkouts WHERE ID = CheckoutID)
