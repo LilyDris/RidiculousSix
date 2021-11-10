@@ -1,6 +1,9 @@
 Checkpoint 5 Advanced Queries
 
 We were instructed to fix extra query #2 from Checkpoint 4:
+SELECT COUNT(*)
+FROM Media_Item, Actor_Stars
+WHERE Rating=5 AND Movie_Flag=1 AND Actor_Stars.Name="Brad Pitt";
 
 We were instructed to fix our generated view from Checkpoint 4:
 COUNT(SELECT Copy_Number FROM Media_Item,Email_Address WHERE City=[city] AND State=[state])
