@@ -34,9 +34,7 @@ e.
 SELECT Name FROM Actor_Stars, Checkouts WHERE Actor_Stars.ID = Checkouts.ID AND Actor_Stars.Copy_Number = Checkouts.Copy_Number GROUP BY Name ORDER BY COUNT(NAME) DESC LIMIT 1;
 
 f.
-X AS MAX(Y*Z)
-Y AS COUNT(Length) FROM (SELECT * FROM Media_Item,Checkouts WHERE AlbumFlag = 1 AND CheckoutID = ID)
-Z AS SELECT Name FROM Artist_Authors,Checkouts WHERE ID = CheckoutID
+SELECT Artist_Authors.Name FROM Artist_Authors, Checkouts, Media_Item WHERE Artist_Authors.ID = Checkouts.ID AND Artist_Authors.Copy_Number = Checkouts.Copy_Number AND Media_Item.ID = Checkouts.ID AND Media_Item.Copy_Number = Checkouts.Copy_Number GROUP BY Artist_Authors.Name ORDER BY (Media_Item.Length * COUNT(Checkouts.ID)) DESC LIMIT 1;
 
 g.
 SELECT * FROM Patron WHERE Patron.Email_Address = Y.Email_Address
