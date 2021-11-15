@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 CREATE TABLE Media_Item (ID CHAR(10) NOT NULL, Copy_Number INT NOT NULL, Name VARCHAR(50), Year INT, Length VARCHAR(12), Audiobook_Flag INT, Album_Flag INT, Publisher VARCHAR(15), Movie_Flag INT, Director VARCHAR(20), Game_Flag INT, Console VARCHAR(20), Rating VARCHAR(5), Status INT, Order_Number INT, Due_Date DATE, Email_Address VARCHAR(50), Primary Key(ID, Copy_Number), Foreign Key(Order_Number) REFERENCES "Order"(Order_Number), Foreign Key(Email_Address) REFERENCES Patron(Email_Address));
 CREATE TABLE Media_Genres (ID CHAR(10) NOT NULL, Genres VARCHAR(20) NOT NULL, Primary Key(ID, Genres), Foreign Key(Genres) REFERENCES Media_Item(ID));
 CREATE TABLE Artist_Genres (Name VARCHAR(50) NOT NULL, Genres VARCHAR(20) NOT NULL, Primary Key(Name, Genres), Foreign Key(Name) REFERENCES Artist(Name));
@@ -15,3 +16,23 @@ CREATE TABLE Actor_Stars (Name VARCHAR(50) NOT NULL, ID CHAR(10) NOT NULL, Prima
 CREATE TABLE Studio_Creates (Name VARCHAR(50) NOT NULL, ID CHAR(10) NOT NULL, Primary Key(Name, ID), Foreign Key(Name) REFERENCES Game_Studio(Name), Foreign Key(ID) REFERENCES Media_Item(ID));
 CREATE TABLE Artist_Authors (Name VARCHAR(50) NOT NULL, ID CHAR(10) NOT NULL, Primary Key(Name, ID), Foreign Key(Name) REFERENCES Artist(Name), Foreign Key(ID) REFERENCES Media_Item(ID));
 CREATE TABLE Album_Contains (Name VARCHAR(50) NOT NULL, ID CHAR(10) NOT NULL, Primary Key(Name, ID), Foreign Key(Name) REFERENCES Track(Name), Foreign Key(ID) REFERENCES Media_Item(ID));
+=======
+CREATE TABLE Media_Item (ID CHAR(10) NOT NULL, Copy_Number INT NOT NULL, Name VARCHAR(50), Year INT, Length INT, Audiobook_Flag INT, Album_Flag INT, Publisher VARCHAR(15), Movie_Flag INT, Director VARCHAR(20), Game_Flag INT, Console VARCHAR(20), Rating VARCHAR(5), Status INT, Orders_Number INT, City VARCHAR(20) NOT NULL, State VARCHAR(20) NOT NULL, PRIMARY KEY (ID, Copy_Number), FOREIGN KEY (Orders_Number) REFERENCES Orders(Orders_Number), FOREIGN KEY (City, State) REFERENCES Branch(City,State));
+CREATE TABLE Media_Genres (ID CHAR(10) NOT NULL, Copy_Number INT NOT NULL, Genres VARCHAR(20) NOT NULL, PRIMARY KEY (ID,Copy_Number, Genres), FOREIGN KEY (ID,Copy_Number) REFERENCES Media_Item(ID,Copy_Number));
+CREATE TABLE Artist_Genres (Name VARCHAR(50) NOT NULL, Genres VARCHAR(20) NOT NULL, PRIMARY KEY (Name, Genres), FOREIGN KEY (Name) REFERENCES Artist(Name));
+CREATE TABLE Branch (City VARCHAR(20) NOT NULL, State VARCHAR(20) NOT NULL, PRIMARY KEY (City, State));
+CREATE TABLE Orders (Orders_Number INT NOT NULL, Price VARCHAR(10), Quantity INT, Arrival_Date DATE, City VARCHAR(20) NOT NULL, State VARCHAR(20) NOT NULL, PRIMARY KEY (Orders_Number), FOREIGN KEY (City, State) REFERENCES Branch(City,State));
+CREATE TABLE Patron (Email_Address VARCHAR(50) NOT NULL, First_Name VARCHAR(20) NOT NULL, Last_Name VARCHAR(20) NOT NULL, Address VARCHAR(50), City VARCHAR(20) NOT NULL, State VARCHAR(20) NOT NULL, PRIMARY KEY (Email_Address),  FOREIGN KEY (City, State) REFERENCES Branch(City,State));
+CREATE TABLE Checkouts (Checkout_ID CHAR(10) NOT NULL, Due_Date DATE NOT NULL, Checkout_Date Date NOT NULL, Email_Address VARCHAR(50) NOT NULL, ID CHAR(10) NOT NULL, Copy_Number INT NOT NULL, PRIMARY KEY (Checkout_ID), FOREIGN KEY (Email_Address) REFERENCES Patron(Email_Address), FOREIGN KEY (ID, Copy_Number) REFERENCES Media_Item(ID, Copy_Number));
+CREATE TABLE Chapter (Name VARCHAR(50) NOT NULL, Number INT NOT NULL, ID CHAR(10) NOT NULL, Copy_Number INT NOT NULL, PRIMARY KEY (Name, Number, Copy_Number), FOREIGN KEY (ID, Copy_Number) REFERENCES Media_Item(ID,Copy_Number));
+CREATE TABLE Author (Name VARCHAR(50) NOT NULL, Age INT, PRIMARY KEY (Name));
+CREATE TABLE Actor (Name VARCHAR(50) NOT NULL, Sex CHAR(1), Age INT, PRIMARY KEY (Name));
+CREATE TABLE Game_Studio (Name VARCHAR(50) NOT NULL, PRIMARY KEY (Name));
+CREATE TABLE Artist (Name VARCHAR(50) NOT NULL, Sex CHAR(1), AGE INT, PRIMARY KEY (Name));
+CREATE TABLE Track (Name VARCHAR(50) NOT NULL, Genre VARCHAR(20), ArtistName VARCHAR(50) NOT NULL, PRIMARY KEY (Name, ArtistName), FOREIGN KEY (ArtistName) REFERENCES Artist(Name));
+CREATE TABLE Author_Writes (Name VARCHAR(50) NOT NULL, ID CHAR(10) NOT NULL, Copy_Number INT NOT NULL, PRIMARY KEY (Name, ID, Copy_Number), FOREIGN KEY (Name) REFERENCES Author(Name), FOREIGN KEY (ID, Copy_Number) REFERENCES Media_Item(ID, Copy_Number));
+CREATE TABLE Actor_Stars (Name VARCHAR(50) NOT NULL, ID CHAR(10) NOT NULL, Copy_Number INT NOT NULL, PRIMARY KEY (Name, ID, Copy_Number), FOREIGN KEY (Name) REFERENCES Actor(Name), FOREIGN KEY (ID, Copy_Number) REFERENCES Media_Item(ID, Copy_Number));
+CREATE TABLE Studio_Creates (Name VARCHAR(50) NOT NULL, ID CHAR(10) NOT NULL, Copy_Number INT NOT NULL, PRIMARY KEY (Name, ID, Copy_Number), FOREIGN KEY (Name) REFERENCES Game_Studio(Name), FOREIGN KEY (ID, Copy_Number) REFERENCES Media_Item(ID, Copy_Number));
+CREATE TABLE Artist_Authors (Name VARCHAR(50) NOT NULL, ID CHAR(10) NOT NULL, Copy_Number INT NOT NULL, PRIMARY KEY (Name, ID, Copy_Number), FOREIGN KEY (Name) REFERENCES Artist(Name), FOREIGN KEY (ID, Copy_Number) REFERENCES Media_Item(ID, Copy_Number));
+CREATE TABLE Album_Contains (Name VARCHAR(50) NOT NULL, ID CHAR(10) NOT NULL, Copy_Number INT NOT NULL, ArtistName VARCHAR(50) NOT NULL, PRIMARY KEY (Name, ID, Copy_Number, ArtistName), FOREIGN KEY (ID, Copy_Number) REFERENCES Media_Item(ID, Copy_Number), FOREIGN KEY (ArtistName,Name) REFERENCES Track(ArtistName,Name));
+>>>>>>> develop

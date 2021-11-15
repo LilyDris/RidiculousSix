@@ -1,25 +1,30 @@
 /*	Find the titles of all tracks by ARTIST released before YEAR*/
-SELECT Name
-FROM Track
-WHERE ArtistName="Name" AND Year>200
+SELECT DISTINCT Name
+FROM Album_Contains, Media_Item
+Where Media_Item.Year<2000 AND Album_Contains.ArtistName='Billy Joel';
 
 /* Give all the movies and their date of their checkout from a single patron (you choose how to designate the patron)*/
-SELECT Name
-/* Problem here - we may need to modify our ER Model to have a checkout date */
+SELECT Name, Checkout_Date
+FROM Media_Item
+WHERE email_address='librarypatron@gmail.com' and Movie_Flag=1;
 
 /*	List all the albums and their unique identifiers with less than 2 copies held by the library. */
 SELECT Name, ID
 FROM Media_Item
-WHERE Album_Flag=1 AND COUNT()
+WHERE Album_Flag=1 Copy_Number<2
 /* Not done here */
 
 /*	Give all the patrons who checked out a movie by ACTOR and the movies they checked out.*/
 SELECT First_Name, Last_Name, Media_Item.Name
 FROM Patron, Media_Item, Actor_Stars
-WHERE Patron.Email_Address = Media_Item.Email_Address AND Actor_Stars.Name = ACTOR
+WHERE Patron.Email_Address = Media_Item.Email_Address AND Actor_Stars.Name = ACTOR;
 
 /*	Find the total number of albums checked out by a single patron (you choose how to designate the patron)*/
-/* Count aggregate function here????? */
+SELECT COUNT(Media_Item)
+FROM Media_Item
+WHERE Media_Item.Email_Address='librarypatron@gmail.com' AND Album_Flag=1;
 
 /*	Find the patron who has checked out the most videos and the total number of videos they have checked out.*/
-/* Also probably an aggregate function */
+SELECT Patron, COUNT(Media_Item)
+FROM Patron, Media_Item
+WHERE Media_Item.Email_Address='librarypatron@gmail.com' AND Movie_Flag=1;
