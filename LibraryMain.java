@@ -15,8 +15,6 @@ public class LibraryMain {
     final static String menu = "MENU\n1. Search\n2. Add new records\n3. Order items\n4. Edit records\n5. Useful reports\n6. Quit";
     public static Scanner keyboard = new Scanner(System.in);
     public static int choice;
-    public static List<Artist> artistInventory = new ArrayList<>();
-    public static List<Movie> movieInventory = new ArrayList<>();
 
     /**
      * Connects to the database if it exists, creates it if it does not, and returns the connection object.

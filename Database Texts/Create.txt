@@ -9,7 +9,7 @@ CREATE TABLE Chapter (Name VARCHAR(50) NOT NULL, Number INT NOT NULL, ID CHAR(10
 CREATE TABLE Author (Name VARCHAR(50) NOT NULL, Age INT, Primary Key(Name));
 CREATE TABLE Actor (Name VARCHAR(50) NOT NULL, Sex CHAR(1), Age INT, Primary Key(Name));
 CREATE TABLE Game_Studio (Name VARCHAR(50) NOT NULL, Primary Key(Name));
-CREATE TABLE Artist (Name VARCHAR(50) NOT NULL, Primary Key(Name));
+CREATE TABLE Artist (Name VARCHAR(50) NOT NULL, Age INT, Sex CHAR(1), Primary Key(Name));
 CREATE TABLE Track (Name VARCHAR(50) NOT NULL, Genre VARCHAR(20), ArtistName VARCHAR(12) NOT NULL, Primary Key(Name, ArtistName), Foreign Key(ArtistName) REFERENCES Artist(Name));
 CREATE TABLE Author_Writes (Name VARCHAR(50) NOT NULL, ID CHAR(10) NOT NULL, Primary Key(Name, ID), Foreign Key(Name) REFERENCES Author(Name), Foreign Key(ID) REFERENCES Media_Item(ID));
 CREATE TABLE Actor_Stars (Name VARCHAR(50) NOT NULL, ID CHAR(10) NOT NULL, Primary Key(Name, ID), Foreign Key(Name) REFERENCES Actor(Name), Foreign Key(ID) REFERENCES Media_Item(ID));
