@@ -1,79 +1,5 @@
-<<<<<<< HEAD
-CREATE TABLE Media_Item (ID CHAR(10) NOT NULL, Copy_Number INT NOT NULL, Name VARCHAR(50), Year INT, Length VARCHAR(12), Audiobook_Flag INT, Album_Flag INT, Publisher VARCHAR(15), Movie_Flag INT, Director VARCHAR(20), Game_Flag INT, Console VARCHAR(20), Rating VARCHAR(10), Status INT, Order_Number INT , Due_Date DATE, Email_Address VARCHAR(50));
-
-INSERT INTO Media_Item VALUES ('1234567890', 1, "Harry Potter and the Sorcerer's Stone", 1997, '4:29:30', 1, 0, 'Bloomsbury', 0, NULL, 0, NULL, NULL, 1, NULL, NULL, 'librarypatron@gmail.com');
-INSERT INTO Media_Item VALUES ('1234567890', 2, "Harry Potter and the Sorcerer's Stone", 1997, '4:29:30', 1, 0, 'Bloomsbury', 0, NULL, 0, NULL, NULL, 0, 2011, NULL, NULL);
-INSERT INTO Media_Item VALUES ('1234567890', 3, "Harry Potter and the Sorcerer's Stone", 1997, '4:29:30', 1, 0, 'Bloomsbury', 0, NULL, 0, NULL, NULL, 0, NULL, 2021-12-23, 'librarypatron@gmail.com');
-INSERT INTO Media_Item VALUES ('4563153215', 1, 'The Name of the Wind', 2007, '6:32:15', 1, 0, 'DAW Books', 0, NULL, 0, NULL, NULL, 1, NULL, NULL, NULL);
-INSERT INTO Media_Item VALUES ('4563153215', 2, 'The Name of the Wind', 2007, '6:32:15', 1, 0, 'DAW Books', 0, NULL, 0, NULL, NULL, 1, NULL, NULL, NULL);
-INSERT INTO Media_Item VALUES ('1544752156', 1, "Harry Potter and the Sorcerer's Stone", 2001, '2:32:00', 0, 0, NULL, 1, 'Chris Columbus', 0, NULL, NULL, 1, NULL, NULL, NULL);
-INSERT INTO Media_Item VALUES ('5555555555', 1, 'Harry Potter and the Order of the Phoenix', 2003, '12:57:46', 1, 0, 'Bloomsbury', 0, NULL, 0, NULL, NULL, 1, NULL, NULL, NULL);
-INSERT INTO Media_Item VALUES ('7678906543', 1, 'Star Wars IV: A New Hope', 1977, '2:01:00', 0, 0, NULL, 1, 'George Lucas', 0, NULL, NULL, 1, NULL, NULL, NULL);
-INSERT INTO Media_Item VALUES ('7678906543', 2, 'Star Wars IV: A New Hope', 1977, '2:01:00', 0, 0, NULL, 1, 'George Lucas', 0, NULL, NULL, 1, NULL, NULL, NULL);
-INSERT INTO Media_Item VALUES ('1358594289', 1, 'Star Wars V: The Empire Strikes Back', 1980, '2:04:00', 0, 0, NULL, 1, 'Irvin Kershner', 0, NULL, NULL, 1, NULL, NULL, NULL);
-INSERT INTO Media_Item VALUES ('1358594289', 2, 'Star Wars V: The Empire Strikes Back', 1980, '2:04:00', 0, 0, NULL, 1, 'Irvin Kershner', 0, NULL, NULL, 1, NULL, NULL, NULL);
-INSERT INTO Media_Item VALUES ('1358594289', 3, 'Star Wars V: The Empire Strikes Back', 1980, '2:04:00', 0, 0, NULL, 1, 'Irvin Kershner', 0, NULL, NULL, 1, NULL, NULL, NULL);
-INSERT INTO Media_Item VALUES ('8752312283', 1, 'Star Wars VI: Return of the Jedi', 1983, '2:11:00', 0, 0, NULL, 1, '	Richard Marquand', 0, NULL, NULL, 1, NULL, NULL, NULL);
-INSERT INTO Media_Item VALUES ('6421358790', 1, 'The Legend of Zelda: Breath of the Wild', 2017, '40:00:00', 0, 0, NULL, 0, NULL, 1, 'Nintendo Switch', 'E10+', 0, NULL, 2020-08-23, 'patron2@yahoo.com');
-INSERT INTO Media_Item VALUES ('6312832925', 1, "Assassin's Creed IV: Black Flag", 2013, '30:00:00', 0, 0, NULL, 0, NULL, 1, 'Playstation 4', 'M', 1, NULL, NULL, NULL);
-INSERT INTO Media_Item VALUES ('6312832925', 2, "Assassin's Creed IV: Black Flag", 2013, '30:00:00', 0, 0, NULL, 0, NULL, 1, 'Playstation 4', 'M', 0, 4021, NULL, NULL);
-INSERT INTO Media_Item VALUES ('7541236554', 1, "Assassin's Creed III", 2012, '33:15:00', 0, 0, NULL, 0, NULL, 1, 'Xbox One', 'M', 1, NULL, NULL, NULL);
-INSERT INTO Media_Item VALUES ('2469762156', 1, 'A Rush of Blood to the Head', 2002, '54:08', 0, 1, 'Parlophone', 0, NULL, 0, NULL, NULL, 1, NULL, NULL, NULL);
-INSERT INTO Media_Item VALUES ('2469762156', 2, 'A Rush of Blood to the Head', 2002, '54:08', 0, 1, 'Parlophone', 0, NULL, 0, NULL, NULL, 1, NULL, NULL, NULL);
-INSERT INTO Media_Item VALUES ('1265472654', 1, 'Greatest Hits', 1985, '1:53:45', 0, 1, 'Columbia', 0, NULL, 0, NULL, NULL, 1, NULL, NULL, NULL);
-
-CREATE TABLE Media_Genres (ID CHAR(10) NOT NULL, Genres VARCHAR(20) NOT NULL);
-
-INSERT INTO Media_Genres VALUES ('1234567890', 'Fantasy');
-INSERT INTO Media_Genres VALUES ('4563153215', 'Fantasy');
-INSERT INTO Media_Genres VALUES ('1544752156', 'Fantasy');
-INSERT INTO Media_Genres VALUES ('1544752156', 'Family');
-INSERT INTO Media_Genres VALUES ('5555555555', 'Fantasy');
-INSERT INTO Media_Genres VALUES ('7678906543', 'Sci-Fi');
-INSERT INTO Media_Genres VALUES ('7678906543', 'Action');
-INSERT INTO Media_Genres VALUES ('1358594289', 'Sci-Fi');
-INSERT INTO Media_Genres VALUES ('1358594289', 'Action');
-INSERT INTO Media_Genres VALUES ('8752312283', 'Sci-Fi');
-INSERT INTO Media_Genres VALUES ('8752312283', 'Action');
-INSERT INTO Media_Genres VALUES ('6421358790', 'Action');
-INSERT INTO Media_Genres VALUES ('6421358790', 'Adventure');
-INSERT INTO Media_Genres VALUES ('6312832925', 'Action');
-INSERT INTO Media_Genres VALUES ('6312832925', 'Adventure');
-INSERT INTO Media_Genres VALUES ('6312832925', 'Stealth');
-INSERT INTO Media_Genres VALUES ('7541236554', 'Action');
-INSERT INTO Media_Genres VALUES ('7541236554', 'Adventure');
-INSERT INTO Media_Genres VALUES ('7541236554', 'Stealth');
-INSERT INTO Media_Genres VALUES ('2469762156', 'Rock');
-INSERT INTO Media_Genres VALUES ('1265472654', 'Rock');
-
-CREATE TABLE Artist_Genres (Name VARCHAR(50) NOT NULL, Genres VARCHAR(20) NOT NULL);
-
-INSERT INTO Artist_Genres VALUES ('Coldplay', 'Rock');
-INSERT INTO Artist_Genres VALUES ('Billy Joel', 'Rock');
-INSERT INTO Artist_Genres VALUES ('Taylor Swift', 'Country');
-INSERT INTO Artist_Genres VALUES ('Taylor Swift', 'Pop');
-INSERT INTO Artist_Genres VALUES ('Journey', 'Rock');
-INSERT INTO Artist_Genres VALUES ('AC/DC', 'Rock');
-INSERT INTO Artist_Genres VALUES ('Bee Gees', 'Disco');
-INSERT INTO Artist_Genres VALUES ('Bee Gees', 'Soul');
-INSERT INTO Artist_Genres VALUES ('Bon Jovi', 'Rock');
-INSERT INTO Artist_Genres VALUES ('Bruno Mars', 'Pop');
-INSERT INTO Artist_Genres VALUES ('Bruno Mars', 'Reggae');
-INSERT INTO Artist_Genres VALUES ('Elton John', 'Rock');
-INSERT INTO Artist_Genres VALUES ('Elton John', 'Pop');
-INSERT INTO Artist_Genres VALUES ('Fun', 'Alternative');
-INSERT INTO Artist_Genres VALUES ('Gotye', 'Alternative');
-INSERT INTO Artist_Genres VALUES ('Green Day', 'Rock');
-INSERT INTO Artist_Genres VALUES ('John Legend', 'R&B');
-INSERT INTO Artist_Genres VALUES ('John Legend', 'Soul');
-INSERT INTO Artist_Genres VALUES ('Maroon 5', 'Rock');
-INSERT INTO Artist_Genres VALUES ('Plain White Ts', 'Rock');
-
-CREATE TABLE Branch (City VARCHAR(15) NOT NULL, State VARCHAR(15) NOT NULL);
-=======
 /*Must insert in this exact order to not break foreign key restraints, must also enter in only a section at a time to
 prevent errors*/
->>>>>>> develop
 
 INSERT INTO Branch VALUES ('Cleveland', 'Ohio');
 INSERT INTO Branch VALUES ('Columbus', 'Ohio');
@@ -96,76 +22,6 @@ INSERT INTO Branch VALUES ('Tuscon', 'Arizona');
 INSERT INTO Branch VALUES ('Dublin', 'Ohio');
 INSERT INTO Branch VALUES ('Montgomery', 'Alabama');
 
-<<<<<<< HEAD
-CREATE TABLE "Order" (Order_Number INT NOT NULL, Price VARCHAR(10), Quantity INT, Arrival_Date DATE, City VARCHAR(12) NOT NULL, State VARCHAR(12) NOT NULL);
-
-
-
-CREATE TABLE Patron (Email_Address VARCHAR(50) NOT NULL, First_Name VARCHAR(20) NOT NULL, Last_Name VARCHAR(20) NOT NULL, Address VARCHAR(50), City VARCHAR(12) NOT NULL, State VARCHAR(12) NOT NULL);
-
-
-
-CREATE TABLE Chapter (Name VARCHAR(50) NOT NULL, Number INT NOT NULL, ID CHAR(10) NOT NULL);
-
-
-
-CREATE TABLE Author (Name VARCHAR(50) NOT NULL, Age INT);
-
-
-
-CREATE TABLE Actor (Name VARCHAR(50) NOT NULL, Sex CHAR(1) NOT NULL, Age INT);
-
-
-
-CREATE TABLE Game_Studio (Name VARCHAR(50) NOT NULL);
-
-
-
-CREATE TABLE Artist (Name VARCHAR(50) NOT NULL);
-
-INSERT INTO Artist VALUES ('Coldplay');
-INSERT INTO Artist VALUES ('Billy Joel');
-INSERT INTO Artist VALUES ('Post Malone');
-INSERT INTO Artist VALUES ('Taylor Swift');
-INSERT INTO Artist VALUES ('Journey');
-INSERT INTO Artist VALUES ('AC/DC');
-INSERT INTO Artist VALUES ('Billie Eilish');
-INSERT INTO Artist VALUES ('Bee Gees');
-INSERT INTO Artist VALUES ('Bon Jovi');
-INSERT INTO Artist VALUES ('Queen');
-INSERT INTO Artist VALUES ('Bruno Mars');
-INSERT INTO Artist VALUES ('Smash Mouth');
-INSERT INTO Artist VALUES ('Elton John');
-INSERT INTO Artist VALUES ('Fun');
-INSERT INTO Artist VALUES ('Gotye');
-INSERT INTO Artist VALUES ('Green Day');
-INSERT INTO Artist VALUES ('Ed Sheeran');
-INSERT INTO Artist VALUES ('John Legend');
-INSERT INTO Artist VALUES ('Maroon 5');
-INSERT INTO Artist VALUES ('Plain White T's');
-
-CREATE TABLE Track (Name VARCHAR(50) NOT NULL, Genre VARCHAR(20), ArtistName VARCHAR(50) NOT NULL);
-
-
-
-CREATE TABLE Author_Writes (Name VARCHAR(50) NOT NULL, ID CHAR(10) NOT NULL);
-
-
-
-CREATE TABLE Actor_Stars (Name VARCHAR(50) NOT NULL, ID CHAR(10) NOT NULL);
-
-
-
-CREATE TABLE Studio_Creates (Name VARCHAR(50) NOT NULL, ID CHAR(10) NOT NULL);
-
-
-
-CREATE TABLE Artist_Authors (Name VARCHAR(50) NOT NULL, ID CHAR(10) NOT NULL);
-
-
-
-CREATE TABLE Album_Contains (Name VARCHAR(50) NOT NULL, ID CHAR(10) NOT NULL);
-=======
 INSERT INTO Patron VALUES ('librarypatron@gmail.com', 'Jacob', 'Woodhouse', '55 W Lane Avenue, Columbus, OH 43210', 'Columbus', 'Ohio');
 INSERT INTO Patron VALUES ('patron2@yahoo.com', 'Lily', 'Driscoll', '123 Fake Street, Columbus, OH 43201', 'Columbus', 'Ohio');
 INSERT INTO Patron VALUES ('myemail@gmail.com', 'Isaac', 'Mattern', '2972 N High Street, Columbus, OH 43210', 'Columbus', 'Ohio');
@@ -208,47 +64,26 @@ INSERT INTO Orders VALUES (1, '$42', 3, 2022-01-29, 'Iowa City', 'Iowa');
 INSERT INTO Orders VALUES (390, '$100', 10, 2022-02-14, 'Toledo', 'Ohio');
 INSERT INTO Orders VALUES (5647, '$20', 2, 2021-12-17, 'Toledo', 'Ohio');
 
-INSERT INTO Media_Item VALUES ('1234567890', 1, "Harry Potter and the Sorcerer's Stone", 1997, 269, 1, 0, 'Bloomsbury', 0, NULL, 0, NULL, NULL, 1, NULL, 'Columbus', 'Ohio');
-INSERT INTO Media_Item VALUES ('1234567890', 2, "Harry Potter and the Sorcerer's Stone", 1997, 269, 1, 0, 'Bloomsbury', 0, NULL, 0, NULL, NULL, 0, 2011, 'Cleveland', 'Ohio');
-INSERT INTO Media_Item VALUES ('1234567890', 3, "Harry Potter and the Sorcerer's Stone", 1997, 269, 1, 0, 'Bloomsbury', 0, NULL, 0, NULL, NULL, 0, NULL, 'Toledo', 'Ohio');
-INSERT INTO Media_Item VALUES ('4563153215', 1, 'The Name of the Wind', 2007, 392, 1, 0, 'DAW Books', 0, NULL, 0, NULL, NULL, 1, NULL, 'Chicago', 'Illinois');
-INSERT INTO Media_Item VALUES ('4563153215', 2, 'The Name of the Wind', 2007, 392, 1, 0, 'DAW Books', 0, NULL, 0, NULL, NULL, 1, NULL, 'Chicago', 'Illinois');
-INSERT INTO Media_Item VALUES ('1544752156', 1, "Harry Potter and the Sorcerer's Stone", 2001, 152, 0, 0, NULL, 1, 'Chris Columbus', 0, NULL, NULL, 1, NULL, 'Cincinnati', 'Ohio');
-INSERT INTO Media_Item VALUES ('5555555555', 1, 'Harry Potter and the Order of the Phoenix', 2003, 777, 1, 0, 'Bloomsbury', 0, NULL, 0, NULL, NULL, 1, NULL, 'Memphis', 'Tennessee');
-INSERT INTO Media_Item VALUES ('7678906543', 1, 'Star Wars IV: A New Hope', 1977, 121, 0, 0, NULL, 1, 'George Lucas', 0, NULL, NULL, 1, NULL, 'Phoenix', 'Arizona');
-INSERT INTO Media_Item VALUES ('7678906543', 2, 'Star Wars IV: A New Hope', 1977, 121, 0, 0, NULL, 1, 'George Lucas', 0, NULL, NULL, 1, NULL, 'Madison', 'Wisconsin');
-INSERT INTO Media_Item VALUES ('1358594289', 1, 'Star Wars V: The Empire Strikes Back', 1980, 124, 0, 0, NULL, 1, 'Irvin Kershner', 0, NULL, NULL, 1, NULL, 'Buffalo', 'New York');
-INSERT INTO Media_Item VALUES ('1358594289', 2, 'Star Wars V: The Empire Strikes Back', 1980, 124, 0, 0, NULL, 1, 'Irvin Kershner', 0, NULL, NULL, 1, NULL, 'New York', 'New York');
-INSERT INTO Media_Item VALUES ('1358594284', 3, 'Star Wars III: Revenge of the Sith', 1980, 124, 0, 0, NULL, 1, 'George Lucas', 0, NULL, NULL, 1, NULL, 'Boston', 'Massachusetts');
-INSERT INTO Media_Item VALUES ('8752312283', 1, 'Star Wars VI: Return of the Jedi', 1983, 131, 0, 0, NULL, 1, 'Richard Marquand', 0, NULL, NULL, 1, NULL, 'Tuscon', 'Arizona');
-INSERT INTO Media_Item VALUES ('6421358790', 1, 'The Legend of Zelda: Breath of the Wild', 2017, 2400, 0, 0, NULL, 0, NULL, 1, 'Nintendo Switch', 'E10+', 0, NULL, 'Columbus', 'Ohio');
-INSERT INTO Media_Item VALUES ('6312832925', 1, "Assassin's Creed IV: Black Flag", 2013, 1800, 0, 0, NULL, 0, NULL, 1, 'Playstation 4', 'M', 1, NULL, 'Lexington', 'Kentucky');
-INSERT INTO Media_Item VALUES ('6312832925', 2, "Assassin's Creed IV: Black Flag", 2013, 1800, 0, 0, NULL, 0, NULL, 1, 'Playstation 4', 'M', 0, 4021, 'Iowa City', 'Iowa');
-INSERT INTO Media_Item VALUES ('7541236554', 1, "Assassin's Creed III", 2012, 1995, 0, 0, NULL, 0, NULL, 1, 'Xbox One', 'M', 1, NULL, 'San Francisco', 'California');
-INSERT INTO Media_Item VALUES ('2469762156', 1, 'A Rush of Blood to the Head', 2002, 54, 0, 1, 'Parlophone', 0, NULL, 0, NULL, NULL, 1, NULL, 'Los Angeles', 'California');
-INSERT INTO Media_Item VALUES ('2469762156', 2, 'A Rush of Blood to the Head', 2002, 54, 0, 1, 'Parlophone', 0, NULL, 0, NULL, NULL, 1, NULL, 'Cleveland', 'Ohio');
-INSERT INTO Media_Item VALUES ('1265472654', 1, 'Greatest Hits', 1985, 113, 0, 1, 'Columbia', 0, NULL, 0, NULL, NULL, 1, NULL, 'Cleveland', 'Ohio');
-
-INSERT INTO Checkouts VALUES ('1111111111', '2021-11-08', '2021-10-08', 'librarypatron@gmail.com', '6421358790', 1);
-INSERT INTO Checkouts VALUES ('1546321548', '2021-10-02', '2021-09-02', 'anotheremail@hotmail.com', '6421358790', 1);
-INSERT INTO Checkouts VALUES ('8515654785', '2021-11-08', '2021-10-08', 'librarypatron@gmail.com', '1544752156', 1);
-INSERT INTO Checkouts VALUES ('4584521569', '2021-12-08', '2021-11-08', 'patron2@yahoo.com', '2469762156', 2);
-INSERT INTO Checkouts VALUES ('1548965421', '2021-11-30', '2021-10-30', 'email6@yahoo.com', '1265472654', 1);
-INSERT INTO Checkouts VALUES ('8564215210', '2018-11-18', '2018-10-18', 'dogs4lyfe@buckeyemail.osu.edu', '6312832925', 1);
-INSERT INTO Checkouts VALUES ('9541256263', '2012-02-04', '2012-01-04', 'cats4lyfe@buckeyemail.osu.edu', '6312832925', 2);
-INSERT INTO Checkouts VALUES ('7851235152', '2011-05-22', '2011-04-22', 'cats4lyfe@buckeyemail.osu.edu', '1234567890', 3);
-INSERT INTO Checkouts VALUES ('5412365256', '2010-11-13', '2010-10-13', 'address@gmail.com', '1234567890', 3);
-INSERT INTO Checkouts VALUES ('1453269874', '2009-09-20', '2009-08-20', 'anotheremail@hotmail.com', '1234567890', 2);
-INSERT INTO Checkouts VALUES ('8549631254', '2008-10-21', '2008-09-21', 'address@gmail.com', '5555555555', 1);
-INSERT INTO Checkouts VALUES ('2152021532', '2007-06-08', '2007-05-08', 'gamma@yahoo.com', '7678906543', 1);
-INSERT INTO Checkouts VALUES ('7854120124', '2006-07-10', '2006-06-10', 'creativity@gmail.com', '1358594284', 3);
-INSERT INTO Checkouts VALUES ('1652301254', '2005-12-08', '2005-11-08', 'secrets@gmail.com', '8752312283', 1);
-INSERT INTO Checkouts VALUES ('8754213695', '2005-01-23', '2004-12-23', 'librarypatron@gmail.com', '7678906543', 2);
-INSERT INTO Checkouts VALUES ('1254621525', '2004-03-03', '2004-02-03', 'address@gmail.com', '2469762156', 2);
-INSERT INTO Checkouts VALUES ('1236548785', '2003-02-01', '2003-01-01', 'family@yahoo.com', '1358594289', 2);
-INSERT INTO Checkouts VALUES ('9516564525', '2002-08-18', '2002-07-18', 'bestasgardian@gmail.com', '4563153215', 1);
-INSERT INTO Checkouts VALUES ('9875452515', '2001-06-21', '2001-05-21', 'fisherman@gmail.com', '4563153215', 1);
-INSERT INTO Checkouts VALUES ('5465201230', '2000-05-25', '2000-04-25', 'child@yahoo.com', '4563153215', 1);
+INSERT INTO Media_Item VALUES ('1234567890', 1, "Harry Potter and the Sorcerer's Stone", 1997, '4:29:30', 1, 0, 'Bloomsbury', 0, NULL, 0, NULL, NULL, 1, NULL, NULL, NULL, NULL);
+INSERT INTO Media_Item VALUES ('1234567890', 2, "Harry Potter and the Sorcerer's Stone", 1997, '4:29:30', 1, 0, 'Bloomsbury', 0, NULL, 0, NULL, NULL, 0, 2011, NULL, NULL, NULL);
+INSERT INTO Media_Item VALUES ('1234567890', 3, "Harry Potter and the Sorcerer's Stone", 1997, '4:29:30', 1, 0, 'Bloomsbury', 0, NULL, 0, NULL, NULL, 0, NULL, 2021-12-23, 2021-11-23, 'librarypatron@gmail.com');
+INSERT INTO Media_Item VALUES ('4563153215', 1, 'The Name of the Wind', 2007, '6:32:15', 1, 0, 'DAW Books', 0, NULL, 0, NULL, NULL, 1, NULL, NULL, NULL, NULL);
+INSERT INTO Media_Item VALUES ('4563153215', 2, 'The Name of the Wind', 2007, '6:32:15', 1, 0, 'DAW Books', 0, NULL, 0, NULL, NULL, 1, NULL, NULL, NULL, NULL);
+INSERT INTO Media_Item VALUES ('1544752156', 1, "Harry Potter and the Sorcerer's Stone", 2001, '2:32:00', 0, 0, NULL, 1, 'Chris Columbus', 0, NULL, NULL, 1, NULL, NULL, NULL, NULL);
+INSERT INTO Media_Item VALUES ('5555555555', 1, 'Harry Potter and the Order of the Phoenix', 2003, '12:57:46', 1, 0, 'Bloomsbury', 0, NULL, 0, NULL, NULL, 1, NULL, NULL, NULL, NULL);
+INSERT INTO Media_Item VALUES ('7678906543', 1, 'Star Wars IV: A New Hope', 1977, '2:01:00', 0, 0, NULL, 1, 'George Lucas', 0, NULL, NULL, 1, NULL, NULL, NULL, NULL);
+INSERT INTO Media_Item VALUES ('7678906543', 2, 'Star Wars IV: A New Hope', 1977, '2:01:00', 0, 0, NULL, 1, 'George Lucas', 0, NULL, NULL, 1, NULL, NULL, NULL, NULL);
+INSERT INTO Media_Item VALUES ('1358594289', 1, 'Star Wars V: The Empire Strikes Back', 1980, '2:04:00', 0, 0, NULL, 1, 'Irvin Kershner', 0, NULL, NULL, 1, NULL, NULL, NULL, NULL);
+INSERT INTO Media_Item VALUES ('1358594289', 2, 'Star Wars V: The Empire Strikes Back', 1980, '2:04:00', 0, 0, NULL, 1, 'Irvin Kershner', 0, NULL, NULL, 1, NULL, NULL, NULL, NULL);
+INSERT INTO Media_Item VALUES ('1358594284', 3, 'Star Wars III: Revenge of the Sith', 1980, '2:04:00', 0, 0, NULL, 1, 'IGeorge Lucas', 0, NULL, NULL, 1, NULL, NULL, NULL, NULL);
+INSERT INTO Media_Item VALUES ('8752312283', 1, 'Star Wars VI: Return of the Jedi', 1983, '2:11:00', 0, 0, NULL, 1, 'Richard Marquand', 0, NULL, NULL, 1, NULL, NULL, NULL, NULL);
+INSERT INTO Media_Item VALUES ('6421358790', 1, 'The Legend of Zelda: Breath of the Wild', 2017, '40:00:00', 0, 0, NULL, 0, NULL, 1, 'Nintendo Switch', 'E10+', 0, NULL, 2020-08-23, 2020-07-23, 'patron2@yahoo.com');
+INSERT INTO Media_Item VALUES ('6312832925', 1, "Assassin's Creed IV: Black Flag", 2013, '30:00:00', 0, 0, NULL, 0, NULL, 1, 'Playstation 4', 'M', 1, NULL, NULL, NULL, NULL);
+INSERT INTO Media_Item VALUES ('6312832925', 2, "Assassin's Creed IV: Black Flag", 2013, '30:00:00', 0, 0, NULL, 0, NULL, 1, 'Playstation 4', 'M', 0, 4021, NULL, NULL, NULL);
+INSERT INTO Media_Item VALUES ('7541236554', 1, "Assassin's Creed III", 2012, '33:15:00', 0, 0, NULL, 0, NULL, 1, 'Xbox One', 'M', 1, NULL, NULL, NULL, NULL);
+INSERT INTO Media_Item VALUES ('2469762156', 1, 'A Rush of Blood to the Head', 2002, '54:08', 0, 1, 'Parlophone', 0, NULL, 0, NULL, NULL, 1, NULL, NULL, NULL, NULL);
+INSERT INTO Media_Item VALUES ('2469762156', 2, 'A Rush of Blood to the Head', 2002, '54:08', 0, 1, 'Parlophone', 0, NULL, 0, NULL, NULL, 1, NULL, NULL, NULL, NULL);
+INSERT INTO Media_Item VALUES ('1265472654', 1, 'Greatest Hits', 1985, '1:53:45', 0, 1, 'Columbia', 0, NULL, 0, NULL, NULL, 1, NULL, NULL, NULL, NULL);
 
 INSERT INTO Author VALUES ('Joanne K. Rowling', 56);
 INSERT INTO Author VALUES ('Patrick James Rothfuss', 48);
@@ -313,27 +148,26 @@ INSERT INTO Game_Studio VALUES ('FromSoftware');
 INSERT INTO Game_Studio VALUES ('Valve');
 INSERT INTO Game_Studio VALUES ('Rockstar Games');
 
-INSERT INTO Artist VALUES ('Coldplay', NULL, NULL);
-INSERT INTO Artist VALUES ('Billy Joel', 'M', 72);
-INSERT INTO Artist VALUES ('Post Malone', 'M', 26);
-INSERT INTO Artist VALUES ('Taylor Swift', 'F', 31);
-INSERT INTO Artist VALUES ('Journey', NULL, NULL);
-INSERT INTO Artist VALUES ('AC/DC', NULL, NULL);
-INSERT INTO Artist VALUES ('Billie Eilish', 'F', 19);
-INSERT INTO Artist VALUES ('Bee Gees', NULL, NULL);
-INSERT INTO Artist VALUES ('Bon Jovi', NULL, NULL);
-INSERT INTO Artist VALUES ('Queen', NULL, NULL);
-INSERT INTO Artist VALUES ('Bruno Mars', 'M', 36);
-INSERT INTO Artist VALUES ('Smash Mouth', NULL, NULL);
-INSERT INTO Artist VALUES ('Elton John', 'M', 74);
-INSERT INTO Artist VALUES ('Fun', NULL, NULL);
-INSERT INTO Artist VALUES ('Gotye', 'M', 41);
-INSERT INTO Artist VALUES ('Green Day', NULL, NULL);
-INSERT INTO Artist VALUES ('Ed Sheeran', 'M', 30);
-INSERT INTO Artist VALUES ('John Legend', 'M', 42);
-INSERT INTO Artist VALUES ('Maroon 5', NULL, NULL);
-INSERT INTO Artist VALUES ("Plain White T's", NULL, NULL);
->>>>>>> develop
+INSERT INTO Artist VALUES ('Coldplay');
+INSERT INTO Artist VALUES ('Billy Joel');
+INSERT INTO Artist VALUES ('Post Malone');
+INSERT INTO Artist VALUES ('Taylor Swift');
+INSERT INTO Artist VALUES ('Journey');
+INSERT INTO Artist VALUES ('AC/DC');
+INSERT INTO Artist VALUES ('Billie Eilish');
+INSERT INTO Artist VALUES ('Bee Gees');
+INSERT INTO Artist VALUES ('Bon Jovi');
+INSERT INTO Artist VALUES ('Queen');
+INSERT INTO Artist VALUES ('Bruno Mars');
+INSERT INTO Artist VALUES ('Smash Mouth');
+INSERT INTO Artist VALUES ('Elton John');
+INSERT INTO Artist VALUES ('Fun');
+INSERT INTO Artist VALUES ('Gotye');
+INSERT INTO Artist VALUES ('Green Day');
+INSERT INTO Artist VALUES ('Ed Sheeran');
+INSERT INTO Artist VALUES ('John Legend');
+INSERT INTO Artist VALUES ('Maroon 5');
+INSERT INTO Artist VALUES ("Plain White T's");
 
 INSERT INTO Artist_Genres VALUES ('Coldplay', 'Rock');
 INSERT INTO Artist_Genres VALUES ('Billy Joel', 'Rock');
