@@ -93,7 +93,7 @@ public class LibraryMain {
         while (choice != 6) {
             System.out.println(menu);
             System.out.println("Enter number option would you like?");
-            choice = keyboard.nextInt();keyboard.nextLine();
+            choice = Integer.parseInt(keyboard.nextLine());
             
             switch (choice) {
                 case 1:
@@ -128,7 +128,7 @@ public class LibraryMain {
                 + "4. Most listened to artist in the database\n" + "5. Patron who has checked out the most videos";
         System.out.println(reportMenu);
         System.out.println("Enter number option would you like?");
-        choice = keyboard.nextInt();keyboard.nextLine();
+        choice = Integer.parseInt(keyboard.nextLine());
         PreparedStatement stmt=null;
     	ResultSet rs=null;
         switch (choice) {
@@ -273,7 +273,7 @@ public class LibraryMain {
         final String editMenu = "1. Edit an Artist";
         System.out.println(editMenu);
         System.out.println("Enter number option would you like?");
-        choice = keyboard.nextInt();keyboard.nextLine();
+        choice = Integer.parseInt(keyboard.nextLine());
         
        
         switch (choice){
@@ -283,7 +283,7 @@ public class LibraryMain {
 			
 				
 				System.out.println("What would you like to edit about the artist?\n1. Name\n2. Age\n3. Sex");
-				int editChoice = keyboard.nextInt();keyboard.nextLine();
+				int editChoice = Integer.parseInt(keyboard.nextLine());
 				switch (editChoice){
 					case 1:
 						System.out.println("Enter new name:");
@@ -312,7 +312,7 @@ public class LibraryMain {
 						stmt=null;
 						rs=0;
 						System.out.println("Enter new age:");
-						int age = keyboard.nextInt();keyboard.nextLine();
+						int age = Integer.parseInt(keyboard.nextLine());
 						
 				try {
 	        		stmt= conn.prepareStatement("UPDATE Artist SET Age=? WHERE Name= ?");
@@ -377,7 +377,7 @@ public class LibraryMain {
         final String orderMenu = "1. Order a Movie\n2. Activate item recieved";
         System.out.println(orderMenu);
         System.out.println("Enter number option would you like?");
-        choice = keyboard.nextInt();keyboard.nextLine();
+        choice = Integer.parseInt(keyboard.nextLine());
         switch (choice){
         case 1:
 			System.out.println("What movie do you want to order?");
@@ -425,7 +425,7 @@ public class LibraryMain {
 			System.out.println("Order number: ");
 			orderNum=keyboard.nextInt(); keyboard.nextLine();
 			System.out.println("Media ID for Movie: ");
-			int id=keyboard.nextInt();keyboard.nextLine();
+			int id=Integer.parseInt(keyboard.nextLine());
 			
         	try {
         		stmt2=conn.prepareStatement( "SELECT City,State FROM Orders WHERE Orders_Number=?");
@@ -466,7 +466,7 @@ public class LibraryMain {
         final String recordsMenu = "1. Add an artist\n2. Add a Track";
         System.out.println(recordsMenu);
         System.out.println("Enter number option would you like?");
-        choice = keyboard.nextInt();keyboard.nextLine();
+        choice = Integer.parseInt(keyboard.nextLine());
         switch (choice) {
 
         case 1:
@@ -535,7 +535,7 @@ public class LibraryMain {
         final String searchMenu = "1. Artist\n2. Track";
         System.out.println(searchMenu);
         System.out.println("Enter number option would you like?");
-        choice = keyboard.nextInt();keyboard.nextLine();
+        choice = Integer.parseInt(keyboard.nextLine());
 
       
         switch (choice) {
@@ -545,7 +545,7 @@ public class LibraryMain {
         	ResultSet artistResult= null;
 			try {
 				
-				keyboard.nextLine();
+				
 				getArtist = conn.prepareStatement("SELECT * FROM Artist WHERE Name = ?" );
 				System.out.println("Enter name of Artist:");
 	            String artist=keyboard.nextLine();
@@ -556,8 +556,8 @@ public class LibraryMain {
 	            	System.out.println("No artist found");
 	            }else {
 	            	System.out.println("Name: "+artist
-	            			+ "Age: "+artistResult.getInt(2)
-	            			+ "Sex: "+artistResult.getString(3));
+	            			+ " Age: "+artistResult.getInt(3)
+	            			+ " Sex: "+artistResult.getString(2));
 	            }
 	            while(artistResult.next()){  
 	            	System.out.println(artistResult.getString(1));  
