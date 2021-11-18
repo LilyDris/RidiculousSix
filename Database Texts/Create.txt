@@ -16,3 +16,13 @@ CREATE TABLE Studio_Creates (Name VARCHAR(50) NOT NULL, ID CHAR(10) NOT NULL, Co
 CREATE TABLE Artist_Authors (Name VARCHAR(50) NOT NULL, ID CHAR(10) NOT NULL, Copy_Number INT NOT NULL, PRIMARY KEY (Name, ID, Copy_Number), FOREIGN KEY (Name) REFERENCES Artist(Name), FOREIGN KEY (ID, Copy_Number) REFERENCES Media_Item(ID, Copy_Number));
 CREATE TABLE Album_Contains (Name VARCHAR(50) NOT NULL, ID CHAR(10) NOT NULL, Copy_Number INT NOT NULL, ArtistName VARCHAR(50) NOT NULL, PRIMARY KEY (Name, ID, Copy_Number, ArtistName), FOREIGN KEY (ID, Copy_Number) REFERENCES Media_Item(ID, Copy_Number), FOREIGN KEY (ArtistName,Name) REFERENCES Track(ArtistName,Name));
 CREATE TABLE Checkouts (Checkout_ID CHAR(10) NOT NULL, Due_Date DATE NOT NULL, Checkout_Date Date NOT NULL, Email_Address VARCHAR(50) NOT NULL, ID CHAR(10) NOT NULL, Copy_Number INT NOT NULL, PRIMARY KEY (Checkout_ID), FOREIGN KEY (Email_Address) REFERENCES Patron(Email_Address), FOREIGN KEY (ID, Copy_Number) REFERENCES Media_Item(ID, Copy_Number));
+
+SELECT Media_Item.Name, Author_Writes.Name as Author, COUNT(DISTINCT Chapter.Name) as Total_Chapters
+FROM Media_Item, Author_Writes, Chapter
+WHERE Author_Writes.ID=Chapter.ID AND Audiobook_Flag=1 AND Chapter.ID=Media_Item.ID
+GROUP By Media_Item.Name;
+
+SELECT First_Name, Last_Name ,COUNT(Checkout_ID) as Total_Checkedout
+FROM Patron, Checkouts
+Where Patron.Email_Address=Checkouts.Email_Address
+GROUP BY Last_Name;
