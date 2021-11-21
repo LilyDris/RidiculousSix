@@ -157,9 +157,9 @@ public class LibraryMain {
         	System.out.println("Patron email to search: ");
         	String patron=keyboard.nextLine();
         	try {
-        		stmt= conn.prepareStatement("SELECT COUNT(Name)\r\n"
-        				+ "FROM Media_Item\r\n"
-        				+ "WHERE Media_Item.Email_Address=? AND Album_Flag=1");
+        		stmt= conn.prepareStatement("SELECT COUNT(DISTINCT Media_Item.Name)\r\n"
+        				+ "FROM Checkouts, Media_Item\r\n"
+        				+ "Where Email_Address=? AND Album_Flag=1");
         		
         		stmt.setString(1,patron);
         		rs= stmt.executeQuery();
@@ -168,7 +168,7 @@ public class LibraryMain {
         		
         		while(rs.next()) {
         			
-        			System.out.println(rs.getString(1));
+        			System.out.println(rs.getInt(1));
         		}
         		
         	}catch(SQLException e) {
