@@ -238,10 +238,11 @@ public class LibraryMain {
         case 5:
         	//[Checkpoint #4]: Find the patron who has checked out the most videos and the total number of videos they have checked out. 
         	try {
-        		stmt= conn.prepareStatement("SELECT Email_Address,COUNT(Name)\r\n"
-        				+ "FROM  Media_Item\r\n"
-        				+ "WHERE  Movie_Flag=1 AND Email_Address!='NULL'\r\n"
-        				+ "Group By Email_Address\r\n"
+        		stmt= conn.prepareStatement("SELECT COUNT(*), Email_Address\r\n"
+        				+ "FROM Checkouts, Media_Item\r\n"
+        				+ "WHERE Checkouts.ID=Media_Item.ID AND Checkouts.Copy_Number=Media_Item.Copy_Number AND Movie_Flag=1\r\n"
+        				+ "GROUP BY Email_Address\r\n"
+        				+ "ORDER BY COUNT(*) DESC\r\n"
         				+ "LIMIT 1");
         		
         	
@@ -251,7 +252,7 @@ public class LibraryMain {
         		
         		while(rs.next()) {
         			
-        			System.out.println("Patron: "+rs.getString(1)+" has checked out the most videos: "+rs.getInt(2));
+        			System.out.println("Patron: "+rs.getString(2)+" has checked out the most videos: "+rs.getInt(1));
         		}
         		
         	}catch(SQLException e) {
