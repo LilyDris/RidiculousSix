@@ -6,3 +6,4 @@ META-INF/maven/org.xerial/sqlite-jdbc/.settings/org.eclipse.core.resources.prefs
 *.prefs
 .classpath
 .classpath
+.classpath
