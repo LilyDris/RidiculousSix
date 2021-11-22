@@ -1,2 +1,8 @@
 *.class
 /.metadata/
+META-INF/maven/org.xerial/sqlite-jdbc/.classpath
+META-INF/maven/org.xerial/sqlite-jdbc/.project
+META-INF/maven/org.xerial/sqlite-jdbc/.settings/org.eclipse.core.resources.prefs
+*.prefs
+.classpath
+.classpath
