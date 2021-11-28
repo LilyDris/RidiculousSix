@@ -1,0 +1,517 @@
+﻿ID,Copy_Number,Name,Year,Length,Audiobook_Flag,Album_Flag,Publisher,Movie_Flag,Director,Game_Flag,Console,Rating,Status,Orders_Number,City,State
+1234567890,1,Harry Potter and the Sorcerer's Stone,1997,269,1,0,Bloomsbury,0,,0,,,1,2011,Columbus,Ohio
+1234567890,2,Harry Potter and the Sorcerer's Stone,1997,269,1,0,Bloomsbury,0,,0,,,0,2011,Cleveland,Ohio
+1234567890,3,Harry Potter and the Sorcerer's Stone,1997,269,1,0,Bloomsbury,0,,0,,,0,2011,Toledo,Ohio
+4563153215,1,The Name of the Wind,2007,392,1,0,DAW Books,0,,0,,,1,2011,Chicago,Illinois
+4563153215,2,The Name of the Wind,2007,392,1,0,DAW Books,0,,0,,,1,2011,Chicago,Illinois
+5555555555,1,Harry Potter and the Order of the Phoenix,2003,777,1,0,Bloomsbury,0,,0,,,1,2011,Memphis,Tennessee
+6274894758,1,Coming Up For Air,1984,,1,0,,0,,,,,1,3201,Columbus,Ohio
+7384927384,1,Animal Farm,1945,,1,0,,0,,0,,,1,3201,Columbus,Ohio
+8463748593,1,The Lightning Theif,2009,,1,0,,0,,0,,,1,3201,Columbus,Ohio
+2821115,1,Physical Graffiti [Disc 1],1975,2342,0,1,,,,,,,1,3201,Columbus,Ohio
+36545150,1,The Best of Ed Motta,1980,3405,0,1,,,,,,,1,3201,Columbus,Ohio
+45635745,1,How To Dismantle An Atomic Bomb,2004,2944,0,1,,,,,,,1,3201,Columbus,Ohio
+48455604,1,Led Zeppelin II,1969,2493,0,1,,,,,,,1,3201,Columbus,Ohio
+57000878,1,BBC Sessions [Disc 2] [Live],1969,4695,0,1,,,,,,,1,3201,Columbus,Ohio
+64694805,1,Blue Moods,1955,4415,0,1,,,,,,,1,3201,Columbus,Ohio
+66439137,1,Restless and Wild,1982,857,0,1,,,,,,,1,3201,Columbus,Ohio
+70847531,1,Olodum,1979,2868,0,1,,,,,,,1,3201,Columbus,Ohio
+73448015,1,UB40 The Best Of - Volume Two [UK],1978,3517,0,1,,,,,,,1,3201,Columbus,Ohio
+89544725,1,Facelift,2011,2855,0,1,,,,,,,1,3201,Columbus,Ohio
+90994472,1,From The Muddy Banks Of The Wishkah [Live],1996,3236,0,1,,,,,,,1,3201,Columbus,Ohio
+101400480,1,Greatest Kiss,1997,4566,0,1,,,,,,,1,3201,Columbus,Ohio
+105082409,1,American Idiot,2004,3432,0,1,,,,,,,1,3201,Columbus,Ohio
+105656734,1,Misplaced Childhood,1985,2472,0,1,,,,,,,1,3201,Columbus,Ohio
+121692047,1,The X Factor,2005,4262,0,1,,,,,,,1,3201,Columbus,Ohio
+142139186,1,Black Sabbath,1968,2291,0,1,,,,,,,1,3201,Columbus,Ohio
+171257550,1,Get Born,2003,2913,0,1,,,,,,,1,3201,Columbus,Ohio
+175220059,1,Vault: Def Leppard's Greatest Hits,1995,4394,0,1,,,,,,,1,3201,Columbus,Ohio
+175952985,1,Jagged Little Pill,1995,3444,0,1,,,,,,,1,3201,Columbus,Ohio
+180181588,1,Synkronized,1999,3174,0,1,,,,,,,1,3201,Columbus,Ohio
+184282021,1,Rotten Apples: Greatest Hits,2001,4188,0,1,,,,,,,1,3201,Columbus,Ohio
+192453425,1,Van Halen III,1998,3916,0,1,,,,,,,1,3201,Columbus,Ohio
+193009987,1,Deep Purple In Rock,1969,2533,0,1,,,,,,,1,3201,Columbus,Ohio
+199649151,1,Bark at the Moon (Remastered),1995,257,0,1,,,,,,,1,3201,Columbus,Ohio
+212376173,1,In Your Honor [Disc 2],2005,2591,0,1,,,,,,,1,3201,Columbus,Ohio
+236439831,1,Heart of the Night,1996,3491,0,1,,,,,,,1,3201,Columbus,Ohio
+243130979,1,The Cream Of Clapton,1987,4363,0,1,,,,,,,1,3201,Columbus,Ohio
+244940661,1,Koyaanisqatsi (Soundtrack from the Motion Picture),2009,206,0,1,,,,,,,1,3201,Columbus,Ohio
+256564274,1,Alcohol Fueled Brewtality Live! [Disc 2],2000,1445,0,1,,,,,,,1,3201,Columbus,Ohio
+272496799,1,Mais Do Mesmo,1998,4138,0,1,,,,,,,1,3201,Columbus,Ohio
+279444609,1,Zooropa,1993,2720,0,1,,,,,,,1,3201,Columbus,Ohio
+283301565,1,Audioslave,2007,3921,0,1,,,,,,,1,3201,Columbus,Ohio
+291637255,1,Blood Sugar Sex Magik,1992,4430,0,1,,,,,,,1,3201,Columbus,Ohio
+298777722,1,The Colour And The Shape,1996,2561,0,1,,,,,,,1,3201,Columbus,Ohio
+303707528,1,Arquivo Os Paralamas Do Sucesso,1982,3609,0,1,,,,,,,1,3201,Columbus,Ohio
+312628398,1,Big Ones,1994,4403,0,1,,,,,,,1,3201,Columbus,Ohio
+328840470,1,Ride The Lightning,2012,2845,0,1,,,,,,,1,3201,Columbus,Ohio
+348635359,1,The Best Of Men At Work,1981,2600,0,1,,,,,,,1,3201,Columbus,Ohio
+364346649,1,As Canções de Eu Tu Eles,2000,2880,0,1,,,,,,,1,3201,Columbus,Ohio
+370084652,1,Unplugged [Live],1994,3086,0,1,,,,,,,1,3201,Columbus,Ohio
+371280031,1,No Security,1998,4065,0,1,,,,,,,1,3201,Columbus,Ohio
+382233289,1,Morning Dance,1979,2474,0,1,,,,,,,1,3201,Columbus,Ohio
+386700048,1,Retrospective I (1974-1980),1974,4542,0,1,,,,,,,1,3201,Columbus,Ohio
+387126252,1,The Best Of R.E.M.: The IRS Years,1982,3562,0,1,,,,,,,1,3201,Columbus,Ohio
+387317488,1,Quanta Gente Veio Ver (Live),1998,3909,0,1,,,,,,,1,3201,Columbus,Ohio
+388270245,1,Emergency On Planet Earth,1993,2783,0,1,,,,,,,1,3201,Columbus,Ohio
+390423475,1,House of Pain,2011,3147,0,1,,,,,,,1,3201,Columbus,Ohio
+395540284,1,Live After Death,1985,5818,0,1,,,,,,,1,3201,Columbus,Ohio
+401957996,1,Are You Experienced?,1966,3612,0,1,,,,,,,1,3201,Columbus,Ohio
+402370583,1,Live On Two Legs [Live],1998,4048,0,1,,,,,,,1,3201,Columbus,Ohio
+418060789,1,The Final Concerts (Disc 2),2006,3726,0,1,,,,,,,1,3201,Columbus,Ohio
+430887463,1,Cidade Negra - Hits,1986,3429,0,1,,,,,,,1,3201,Columbus,Ohio
+434743637,1,Kill 'Em All,1988,3076,0,1,,,,,,,1,3201,Columbus,Ohio
+438163974,1,Master Of Puppets,1986,3283,0,1,,,,,,,1,3201,Columbus,Ohio
+439910151,1,Plays Metallica By Four Cellos,1995,2668,0,1,,,,,,,1,3201,Columbus,Ohio
+445269703,1,Santana - As Years Go By,1966,4300,0,1,,,,,,,1,3201,Columbus,Ohio
+483730166,1,Garage Inc. (Disc 2),1998,4245,0,1,,,,,,,1,3201,Columbus,Ohio
+487349370,1,Seventh Son of a Seventh Son,1988,2638,0,1,,,,,,,1,3201,Columbus,Ohio
+499440551,1,In Through The Out Door,1978,2552,0,1,,,,,,,1,3201,Columbus,Ohio
+507510433,1,MK III The Final Concerts [Disc 1],1975,3482,0,1,,,,,,,1,3201,Columbus,Ohio
+507637467,1,International Superhits,2001,3636,0,1,,,,,,,1,3201,Columbus,Ohio
+510101253,1,Nevermind,1991,2550,0,1,,,,,,,1,3201,Columbus,Ohio
+516476437,1,Minha História,2008,3122,0,1,,,,,,,1,3201,Columbus,Ohio
+570566445,1,Van Halen,1974,2129,0,1,,,,,,,1,3201,Columbus,Ohio
+585563627,1,Out Of Exile,2005,3218,0,1,,,,,,,1,3201,Columbus,Ohio
+592862844,1,Motley Crue Greatest Hits,1998,4154,0,1,,,,,,,1,3201,Columbus,Ohio
+608821718,1,Back to Black,2006,2538,0,1,,,,,,,1,3201,Columbus,Ohio
+613866189,1,Bongo Fury,1975,2460,0,1,,,,,,,1,3201,Columbus,Ohio
+635142877,1,Houses Of The Holy,1973,2452,0,1,,,,,,,1,3201,Columbus,Ohio
+648865294,1,Rock In Rio [CD1],1983,3380,0,1,,,,,,,1,3201,Columbus,Ohio
+650878193,1,Led Zeppelin III,1970,2576,0,1,,,,,,,1,3201,Columbus,Ohio
+669417473,1,The Doors,1965,2665,0,1,,,,,,,1,3201,Columbus,Ohio
+686621938,1,BBC Sessions [Disc 1] [Live],1969,4482,0,1,,,,,,,1,3201,Columbus,Ohio
+686991733,1,Let There Be Rock,1977,2450,0,1,,,,,,,1,3201,Columbus,Ohio
+688071122,1,By The Way,2002,4121,0,1,,,,,,,1,3201,Columbus,Ohio
+695912993,1,Warner 25 Anos,1968,2628,0,1,,,,,,,1,3201,Columbus,Ohio
+719036078,1,Piece Of Mind,1983,2749,0,1,,,,,,,1,3201,Columbus,Ohio
+720869189,1,Alcohol Fueled Brewtality Live! [Disc 1],2000,4054,0,1,,,,,,,1,3201,Columbus,Ohio
+723006448,1,Live [Disc 1],1987,3294,0,1,,,,,,,1,3201,Columbus,Ohio
+724046399,1,South American Getaway,1972,289,0,1,,,,,,,1,3201,Columbus,Ohio
+726635841,1,Living After Midnight,1980,3965,0,1,,,,,,,1,3201,Columbus,Ohio
+726668033,1,All That You Can't Leave Behind,2000,2959,0,1,,,,,,,1,3201,Columbus,Ohio
+735123103,1,Powerslave,1984,3031,0,1,,,,,,,1,3201,Columbus,Ohio
+736212356,1,Achtung Baby,1991,3322,0,1,,,,,,,1,3201,Columbus,Ohio
+744183074,1,Miles Ahead,1957,3127,0,1,,,,,,,1,3201,Columbus,Ohio
+763144371,1,Live At Donington 1992 (Disc 1),1992,3102,0,1,,,,,,,1,3201,Columbus,Ohio
+770933084,1,Na Pista,2014,2555,0,1,,,,,,,1,3201,Columbus,Ohio
+785066789,1,In Your Honor [Disc 1],2005,2405,0,1,,,,,,,1,3201,Columbus,Ohio
+791514619,1,For Those About To Rock We Salute You,1981,2394,0,1,,,,,,,1,3201,Columbus,Ohio
+792595492,1,Stormbringer,1961,2191,0,1,,,,,,,1,3201,Columbus,Ohio
+793854178,1,Slaves And Masters,1990,2810,0,1,,,,,,,1,3201,Columbus,Ohio
+803626461,1,Walking Into Clarksdale,2007,3643,0,1,,,,,,,1,3201,Columbus,Ohio
+824489055,1,Rock In Rio [CD2],1983,3580,0,1,,,,,,,1,3201,Columbus,Ohio
+832182374,1,Led Zeppelin I,1969,2687,0,1,,,,,,,1,3201,Columbus,Ohio
+835290849,1,Blizzard of Ozz,1980,607,0,1,,,,,,,1,3201,Columbus,Ohio
+842844166,1,Santana Live,1967,4041,0,1,,,,,,,1,3201,Columbus,Ohio
+843541438,1,Afrociberdelia,1994,4229,0,1,,,,,,,1,3201,Columbus,Ohio
+860921730,1,Physical Graffiti [Disc 2],1975,2616,0,1,,,,,,,1,3201,Columbus,Ohio
+863925983,1,The Battle Rages On,1992,3013,0,1,,,,,,,1,3201,Columbus,Ohio
+907788477,1,Balls to the Wall,1984,342,0,1,,,,,,,1,3201,Columbus,Ohio
+924323510,1,Garage Inc. (Disc 1),1998,3940,0,1,,,,,,,1,3201,Columbus,Ohio
+925390332,1,Purpendicular,1995,3742,0,1,,,,,,,1,3201,Columbus,Ohio
+953801211,1,The Return Of The Space Cowboy,1994,3962,0,1,,,,,,,1,3201,Columbus,Ohio
+961131853,1,Temple of the Dog,1991,3312,0,1,,,,,,,1,3201,Columbus,Ohio
+968497964,1,Minha Historia,2008,7409,0,1,,,,,,,1,3201,Columbus,Ohio
+977055074,1,Live [Disc 2],2001,2961,0,1,,,,,,,1,3201,Columbus,Ohio
+1265472654,1,Greatest Hits,1985,113,0,1,Columbia,0,,0,,,1,4021,Cleveland,Ohio
+1358594284,3,Star Wars III: Revenge of the Sith,1980,124,0,0,,1,George Lucas,0,,,1,4021,Boston,Massachusetts
+1358594289,1,Star Wars V: The Empire Strikes Back,1980,124,0,0,,1,Irvin Kershner,0,,,1,4021,Buffalo,New York
+1358594289,2,Star Wars V: The Empire Strikes Back,1980,124,0,0,,1,Irvin Kershner,0,,,1,4021,New York,New York
+1544752156,1,Harry Potter and the Sorcerer's Stone,2001,152,0,0,,1,Chris Columbus,0,,,1,4021,Cincinnati,Ohio
+2469762156,1,A Rush of Blood to the Head,2002,54,0,1,Parlophone,0,,0,,,1,4021,Los Angeles,California
+2469762156,2,A Rush of Blood to the Head,2002,54,0,1,Parlophone,0,,0,,,1,4021,Cleveland,Ohio
+6312832925,1,Assassin's Creed IV: Black Flag,2013,1800,0,0,,0,,1,Playstation 4,M,1,4021,Lexington,Kentucky
+6312832925,2,Assassin's Creed IV: Black Flag,2013,1800,0,0,,0,,1,Playstation 4,M,1,4021,Iowa City,Iowa
+6421358790,1,The Legend of Zelda: Breath of the Wild,2017,2400,0,0,,0,,1,Nintendo Switch,E10+,1,4021,Columbus,Ohio
+7541236554,1,Assassin's Creed III,2012,1995,0,0,,0,,1,Xbox One,M,1,4021,San Francisco,California
+7678906543,1,Star Wars IV: A New Hope,1977,121,0,0,,1,George Lucas,0,,,1,4021,Phoenix,Arizona
+7678906543,2,Star Wars IV: A New Hope,1977,121,0,0,,1,George Lucas,0,,,1,4021,Madison,Wisconsin
+8752312283,1,Star Wars VI: Return of the Jedi,1983,131,0,0,,1,Richard Marquand,0,,,1,4021,Tuscon,Arizona
+45212181,1,Uncommon Wisdom,1905,197,1,,Fontana,,,,,,1,1234,Columbus,Ohio
+179116730,1,"World's Great Thinkers, The",1930,189,1,,,,,,,,1,1234,Columbus,Ohio
+186273782,1,God Created the Integers,1991,197,1,,Penguin,,,,,,1,1234,Columbus,Ohio
+201725963,1,More Tears to Cry,1981,235,1,,,,,,,,1,1234,Columbus,Ohio
+232342280,1,Neural Networks,1980,240,1,,,,,,,,1,1234,Columbus,Ohio
+251781415,1,Textbook of Economic Theory,1930,242,1,,Pearson,,,,,,1,1234,Columbus,Ohio
+300816330,1,"Arthashastra, The",1970,214,1,,,,,,,,1,1234,Columbus,Ohio
+302715212,1,Freedom at Midnight,1903,167,1,,vikas,,,,,,1,1234,Columbus,Ohio
+326685516,1,"Grapes of Wrath, The",1925,196,1,,,,,,,,1,1234,Columbus,Ohio
+380375141,1,Fundamentals of Wavelets,1979,228,1,,Wiley,,,,,,1,1234,Columbus,Ohio
+386740981,1,"Story of Philosophy, The",1983,170,1,,Pocket,,,,,,1,1234,Columbus,Ohio
+420974872,1,Unpopular Essays,1918,198,1,,,,,,,,1,1234,Columbus,Ohio
+434327749,1,Simpsons & Their Mathematical Secrets,1974,233,1,,,,,,,,1,1234,Columbus,Ohio
+570440167,1,History of Western Philosophy,1995,213,1,,Routledge,,,,,,1,1234,Columbus,Ohio
+578381663,1,Karl Marx Biography,1949,162,1,,,,,,,,1,1234,Columbus,Ohio
+584157546,1,Superman Earth One - 1,1947,259,1,,,,,,,,1,1234,Columbus,Ohio
+619848773,1,Girl who played with Fire,1933,179,1,,,,,,,,1,1234,Columbus,Ohio
+675935837,1,"Courtroom Genius, The",1922,217,1,,,,,,,,1,1234,Columbus,Ohio
+825378425,1,"Prisoner of Birth, A",2006,176,1,,Pan,,,,,,1,1234,Columbus,Ohio
+866082131,1,"Short History of the World, A",1977,197,1,,,,,,,,1,1234,Columbus,Ohio
+914131012,1,Identity & Violence,2004,219,1,,Penguin,,,,,,1,1234,Columbus,Ohio
+931099110,1,Crime and Punishment,1960,180,1,,Penguin,,,,,,1,1234,Columbus,Ohio
+957297663,1,Political Philosophers,1955,162,1,,,,,,,,1,1234,Columbus,Ohio
+1073342291,1,City of Djinns,1918,198,1,,,,,,,,1,1234,Columbus,Ohio
+1095892458,1,"New Machiavelli, The",1971,180,1,,Penguin,,,,,,1,1234,Columbus,Ohio
+1112568885,1,Empire of the Mughal - Raiders from the North,1932,180,1,,,,,,,,1,1234,Columbus,Ohio
+1126206305,1,Bookless in Baghdad,1967,206,1,,Penguin,,,,,,1,1234,Columbus,Ohio
+1149653361,1,Beyond the Three Seas,2010,197,1,,Random House,,,,,,1,1234,Columbus,Ohio
+1151814614,1,Making Software,1959,232,1,,O'Reilly,,,,,,1,1234,Columbus,Ohio
+1204291732,1,"Moon is Down, The",1965,196,1,,Penguin,,,,,,1,1234,Columbus,Ohio
+1240403127,1,Data Mining Handbook,1946,242,1,,Apress,,,,,,1,1234,Columbus,Ohio
+1329422272,1,Jurassic Park,1978,174,1,,Random House,,,,,,1,1234,Columbus,Ohio
+1356515848,1,Power Electronics - Rashid,1936,235,1,,,,,,,,1,1234,Columbus,Ohio
+1374543234,1,Dongri to Dubai,2010,216,1,,,,,,,,1,1234,Columbus,Ohio
+1431988380,1,Data Analysis with Open Source Tools,1913,230,1,,,,,,,,1,1234,Columbus,Ohio
+1510394500,1,20000 Leagues Under the Sea,1925,190,1,,,,,,,,1,1234,Columbus,Ohio
+1542930909,1,"Death of Superman, The",2003,258,1,,,,,,,,1,1234,Columbus,Ohio
+1645914511,1,India from Midnight to Milennium,2001,198,1,,Penguin,,,,,,1,1234,Columbus,Ohio
+1701234518,1,Broca's Brain,1983,174,1,,,,,,,,1,1234,Columbus,Ohio
+1714235853,1,"Last Mughal, The",1969,199,1,,Penguin,,,,,,1,1234,Columbus,Ohio
+1742221102,1,Physics & Philosophy,1904,197,1,,Penguin,,,,,,1,1234,Columbus,Ohio
+1779552589,1,"Age of Discontuinity, The",1987,178,1,,Random House,,,,,,1,1234,Columbus,Ohio
+1810941106,1,Once There Was a War,1985,196,1,,Penguin,,,,,,1,1234,Columbus,Ohio
+1821152690,1,"Great Indian Novel, The",1902,198,1,,Penguin,,,,,,1,1234,Columbus,Ohio
+1828213807,1,Python for Data Analysis,1978,233,1,,O'Reilly,,,,,,1,1234,Columbus,Ohio
+1852936794,1,Murphy's Law,1993,178,1,,,,,,,,1,1234,Columbus,Ohio
+1904286389,1,Machine Learning for Hackers,1930,233,1,,O'Reilly,,,,,,1,1234,Columbus,Ohio
+2030933812,1,Justice League: The Villain's Journey,1902,258,1,,,,,,,,1,1234,Columbus,Ohio
+2045818144,1,"Russian Journal, A",2009,196,1,,Penguin,,,,,,1,1234,Columbus,Ohio
+2076715475,1,Girl who kicked the Hornet's Nest,1914,179,1,,,,,,,,1,1234,Columbus,Ohio
+2103446290,1,"Trembling of a Leaf, The",1979,205,1,,,,,,,,1,1234,Columbus,Ohio
+2141369295,1,Image Processing with MATLAB,1937,241,1,,,,,,,,1,1234,Columbus,Ohio
+2183928164,1,We the Nation,1901,216,1,,,,,,,,1,1234,Columbus,Ohio
+2188206619,1,Statistical Decision Theory',1925,236,1,,MIT Press,,,,,,1,1234,Columbus,Ohio
+2209155419,1,Superman Earth One - 2,2004,258,1,,,,,,,,1,1234,Columbus,Ohio
+2311510732,1,"Drunkard's Walk, The",1979,197,1,,Penguin,,,,,,1,1234,Columbus,Ohio
+2319665682,1,Empire of the Mughal - The Serpent's Tooth,1913,180,1,,,,,,,,1,1234,Columbus,Ohio
+2326186522,1,"Judge, The",1993,170,1,,,,,,,,1,1234,Columbus,Ohio
+2342737249,1,Principles of Communication Systems,1965,240,1,,TMH,,,,,,1,1234,Columbus,Ohio
+2343711723,1,Mein Kampf,1970,212,1,,Rupa,,,,,,1,1234,Columbus,Ohio
+2353823923,1,Half A Life,1949,196,1,,,,,,,,1,1234,Columbus,Ohio
+2425873225,1,Slaughterhouse Five,1901,198,1,,Random House,,,,,,1,1234,Columbus,Ohio
+2438723794,1,"City of Joy, The",1932,177,1,,vikas,,,,,,1,1234,Columbus,Ohio
+2528826609,1,Angels & Demons,1955,178,1,,Random House,,,,,,1,1234,Columbus,Ohio
+2641325068,1,Flashpoint,1980,265,1,,,,,,,,1,1234,Columbus,Ohio
+2682757798,1,"Social Choice & Welfare, Vol 39 No. 1",1950,235,1,,Springer,,,,,,1,1234,Columbus,Ohio
+2773610451,1,"Information, The",1966,233,1,,,,,,,,1,1234,Columbus,Ohio
+2809762579,1,Urlasurla,1932,211,1,,,,,,,,1,1234,Columbus,Ohio
+2831414360,1,"Brethren, The",1932,174,1,,Random House,,,,,,1,1234,Columbus,Ohio
+2838415921,1,"Raisin in the Sun, A",1999,175,1,,Penguin,,,,,,1,1234,Columbus,Ohio
+2865965738,1,"Case of the Lame Canary, The",1971,179,1,,,,,,,,1,1234,Columbus,Ohio
+2898307587,1,Oxford book of Modern Science Writing,1939,240,1,,,,,,,,1,1234,Columbus,Ohio
+2944800213,1,Econometric Analysis,1902,242,1,,Pearson,,,,,,1,1234,Columbus,Ohio
+2973846676,1,"Analysis, Vol I",1911,248,1,,HBA,,,,,,1,1234,Columbus,Ohio
+2994946558,1,"Code Book, The",1960,197,1,,,,,,,,1,1234,Columbus,Ohio
+3057369548,1,"Deceiver, The",1905,178,1,,,,,,,,1,1234,Columbus,Ohio
+3103379840,1,Orientalism,1942,197,1,,Penguin,,,,,,1,1234,Columbus,Ohio
+3123714081,1,Superfreakonomics,1986,179,1,,HarperCollins,,,,,,1,1234,Columbus,Ohio
+3166331195,1,Data Structures Using C & C++,1957,235,1,,Prentice Hall,,,,,,1,1234,Columbus,Ohio
+3171339057,1,Pointers in C,1909,213,1,,,,,,,,1,1234,Columbus,Ohio
+3237440145,1,Ashenden of The British Agent,1907,160,1,,Vintage,,,,,,1,1234,Columbus,Ohio
+3332190628,1,Animal Farm,1932,180,1,,,,,,,,1,1234,Columbus,Ohio
+3431350763,1,"Journal of Economics, vol 106 No 3",1917,235,1,,,,,,,,1,1234,Columbus,Ohio
+3488164465,1,Crisis on Infinite Earths,1957,258,1,,,,,,,,1,1234,Columbus,Ohio
+3557389036,1,Radiowaril Bhashane & Shrutika,1910,213,1,,Mauj,,,,,,1,1234,Columbus,Ohio
+3593243980,1,Power Electronics - Mohan,1987,237,1,,,,,,,,1,1234,Columbus,Ohio
+3631895323,1,Veil: Secret Wars of the CIA,1950,171,1,,,,,,,,1,1234,Columbus,Ohio
+3677203196,1,Manasa,1966,213,1,,Mauj,,,,,,1,1234,Columbus,Ohio
+3684568778,1,"History of England, Foundation",1959,197,1,,,,,,,,1,1234,Columbus,Ohio
+3707147496,1,Freakonomics,2009,197,1,,Penguin,,,,,,1,1234,Columbus,Ohio
+3820345472,1,O Jerusalem!,1970,217,1,,vikas,,,,,,1,1234,Columbus,Ohio
+3824515720,1,"Trial, The",1939,198,1,,Random House,,,,,,1,1234,Columbus,Ohio
+3877156308,1,Elements of Information Theory,1913,229,1,,,,,,,,1,1234,Columbus,Ohio
+3934648877,1,Maqta-e-Ghalib,1964,221,1,,Mauj,,,,,,1,1234,Columbus,Ohio
+3941643498,1,"Idea of Justice, The",1941,212,1,,Penguin,,,,,,1,1234,Columbus,Ohio
+4052259381,1,Batman: The Long Halloween,2001,258,1,,,,,,,,1,1234,Columbus,Ohio
+4122539522,1,Justice League: Throne of Atlantis,1931,258,1,,,,,,,,1,1234,Columbus,Ohio
+4132579229,1,Catch 22,1904,178,1,,Random House,,,,,,1,1234,Columbus,Ohio
+4134980874,1,Jim Corbett Omnibus,1943,223,1,,,,,,,,1,1234,Columbus,Ohio
+4184035106,1,"Numbers Behind Numb3rs, The",1943,202,1,,,,,,,,1,1234,Columbus,Ohio
+4192984008,1,"Moon and Sixpence, The",2009,180,1,,,,,,,,1,1234,Columbus,Ohio
+4231393654,1,"Beautiful and the Damned, The",1967,198,1,,Penguin,,,,,,1,1234,Columbus,Ohio
+4258683036,1,False Impressions,1955,177,1,,Pan,,,,,,1,1234,Columbus,Ohio
+4300686758,1,Tales of Beedle the Bard,1929,184,1,,,,,,,,1,1234,Columbus,Ohio
+4362290743,1,Data Scientists at Work,1924,230,1,,Apress,,,,,,1,1234,Columbus,Ohio
+4391427763,1,Doctor on the Brain,1931,204,1,,,,,,,,1,1234,Columbus,Ohio
+4419796034,1,Integration of the Indian States,1962,217,1,,Orient Blackswan,,,,,,1,1234,Columbus,Ohio
+4422831103,1,We the People,1950,216,1,,,,,,,,1,1234,Columbus,Ohio
+4461190923,1,"Outsider, The",1972,198,1,,Penguin,,,,,,1,1234,Columbus,Ohio
+4476611729,1,"Hunchback of Notre Dame, The",1925,175,1,,Random House,,,,,,1,1234,Columbus,Ohio
+4493607149,1,Rosy is My Relative,1916,176,1,,,,,,,,1,1234,Columbus,Ohio
+4569165699,1,Down and Out in Paris & London,1908,179,1,,Penguin,,,,,,1,1234,Columbus,Ohio
+4581627724,1,Data Smart,1938,235,1,,Wiley,,,,,,1,1234,Columbus,Ohio
+4688303664,1,To Sir With Love,1928,197,1,,Penguin,,,,,,1,1234,Columbus,Ohio
+5183637815,1,Free Will,1942,203,1,,FreePress,,,,,,1,1234,Columbus,Ohio
+5233194420,1,"Computer Vision, A Modern Approach",1967,255,1,,Pearson,,,,,,1,1234,Columbus,Ohio
+5365237479,1,Return of the Primitive,1968,202,1,,Penguin,,,,,,1,1234,Columbus,Ohio
+5375680066,1,Zen & The Art of Motorcycle Maintenance,1937,172,1,,Vintage,,,,,,1,1234,Columbus,Ohio
+5407772421,1,History of the DC Universe,2008,258,1,,,,,,,,1,1234,Columbus,Ohio
+5419479090,1,"Idiot, The",1970,197,1,,,,,,,,1,1234,Columbus,Ohio
+5440240358,1,Vyakti ani Valli,1992,211,1,,,,,,,,1,1234,Columbus,Ohio
+5527834205,1,We the Living,1940,178,1,,Penguin,,,,,,1,1234,Columbus,Ohio
+5555356163,1,In a Free State,1951,196,1,,Rupa,,,,,,1,1234,Columbus,Ohio
+5562144112,1,Tales of Mystery and Imagination,1904,172,1,,HarperCollins,,,,,,1,1234,Columbus,Ohio
+5637439695,1,Batman Handbook,2006,270,1,,,,,,,,1,1234,Columbus,Ohio
+5651239581,1,"Hidden Connections, The",1997,197,1,,HarperCollins,,,,,,1,1234,Columbus,Ohio
+5841053364,1,Surely You're Joking Mr Feynman,2002,198,1,,Random House,,,,,,1,1234,Columbus,Ohio
+5842659910,1,Batman Earth One,1912,265,1,,,,,,,,1,1234,Columbus,Ohio
+5867281108,1,Doctor in the Nude,1959,179,1,,Penguin,,,,,,1,1234,Columbus,Ohio
+5894054053,1,"Nature of Statistical Learning Theory, The",1971,230,1,,Springer,,,,,,1,1234,Columbus,Ohio
+5964370976,1,Journal of a Novel,1974,196,1,,Penguin,,,,,,1,1234,Columbus,Ohio
+5993836526,1,Empire of the Mughal - The Tainted Throne,1952,180,1,,,,,,,,1,1234,Columbus,Ohio
+6005086031,1,"Justice, Judiciary and Democracy",1941,224,1,,,,,,,,1,1234,Columbus,Ohio
+6033567574,1,Burning Bright,1966,175,1,,Penguin,,,,,,1,1234,Columbus,Ohio
+6044311752,1,Apulki,1964,211,1,,,,,,,,1,1234,Columbus,Ohio
+6082600190,1,"Prince, The",1988,173,1,,,,,,,,1,1234,Columbus,Ohio
+6094640201,1,New Markets & Other Essays,2002,176,1,,Penguin,,,,,,1,1234,Columbus,Ohio
+6095965051,1,Eyeless in Gaza,1952,180,1,,,,,,,,1,1234,Columbus,Ohio
+6206439207,1,Learning OpenCV,1902,232,1,,O'Reilly,,,,,,1,1234,Columbus,Ohio
+6218224710,1,Men of Mathematics,1902,217,1,,,,,,,,1,1234,Columbus,Ohio
+6412902388,1,Electric Universe,1968,201,1,,Penguin,,,,,,1,1234,Columbus,Ohio
+6424692198,1,"Amulet of Samarkand, The",1968,179,1,,Random House,,,,,,1,1234,Columbus,Ohio
+6471661561,1,Pattern Classification,1955,241,1,,,,,,,,1,1234,Columbus,Ohio
+6478713535,1,"World's Greatest Trials, The",1913,210,1,,,,,,,,1,1234,Columbus,Ohio
+6599176547,1,Rationality & Freedom,1969,213,1,,Springer,,,,,,1,1234,Columbus,Ohio
+6687094445,1,Clash of Civilizations and Remaking of the World Order,1921,228,1,,Simon&Schuster,,,,,,1,1234,Columbus,Ohio
+6723704967,1,Structure and Randomness,1996,252,1,,,,,,,,1,1234,Columbus,Ohio
+6813822740,1,From Beirut to Jerusalem,1967,202,1,,,,,,,,1,1234,Columbus,Ohio
+6972023346,1,"Complete Mastermind, The",1945,178,1,,BBC,,,,,,1,1234,Columbus,Ohio
+7060644917,1,Aghal Paghal,1991,212,1,,Mauj,,,,,,1,1234,Columbus,Ohio
+7064353183,1,"Theory of Everything, The",1952,217,1,,Jaico,,,,,,1,1234,Columbus,Ohio
+7064799846,1,India's Legal System,1993,177,1,,,,,,,,1,1234,Columbus,Ohio
+7124856772,1,Mossad,1979,236,1,,,,,,,,1,1234,Columbus,Ohio
+7219372783,1,Sea of Poppies,1917,197,1,,Penguin,,,,,,1,1234,Columbus,Ohio
+7272395090,1,Empire of the Mughal - Brothers at War,1912,180,1,,,,,,,,1,1234,Columbus,Ohio
+7478769200,1,"Life in Letters, A",1959,196,1,,,,,,,,1,1234,Columbus,Ohio
+7549787863,1,"Age of Wrath, The",1920,238,1,,Penguin,,,,,,1,1234,Columbus,Ohio
+7608024737,1,"Devil's Advocate, The",1951,178,1,,,,,,,,1,1234,Columbus,Ohio
+7624139830,1,Beyond Degrees,1902,222,1,,HarperCollins,,,,,,1,1234,Columbus,Ohio
+7717116893,1,How to Think Like Sherlock Holmes,1965,240,1,,Penguin,,,,,,1,1234,Columbus,Ohio
+7791209606,1,"Attorney, The",1903,170,1,,,,,,,,1,1234,Columbus,Ohio
+7797675333,1,Char Shabda,1962,214,1,,,,,,,,1,1234,Columbus,Ohio
+7802931411,1,Image Processing & Mathematical Morphology,1943,241,1,,CRC,,,,,,1,1234,Columbus,Ohio
+7870557485,1,"Phantom of Manhattan, The",1979,180,1,,,,,,,,1,1234,Columbus,Ohio
+7886869610,1,Ahe Manohar Tari,1969,213,1,,Mauj,,,,,,1,1234,Columbus,Ohio
+7890679104,1,"Age of the Warrior, The",1975,197,1,,,,,,,,1,1234,Columbus,Ohio
+7891146304,1,Selected Short Stories,2003,215,1,,Jaico,,,,,,1,1234,Columbus,Ohio
+7967409319,1,Think Complexity,1945,230,1,,,,,,,,1,1234,Columbus,Ohio
+7994969152,1,"Cathedral and the Bazaar, The",1957,217,1,,,,,,,,1,1234,Columbus,Ohio
+8079488146,1,"Maugham's Collected Short Stories, Vol 3",1944,171,1,,Vintage,,,,,,1,1234,Columbus,Ohio
+8083751744,1,"Killing Joke, The",1977,283,1,,,,,,,,1,1234,Columbus,Ohio
+8086139056,1,Final Crisis,2004,257,1,,,,,,,,1,1234,Columbus,Ohio
+8221223432,1,"Farewell to Arms, A",2010,179,1,,Rupa,,,,,,1,1234,Columbus,Ohio
+8237158157,1,"Artist and the Mathematician, The",1969,186,1,,HighStakes,,,,,,1,1234,Columbus,Ohio
+8314649959,1,"Winter of Our Discontent, The",1903,196,1,,Penguin,,,,,,1,1234,Columbus,Ohio
+8438808403,1,Empire of the Mughal - Ruler of the World,1952,180,1,,,,,,,,1,1234,Columbus,Ohio
+8556319870,1,On Education,1922,203,1,,Routledge,,,,,,1,1234,Columbus,Ohio
+8568737261,1,"Complete Sherlock Holmes, The - Vol I",1939,176,1,,Random House,,,,,,1,1234,Columbus,Ohio
+8590853676,1,Soft Computing & Intelligent Systems,1962,242,1,,Elsevier,,,,,,1,1234,Columbus,Ohio
+8597957648,1,"Tao of Physics, The",1986,179,1,,Penguin,,,,,,1,1234,Columbus,Ohio
+8701878872,1,"Last Lecture, The",1989,197,1,,Hyperion,,,,,,1,1234,Columbus,Ohio
+8701963618,1,Introduction to Algorithms,1901,234,1,,MIT Press,,,,,,1,1234,Columbus,Ohio
+8705121973,1,"Ropemaker, The",1946,196,1,,,,,,,,1,1234,Columbus,Ohio
+8841184970,1,Birth of a Theorem,1906,234,1,,Bodley Head,,,,,,1,1234,Columbus,Ohio
+8905465947,1,"Complete Sherlock Holmes, The - Vol II",1994,176,1,,Random House,,,,,,1,1234,Columbus,Ohio
+8920444747,1,"Signal and the Noise, The",1913,233,1,,Penguin,,,,,,1,1234,Columbus,Ohio
+9055096067,1,Talking Straight,1987,175,1,,,,,,,,1,1234,Columbus,Ohio
+9104550505,1,Asami Asami,1930,205,1,,Mauj,,,,,,1,1234,Columbus,Ohio
+9120159208,1,Ayn Rand Answers,1948,203,1,,,,,,,,1,1234,Columbus,Ohio
+9138101043,1,"Veteran, The",1994,177,1,,Transworld,,,,,,1,1234,Columbus,Ohio
+9300735141,1,Design with OpAmps,1965,240,1,,,,,,,,1,1234,Columbus,Ohio
+9359964350,1,"Discovery of India, The",1949,230,1,,,,,,,,1,1234,Columbus,Ohio
+9379137768,1,Let Us C,1954,213,1,,Prentice Hall,,,,,,1,1234,Columbus,Ohio
+9431866314,1,"World's Greatest Short Stories, The",1961,217,1,,Jaico,,,,,,1,1234,Columbus,Ohio
+9464575521,1,"Christmas Carol, A",1950,196,1,,,,,,,,1,1234,Columbus,Ohio
+9470095729,1,Batatyachi Chal,1971,200,1,,,,,,,,1,1234,Columbus,Ohio
+9498726661,1,Gun Gayin Awadi,1965,212,1,,Mauj,,,,,,1,1234,Columbus,Ohio
+9544052294,1,Hafasavnuk,1915,211,1,,,,,,,,1,1234,Columbus,Ohio
+9666098266,1,Structure & Interpretation of Computer Programs,1968,240,1,,MIT Press,,,,,,1,1234,Columbus,Ohio
+9676660910,1,Statistical Learning Theory,1999,228,1,,,,,,,,1,1234,Columbus,Ohio
+9708865787,1,"Wealth of Nations, The",1998,175,1,,Random House,,,,,,1,1234,Columbus,Ohio
+9719764116,1,All the President's Men,1930,177,1,,Random House,,,,,,1,1234,Columbus,Ohio
+9753430761,1,Angels & Demons,1904,170,1,,,,,,,,1,1234,Columbus,Ohio
+9756986113,1,One,1968,172,1,,Dell,,,,,,1,1234,Columbus,Ohio
+9762388395,1,"Pillars of the Earth, The",1936,176,1,,Random House,,,,,,1,1234,Columbus,Ohio
+9812983233,1,Scoop!,1981,216,1,,HarperCollins,,,,,,1,1234,Columbus,Ohio
+9821870521,1,"Argumentative Indian, The",1903,209,1,,Picador,,,,,,1,1234,Columbus,Ohio
+9891004996,1,Girl with the Dragon Tattoo,2002,179,1,,,,,,,,1,1234,Columbus,Ohio
+9923138394,1,"Great War for Civilization, The",1908,197,1,,HarperCollins,,,,,,1,1234,Columbus,Ohio
+9931904395,1,Dylan on Dylan,1915,197,1,,Random House,,,,,,1,1234,Columbus,Ohio
+9981394972,1,Philosophy: Who Needs It,1952,171,1,,,,,,,,1,1234,Columbus,Ohio
+9979013347,1,Zack and Miri Make a Porno,2002,142,,,,1,The Weinstein Company,,,,1,1234,Columbus,Ohio
+4798100018,1,Youth in Revolt,2000,129,,,,1,The Weinstein Company,,,,1,1234,Columbus,Ohio
+3973627413,1,You Will Meet a Tall Dark Stranger,1991,139,,,,1,Independent,,,,1,1234,Columbus,Ohio
+9989675766,1,When in Rome,2012,47,,,,1,Disney,,,,1,1234,Columbus,Ohio
+5500654494,1,What Happens in Vegas,1992,67,,,,1,Fox,,,,1,1234,Columbus,Ohio
+4470794520,1,Water For Elephants,2000,89,,,,1,20th Century Fox,,,,1,1234,Columbus,Ohio
+9644805390,1,WALL-E,1993,116,,,,1,Disney,,,,1,1234,Columbus,Ohio
+3134647251,1,Waitress,1996,104,,,,1,Independent,,,,1,1234,Columbus,Ohio
+7318614067,1,Waiting For Forever,2016,133,,,,1,Independent,,,,1,1234,Columbus,Ohio
+1676499079,1,Valentine's Day,1996,91,,,,1,Warner Bros.,,,,1,1234,Columbus,Ohio
+7251598171,1,Tyler Perry's Why Did I get Married,1990,105,,,,1,Independent,,,,1,1234,Columbus,Ohio
+6724321518,1,Twilight: Breaking Dawn,2002,93,,,,1,Independent,,,,1,1234,Columbus,Ohio
+9521585082,1,Twilight,2018,47,,,,1,Summit,,,,1,1234,Columbus,Ohio
+7345552252,1,The Ugly Truth,2012,66,,,,1,Independent,,,,1,1234,Columbus,Ohio
+8655289995,1,The Twilight Saga: New Moon,1996,72,,,,1,Summit,,,,1,1234,Columbus,Ohio
+1449416132,1,The Time Traveler's Wife,2010,107,,,,1,Paramount,,,,1,1234,Columbus,Ohio
+3890865359,1,The Proposal,1998,120,,,,1,Disney,,,,1,1234,Columbus,Ohio
+8145113292,1,The Invention of Lying,1999,72,,,,1,Warner Bros.,,,,1,1234,Columbus,Ohio
+5374902837,1,The Heartbreak Kid,2003,50,,,,1,Paramount,,,,1,1234,Columbus,Ohio
+680771673,1,The Duchess,2017,107,,,,1,Paramount,,,,1,1234,Columbus,Ohio
+7888430176,1,The Curious Case of Benjamin Button,2011,89,,,,1,Warner Bros.,,,,1,1234,Columbus,Ohio
+4196644717,1,The Back-up Plan,1995,66,,,,1,CBS,,,,1,1234,Columbus,Ohio
+6757124082,1,Tangled,2004,47,,,,1,Disney,,,,1,1234,Columbus,Ohio
+4285466469,1,Something Borrowed,2004,99,,,,1,Independent,,,,1,1234,Columbus,Ohio
+4866207557,1,She's Out of My League,1999,48,,,,1,Paramount,,,,1,1234,Columbus,Ohio
+7280095970,1,Sex and the City Two,1996,105,,,,1,Warner Bros.,,,,1,1234,Columbus,Ohio
+5860180586,1,Sex and the City 2,2001,135,,,,1,Warner Bros.,,,,1,1234,Columbus,Ohio
+2615486855,1,Sex and the City,2010,92,,,,1,Warner Bros.,,,,1,1234,Columbus,Ohio
+7163254494,1,Remember Me,1994,106,,,,1,Summit,,,,1,1234,Columbus,Ohio
+7143486024,1,Rachel Getting Married,2016,62,,,,1,Independent,,,,1,1234,Columbus,Ohio
+814115910,1,Penelope,2018,100,,,,1,Summit,,,,1,1234,Columbus,Ohio
+4102984305,1,P.S. I Love You,2006,54,,,,1,Independent,,,,1,1234,Columbus,Ohio
+4912505574,1,Over Her Dead Body,1991,127,,,,1,New Line,,,,1,1234,Columbus,Ohio
+139341986,1,Our Family Wedding,2011,82,,,,1,Independent,,,,1,1234,Columbus,Ohio
+4119174498,1,One Day,2011,84,,,,1,Independent,,,,1,1234,Columbus,Ohio
+6050420888,1,Not Easily Broken,2001,116,,,,1,Independent,,,,1,1234,Columbus,Ohio
+6133621700,1,No Reservations,1990,51,,,,1,Warner Bros.,,,,1,1234,Columbus,Ohio
+1266628610,1,Nick and Norah's Infinite Playlist,1997,132,,,,1,Sony,,,,1,1234,Columbus,Ohio
+9939268561,1,New Year's Eve,2002,98,,,,1,Warner Bros.,,,,1,1234,Columbus,Ohio
+3855444507,1,My Week with Marilyn,2008,140,,,,1,The Weinstein Company,,,,1,1234,Columbus,Ohio
+6144067154,1,Music and Lyrics,2015,97,,,,1,Warner Bros.,,,,1,1234,Columbus,Ohio
+5033279849,1,Monte Carlo,1992,65,,,,1,20th Century Fox,,,,1,1234,Columbus,Ohio
+8760046688,1,Miss Pettigrew Lives for a Day,1990,142,,,,1,Independent,,,,1,1234,Columbus,Ohio
+5484204352,1,Midnight in Paris,2002,100,,,,1,Sony,,,,1,1234,Columbus,Ohio
+8344328401,1,Marley and Me,2018,139,,,,1,Fox,,,,1,1234,Columbus,Ohio
+524932161,1,Mamma Mia!,2002,147,,,,1,Universal,,,,1,1234,Columbus,Ohio
+5183455740,1,Mamma Mia!,1990,55,,,,1,Universal,,,,1,1234,Columbus,Ohio
+2891102922,1,Made of Honor,2013,144,,,,1,Sony,,,,1,1234,Columbus,Ohio
+4540732897,1,Love Happens,2009,74,,,,1,Universal,,,,1,1234,Columbus,Ohio
+1032551167,1,Love & Other Drugs,1998,148,,,,1,Fox,,,,1,1234,Columbus,Ohio
+7887173877,1,Life as We Know It,2014,136,,,,1,Independent,,,,1,1234,Columbus,Ohio
+4010263206,1,License to Wed,2017,91,,,,1,Warner Bros.,,,,1,1234,Columbus,Ohio
+8581639945,1,Letters to Juliet,2018,115,,,,1,Summit,,,,1,1234,Columbus,Ohio
+5383192306,1,Leap Year,2015,119,,,,1,Universal,,,,1,1234,Columbus,Ohio
+7324603627,1,Knocked Up,1990,55,,,,1,Universal,,,,1,1234,Columbus,Ohio
+9679894930,1,Killers,1991,116,,,,1,Lionsgate,,,,1,1234,Columbus,Ohio
+2404102706,1,Just Wright,1990,123,,,,1,Fox,,,,1,1234,Columbus,Ohio
+7575064329,1,Jane Eyre,1990,90,,,,1,Universal,,,,1,1234,Columbus,Ohio
+8892335139,1,It's Complicated,2009,129,,,,1,Universal,,,,1,1234,Columbus,Ohio
+9228808472,1,I Love You Phillip Morris,2009,115,,,,1,Independent,,,,1,1234,Columbus,Ohio
+3312994305,1,High School Musical 3: Senior Year,2014,108,,,,1,Disney,,,,1,1234,Columbus,Ohio
+447800107,1,He's Just Not That Into You,1998,105,,,,1,Warner Bros.,,,,1,1234,Columbus,Ohio
+5273208984,1,Good Luck Chuck,1996,107,,,,1,Lionsgate,,,,1,1234,Columbus,Ohio
+3060479877,1,Going the Distance,2016,91,,,,1,Warner Bros.,,,,1,1234,Columbus,Ohio
+9599919424,1,Gnomeo and Juliet,2016,89,,,,1,Disney,,,,1,1234,Columbus,Ohio
+2942083967,1,Gnomeo and Juliet,2002,128,,,,1,Disney,,,,1,1234,Columbus,Ohio
+4792952666,1,Ghosts of Girlfriends Past,2007,111,,,,1,Warner Bros.,,,,1,1234,Columbus,Ohio
+6481333098,1,Four Christmases,2015,142,,,,1,Warner Bros.,,,,1,1234,Columbus,Ohio
+9983405948,1,Fireproof,1998,142,,,,1,Independent,,,,1,1234,Columbus,Ohio
+301436041,1,Enchanted,1990,99,,,,1,Disney,,,,1,1234,Columbus,Ohio
+7181399017,1,Dear John,1996,102,,,,1,Sony,,,,1,1234,Columbus,Ohio
+2121641921,1,Beginners,2018,73,,,,1,Independent,,,,1,1234,Columbus,Ohio
+2256437462,1,Across the Universe,2007,150,,,,1,Independent,,,,1,1234,Columbus,Ohio
+5921557542,1,A Serious Man,2008,123,,,,1,Universal,,,,1,1234,Columbus,Ohio
+958063995,1,A Dangerous Method,2003,128,,,,1,Independent,,,,1,1234,Columbus,Ohio
+1302806755,1,27 Dresses,1997,52,,,,1,Fox,,,,1,1234,Columbus,Ohio
+3817003016,1,(500) Days of Summer,1994,46,,,,1,Fox,,,,1,1234,Columbus,Ohio
+3461888342,1,Super Mario 64 DS,2004,,,,,,,1,Nintendo DS,E,1,1234,Columbus,Ohio
+6451426569,1,Lumines: Puzzle Fusion,2004,,,,,,,1,Sony PSP,E,1,1234,Columbus,Ohio
+2293528969,1,WarioWare Touched!,2004,,,,,,,1,Nintendo DS,E,1,1234,Columbus,Ohio
+3827203797,1,Hot Shots Golf: Open Tee,2004,,,,,,,1,Sony PSP,E,1,1234,Columbus,Ohio
+2177408892,1,Spider-Man 2,2004,,,,,,,1,Nintendo DS,E,1,1234,Columbus,Ohio
+6942984085,1,The Urbz: Sims in the City,2004,,,,,,,1,Nintendo DS,M,1,1234,Columbus,Ohio
+6610585867,1,Ridge Racer,2004,,,,,,,1,Sony PSP,E,1,1234,Columbus,Ohio
+2513068557,1,Metal Gear Ac!d,2004,,,,,,,1,Sony PSP,E,1,1234,Columbus,Ohio
+168935450,1,Madden NFL 2005,2004,,,,,,,1,Nintendo DS,T,1,1234,Columbus,Ohio
+2026394172,1,Pokmon Dash,2004,,,,,,,1,Nintendo DS,T,1,1234,Columbus,Ohio
+1767715330,1,Dynasty Warriors,2004,,,,,,,1,Sony PSP,E,1,1234,Columbus,Ohio
+1416706566,1,Feel the Magic XY/XX,2004,,,,,,,1,Nintendo DS,T,1,1234,Columbus,Ohio
+8837432128,1,Ridge Racer DS,2004,,,,,,,1,Nintendo DS,E,1,1234,Columbus,Ohio
+5541877204,1,Darkstalkers Chronicle: The Chaos Tower,2004,,,,,,,1,Sony PSP,E,1,1234,Columbus,Ohio
+5919433604,1,Ape Escape Academy,2004,,,,,,,1,Sony PSP,E,1,1234,Columbus,Ohio
+8519111339,1,Polarium,2004,,,,,,,1,Nintendo DS,E,1,1234,Columbus,Ohio
+8282686022,1,Asphalt: Urban GT,2004,,,,,,,1,Nintendo DS,E,1,1234,Columbus,Ohio
+5124395046,1,Zoo Keeper,2004,,,,,,,1,Nintendo DS,T,1,1234,Columbus,Ohio
+5494393459,1,Mr. DRILLER: Drill Spirits,2004,,,,,,,1,Nintendo DS,T,1,1234,Columbus,Ohio
+4537027663,1,Sprung,2004,,,,,,,1,Nintendo DS,E,1,1234,Columbus,Ohio
+1723150427,1,Armored Core: Formula Front - Extreme Battle,2004,,,,,,,1,Sony PSP,E,1,1234,Columbus,Ohio
+3914671444,1,Puyo Pop Fever,2004,,,,,,,1,Nintendo DS,E,1,1234,Columbus,Ohio
+1018262256,1,Mario Kart DS,2005,,,,,,,1,Nintendo DS,E,1,1234,Columbus,Ohio
+7595392218,1,Nintendogs,2005,,,,,,,1,Nintendo DS,E,1,1234,Columbus,Ohio
+3351740227,1,Brain Age: Train Your Brain in Minutes a Day!,2005,,,,,,,1,Nintendo DS,M,1,1234,Columbus,Ohio
+3637772469,1,Brain Agey: More Training in Minutes a Day!,2005,,,,,,,1,Nintendo DS,E,1,1234,Columbus,Ohio
+5085836271,1,Grand Theft Auto: Liberty City Stories,2005,,,,,,,1,Sony PSP,E,1,1234,Columbus,Ohio
+635848216,1,Animal Crossing: Wild World,2005,,,,,,,1,Nintendo DS,T,1,1234,Columbus,Ohio
+3999218416,1,Big Brain Academy,2005,,,,,,,1,Nintendo DS,E,1,1234,Columbus,Ohio
+1723658771,1,Call of Duty 2,2005,,,,,,,1,X360,E,1,1234,Columbus,Ohio
+5633398889,1,Midnight Club 3: DUB Edition,2005,,,,,,,1,Sony PSP,T,1,1234,Columbus,Ohio
+8272904809,1,Need for Speed: Most Wanted 5-1-0,2005,,,,,,,1,Sony PSP,M,1,1234,Columbus,Ohio
+9512188193,1,Pokmon Mystery Dungeon: Blue Rescue Team,2005,,,,,,,1,Nintendo DS,T,1,1234,Columbus,Ohio
+399294605,1,Sonic Rush,2005,,,,,,,1,Nintendo DS,E,1,1234,Columbus,Ohio
+4023744565,1,Star Wars: Battlefront II,2005,,,,,,,1,Sony PSP,E,1,1234,Columbus,Ohio
+257602073,1,SOCOM: U.S. Navy SEALs - Fireteam Bravo,2005,,,,,,,1,Sony PSP,E,1,1234,Columbus,Ohio
+5036437606,1,Need for Speed: Most Wanted,2005,,,,,,,1,X360,E,1,1234,Columbus,Ohio
+3015708184,1,Zoo Tycoon DS,2005,,,,,,,1,Nintendo DS,T,1,1234,Columbus,Ohio
+2294630295,1,The Sims 2,2005,,,,,,,1,Nintendo DS,M,1,1234,Columbus,Ohio
+426342124,1,Mario & Luigi: Partners in Time,2005,,,,,,,1,Nintendo DS,E,1,1234,Columbus,Ohio
+4518698929,1,Madden NFL 06,2005,,,,,,,1,Sony PSP,E,1,1234,Columbus,Ohio
+9505291506,1,Need for Speed Underground: Rivals,2005,,,,,,,1,Sony PSP,E,1,1234,Columbus,Ohio
+8366165907,1,Twisted Metal: Head-On,2005,,,,,,,1,Sony PSP,E,1,1234,Columbus,Ohio
+7823791943,1,Perfect Dark Zero,2005,,,,,,,1,X360,E,1,1234,Columbus,Ohio
+1337225683,1,Super Monkey Ball: Touch & Roll,2005,,,,,,,1,Nintendo DS,T,1,1234,Columbus,Ohio
+5830282408,1,Super Princess Peach,2005,,,,,,,1,Nintendo DS,T,1,1234,Columbus,Ohio
+9189414478,1,Burnout Legends,2005,,,,,,,1,Sony PSP,T,1,1234,Columbus,Ohio
+7425321198,1,Madden NFL 06,2005,,,,,,,1,X360,E,1,1234,Columbus,Ohio
+458565134,1,Clubhouse Games,2005,,,,,,,1,Nintendo DS,E,1,1234,Columbus,Ohio
+5954993581,1,ATV Offroad Fury: Blazin' Trails,2005,,,,,,,1,Sony PSP,T,1,1234,Columbus,Ohio
+4330679458,1,Untold Legends: Brotherhood of the Blade,2005,,,,,,,1,Sony PSP,M,1,1234,Columbus,Ohio
+4276826156,1,Tony Hawk's Underground 2: Remix,2005,,,,,,,1,Sony PSP,T,1,1234,Columbus,Ohio
+514768063,1,The Sims 2,2005,,,,,,,1,Sony PSP,T,1,1234,Columbus,Ohio
+8077687065,1,WipEout Pure,2005,,,,,,,1,Sony PSP,E,1,1234,Columbus,Ohio
+6787960705,1,NBA Live 06,2005,,,,,,,1,Sony PSP,E,1,1234,Columbus,Ohio
+5248242268,1,WWE Smackdown vs. Raw 2006,2005,,,,,,,1,Sony PSP,T,1,1234,Columbus,Ohio
+6402218404,1,Dead or Alive 4,2005,,,,,,,1,X360,E,1,1234,Columbus,Ohio
+2602018756,1,Phoenix Wright: Ace Attorney,2005,,,,,,,1,Nintendo DS,E,1,1234,Columbus,Ohio
+7207436715,1,Spider-Man 2,2005,,,,,,,1,Sony PSP,M,1,1234,Columbus,Ohio
+1310741078,1,NFL Street 2,2005,,,,,,,1,Sony PSP,T,1,1234,Columbus,Ohio
+1138216814,1,Kirby: Canvas Curse,2005,,,,,,,1,Nintendo DS,T,1,1234,Columbus,Ohio
+977854176,1,Battlefield 2: Modern Combat,2005,,,,,,,1,X360,E,1,1234,Columbus,Ohio
+2163133271,1,Yoshi Touch & Go,2005,,,,,,,1,Nintendo DS,T,1,1234,Columbus,Ohio
+9379043441,1,Tiger Woods PGA Tour 06,2005,,,,,,,1,X360,T,1,1234,Columbus,Ohio
+8170523701,1,Condemned: Criminal Origins,2005,,,,,,,1,X360,E,1,1234,Columbus,Ohio
+3899488873,1,Peter Jackson's King Kong: The Official Game of...,2005,,,,,,,1,X360,T,1,1234,Columbus,Ohio
+3925254044,1,Castlevania: Dawn of Sorrow,2005,,,,,,,1,Nintendo DS,T,1,1234,Columbus,Ohio
+3814476706,1,SpongeBob SquarePants: The Yellow Avenger,2005,,,,,,,1,Nintendo DS,E,1,1234,Columbus,Ohio
+6990788544,1,Marvel Nemesis: Rise of the Imperfects ,2005,,,,,,,1,Sony PSP,T,1,1234,Columbus,Ohio
+1194869907,1,Kameo: Elements of Power,2005,,,,,,,1,X360,T,1,1234,Columbus,Ohio
+5734638963,1,Advance Wars: Dual Strike,2005,,,,,,,1,Nintendo DS,T,1,1234,Columbus,Ohio
+6675782580,1,Trauma Center: Under the Knife,2005,,,,,,,1,Nintendo DS,T,1,1234,Columbus,Ohio
+9445125661,1,Coded Arms,2005,,,,,,,1,Sony PSP,M,1,1234,Columbus,Ohio
+1060255649,1,NBA LIVE 06 ,2005,,,,,,,1,X360,E,1,1234,Columbus,Ohio
+1279669961,1,Tony Hawk's American Wasteland,2005,,,,,,,1,X360,E,1,1234,Columbus,Ohio
+2896344232,1,Star Wars: Episode III - Revenge of the Sith,2005,,,,,,,1,Nintendo DS,E,1,1234,Columbus,Ohio
+9751001034,1,Capcom Classics Collection Remixed,2005,,,,,,,1,Sony PSP,E,1,1234,Columbus,Ohio
+6272779276,1,Madagascar,2005,,,,,,,1,Nintendo DS,E,1,1234,Columbus,Ohio
+940906138,1,X-Men: Legends II - Rise of Apocalypse,2005,,,,,,,1,Sony PSP,M,1,1234,Columbus,Ohio
+2574459617,1,Quake 4,2005,,,,,,,1,X360,E,1,1234,Columbus,Ohio
+7623780123,1,Pokmon Trozei!,2005,,,,,,,1,Nintendo DS,E,1,1234,Columbus,Ohio
+9059731171,1,Need for Speed: Most Wanted,2005,,,,,,,1,Nintendo DS,E,1,1234,Columbus,Ohio
+9902070848,1,Mega Man Maverick Hunter X,2005,,,,,,,1,Sony PSP,E,1,1234,Columbus,Ohio
+3901692391,1,Metroid Prime Pinball,2005,,,,,,,1,Nintendo DS,E,1,1234,Columbus,Ohio
+341684220,1,NBA 06,2005,,,,,,,1,Sony PSP,E,1,1234,Columbus,Ohio
+3964241204,1,GUN ,2005,,,,,,,1,X360,E,1,1234,Columbus,Ohio
+1155876810,1,NBA 2K6 ,2005,,,,,,,1,X360,E,1,1234,Columbus,Ohio
+1098322028,1,Pinball Hall of Fame: The Gottlieb Collection,2005,,,,,,,1,Sony PSP,T,1,1234,Columbus,Ohio
+3872163145,1,Harry Potter and the Goblet of Fire,2005,,,,,,,1,Nintendo DS,T,1,1234,Columbus,Ohio
+9129546024,1,Tony Hawk's American Sk8land,2005,,,,,,,1,Nintendo DS,E,1,1234,Columbus,Ohio
+1788941699,1,MVP Baseball,2005,,,,,,,1,Sony PSP,M,1,1234,Columbus,Ohio
+8336518666,1,Tiger Woods PGA Tour,2005,,,,,,,1,Sony PSP,E,1,1234,Columbus,Ohio
+2096517305,1,World Series of Poker,2005,,,,,,,1,Sony PSP,E,1,1234,Columbus,Ohio
+3059709268,1,SSX on Tour,2005,,,,,,,1,Sony PSP,E,1,1234,Columbus,Ohio
+9678046921,1,Tiger Woods PGA Tour 06,2005,,,,,,,1,Sony PSP,T,1,1234,Columbus,Ohio
+3728736596,1,Death Jr.,2005,,,,,,,1,Sony PSP,M,1,1234,Columbus,Ohio
+6162377512,1,Harry Potter and the Goblet of Fire,2005,,,,,,,1,Sony PSP,T,1,1234,Columbus,Ohio
+6390671594,1,MediEvil Resurrection,2005,,,,,,,1,Sony PSP,T,1,1234,Columbus,Ohio
+7699694904,1,"The Chronicles of Narnia: The Lion, the Witch a...",2005,,,,,,,1,Nintendo DS,T,1,1234,Columbus,Ohio
