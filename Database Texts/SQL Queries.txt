@@ -1,0 +1,16 @@
+SELECT DISTINCT Name FROM Album_Contains, Media_Item WHERE Media_Item.Year<
+YEAR AND Album_Contains.ArtistName=ARTIST;
+
+SELECT Name, Checkout_Date FROM Media_Item, Checkouts WHERE Email_address=PATRON AND Movie_Flag=1 AND Media_Item.ID = Checkouts.ID AND Media_Item.Copy_Number = Checkouts.Copy_Number; 
+
+SELECT Name, ID FROM Media_Item WHERE Album_Flag=1 GROUP BY ID HAVING COUNT(*) < 2; 
+
+SELECT First_Name, Last_Name, Media_Item.Name FROM Patron, Media_Item, Actor_Stars, Checkouts WHERE Actor_Stars.Name = ACTOR  AND Actor_Stars.ID = Media_Item.ID AND Actor_Stars.Copy_Number = Media_Item.Copy_Number AND Checkouts.Email_Address = Patron.Email_Address AND Media_Item.ID = Checkouts.ID AND Media_Item.Copy_Number = Checkouts.Copy_Number;
+
+SELECT COUNT(*) FROM Media_Item, Checkouts WHERE Checkouts.Email_Address=PATRON AND Album_Flag=1 AND Media_Item.ID = Checkouts.ID AND Media_Item.Copy_Number = Checkouts.Copy_Number;
+
+SELECT Patron.First_Name, Patron.Last_Name, COUNT(*) FROM Patron, Media_Item, Checkouts WHERE Checkouts.Email_Address = Patron.Email_Address AND Movie_Flag=1 AND Media_Item.ID = Checkouts.ID AND Media_Item.Copy_Number = Checkouts.Copy_Number GROUP BY Checkouts.Email_Address ORDER BY COUNT(*) DESC LIMIT 1;
+
+SELECT DISTINCT Media_Item.Name FROM Media_Item, Studio_Creates WHERE Game_Flag=1 AND Studio_Creates.Name=STUDIO AND Media_Item.ID = Studio_Creates.ID AND Media_Item.Copy_Number = Studio_Creates.Copy_Number;
+
+SELECT COUNT(*) FROM Media_Item, Actor_Stars WHERE Rating=RATING AND Movie_Flag=1 AND Status = 1 AND Actor_Stars.Name = ACTOR AND Actor_Stars.ID = Media_Item.ID AND Media_Item.Copy_Number = Actor_Stars.Copy_Number;
