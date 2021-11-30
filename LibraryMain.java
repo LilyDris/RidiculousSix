@@ -123,7 +123,7 @@ public class LibraryMain {
 
     // Displays useful reports the user might need
     private static void usefulReports() throws SQLException {
-        final String reportMenu = "1. Tracks by Billy Joel released before 2000\n"
+        final String reportMenu = "1. Tracks by AC/DC released before 2020\n"
                 + "2. Number of albums checked out by a single patron\n" + "3. Most popular actor in the database\n"
                 + "4. Most listened to artist in the database\n" + "5. Patron who has checked out the most videos";
         System.out.println(reportMenu);
@@ -136,7 +136,7 @@ public class LibraryMain {
         	//This query comes from [Checkpoint #4]: Find the titles of all tracks by ARTIST released before YEAR.
 
         	try {
-        		stmt= conn.prepareStatement("SELECT DISTINCT Album_Contains.Name FROM Album_Contains, Media_Item WHERE Media_Item.Year<2000 AND Album_Contains.ArtistName = 'Billy Joel'");
+        		stmt= conn.prepareStatement("SELECT DISTINCT Album_Contains.Name FROM Album_Contains, Media_Item WHERE Media_Item.Year<2020 AND Album_Contains.ArtistName = 'AC/DC'");
         		
         		rs= stmt.executeQuery();
         		
